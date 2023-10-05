@@ -1,0 +1,89 @@
+
+/* Styles pour la page d'accueil */
+.home-page {
+  background-color: rgb(166, 212, 222);
+  height:max-content;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Permet de faire en sorte que les éléments s'étendent verticalement */
+  position: relative; /* Position relative pour positionner le pied de page */
+  }
+
+header {
+  background-color: #54708d;
+  color: white;
+  padding: 10px;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+main {
+  padding: 20px;
+  flex: 1;
+}
+
+.hero {
+  background-color: #779dc4;
+  color: white;
+  padding: 40px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.hero h2 {
+  font-size: 1.5rem;
+}
+
+.hero p {
+  font-size: 1rem;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  flex: 1;
+  margin-right: 20px;
+}
+
+.feature h3 {
+  font-size: 1.2rem;
+}
+
+.feature p {
+  font-size: 1rem;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  bottom: 0;
+  position: relative;
+  bottom: -10px; /* Réglez cette valeur en fonction de vos préférences, par exemple, bottom: -20px; */
+  width: 100%; /* Assurez-vous qu'il occupe toute la largeur de la page */
+  }
+
+/* Media query pour les écrans plus petits */
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+  }
+
+  .feature {
+    /* margin-bottom: 20px; */
+    margin-right: 0;
+  }
+}
+
