@@ -1,35 +1,40 @@
-import React from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
-import './NavBar.css'
-
-const NavigationBar: React.FC = () => {
+function CollapsibleExample() {
   return (
-    <nav className="navbar">
-      <div className="navbar-container">
-        <Image src="/../public/logo.jpg" alt="Mon Logo" width={200} height={200} className="logo-image"/>
-        <p className="hello-world">Player Real Project</p>
-        <ul className="nav-links">
-          <li className="nav-link">
-          <Link href="/" passHref className="nav-item">
-               Accueil
-            </Link>
-          </li>
-          <li className="nav-link">
-          <Link href="/" passHref className="nav-item">
-               Profil
-            </Link>
-          </li>
-          <li className="nav-link">
-          <Link href="/arbres" passHref className="nav-item">
-               Mes Arbres
-            </Link>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+      <Container>
+        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="#features">Features</Nav.Link>
+            <Nav.Link href="#pricing">Pricing</Nav.Link>
+            <NavDropdown title="Dropdown" id="collapsible-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Another action
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                Separated link
+              </NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+          <Nav>
+            <Nav.Link href="#deets">More deets</Nav.Link>
+            <Nav.Link eventKey={2} href="/profile">
+              About me
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
-};
+}
 
-export default NavigationBar;
+export default CollapsibleExample;
