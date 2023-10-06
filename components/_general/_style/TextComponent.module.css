@@ -1,0 +1,13 @@
+.customText {
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    margin-top: 3%;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.customText p {
+    margin-bottom: 10px;
+}

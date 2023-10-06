@@ -3,8 +3,9 @@ import style from "../styles/style.module.css"
 import 'bootstrap/dist/css/bootstrap.min.css';  // Important 
 
 import MyImage from '@/components/_general/ImageComponent';
-import MyList from '@/components/List';
 import ColorSchemesExample from '@/components/NavBar';
+import TextComponent from '@/components/_general/TextComponent';
+import { precept, small_presentation, end_of_presentation } from '@/static/data';
 
 function HomePage() {
   return (
@@ -13,6 +14,9 @@ function HomePage() {
         <ColorSchemesExample />
         <h1 className={style.customHeading}>Écrits d'un Globe-Trotter Créatif : Livres, Films & Plus.</h1>
         <MyImage />
+        <TextComponent content={precept} />
+        <TextComponent content={small_presentation} />
+        <TextComponent content={end_of_presentation} />
       </div>
     </div>
   );

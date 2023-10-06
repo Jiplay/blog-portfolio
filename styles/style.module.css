@@ -1,14 +1,13 @@
 
 .container {
-  min-height: 100vh; /* Définir une hauteur minimale de 100% de la hauteur de la fenêtre */
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Ajustez ceci en fonction de la mise en page souhaitée */
+  justify-content: space-between;
 }
 
 .gradientBackground {
-  background: linear-gradient(to bottom, #ff9900, #ff66cc); /* Remplacez ces couleurs par celles de votre choix */
-  /* Autres styles d'arrière-plan si nécessaire */
+  background: linear-gradient(to bottom, #ffffff, #f0750a);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -18,9 +17,9 @@
 
 
 .customHeading {
-  font-size: 24px; /* Taille de la police */
-  font-weight: bold; /* Gras */
-  color: #333; /* Couleur du texte */
-  text-align: center; /* Alignement du texte au centre */
+  font-size: 24px; 
+  font-weight: bold;
+  color: #333;
+  text-align: center;
   margin-top: 3%;
 }
