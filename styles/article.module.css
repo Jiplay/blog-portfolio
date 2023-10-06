@@ -1,0 +1,10 @@
+.headlines {
+    text-align: center;
+    margin-top: 5%;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+    color: #333;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+  }

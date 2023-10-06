@@ -1,0 +1,35 @@
+/* Dans votre fichier CSS ou fichier de styles (par exemple, styles.css) */
+.container {
+    border: 5px solid #ddd;
+    padding: 20px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: flex;
+    align-items: center;
+}
+
+.image {
+    flex: 0 0 20%;
+    margin-right: 20px;
+}
+
+.imageStyle {
+    max-width: 500px;
+    max-height: 500px;
+    width: auto; 
+    height: auto;
+}
+
+
+.content {
+flex: 1;
+}
+
+.title {
+    font-weight: bold; 
+    margin-bottom: 10px;
+}
+
+.paragraph {
+    font-size: 0.9rem;
+}

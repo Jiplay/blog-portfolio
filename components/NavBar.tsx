@@ -7,29 +7,25 @@ function CollapsibleExample() {
   return (
     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand href="/">Écrits d'un Globe-Trotter Créatif</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
-            <NavDropdown title="Dropdown" id="collapsible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+            <Nav.Link href="/articles">Derniers Articles</Nav.Link>
+            <Nav.Link href="#pricing">Projets des copains</Nav.Link>
+            <NavDropdown title="Sections" id="collapsible-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Films</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">Livres</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Voyages</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
-                Separated link
+                Divers
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <Nav>
-            <Nav.Link href="#deets">More deets</Nav.Link>
-            <Nav.Link eventKey={2} href="/profile">
-              About me
-            </Nav.Link>
+            <Nav.Link href="#deets">Espace copain</Nav.Link>
+            <Nav.Link eventKey={2} href="/profile">Espace de Julien</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
