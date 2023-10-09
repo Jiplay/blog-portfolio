@@ -1,0 +1,39 @@
+/* Gros titre */
+.headlines {
+    font-family: 'Geneva';
+    font-size: 44px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 10px;
+    font-weight: bold;
+    color:rgb(228, 3, 3)
+  }
+  
+  /* Sous-titre */
+  .subtitles {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 10px;
+    font-family: 'Geneva';
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Texte normal */
+  .text {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 10px;
+    font-family: 'Geneva';
+    font-size: 16px;
+  }
+  
+  /* Texte en petit */
+  .textSmall {
+    margin-left: 10px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-family: 'Geneva';
+    font-size: 14px;
+  }
+  

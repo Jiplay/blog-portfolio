@@ -1,0 +1,10 @@
+.leftImage {
+    max-width: 100%;
+    height: auto;
+    float: right;
+    margin-right: 20px; /* Espacement à droite (ajustez selon vos besoins) */
+  }
+
+.margingTop {
+  margin-top: 2%;
+}

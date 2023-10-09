@@ -7,6 +7,12 @@ type Articles = {
   Author: string
 };
 
+type ImageToDisplay =  {
+  Source: string,
+  AlternativeText: string,
+  Width: number,
+  Height: number,
+}
 
 
-export type {Articles} 
+export type {Articles, ImageToDisplay} 
