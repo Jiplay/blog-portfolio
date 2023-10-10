@@ -12,8 +12,8 @@ const CV: React.FC = () => {
   const profilePicture = {
     Source:"https://media.licdn.com/dms/image/D4D03AQGH-n-0wkhM7Q/profile-displayphoto-shrink_800_800/0/1680077046046?e=2147483647&v=beta&t=L-c1zdJkbYv4-ggF_CVUKNN_HbpflL6Sfd0bu9FJTvU",
     AlternativeText:"me.png",
-    Width:500,
-    Height:500
+    Width:300,
+    Height:300
   }
 
   const experiences = [
@@ -41,23 +41,9 @@ const CV: React.FC = () => {
       <div className={style.leftImage}>
         <MyImage imgToDisplay={profilePicture}/>
       </div>
-      <h2 className={text.text}>{information.accroches[1]}</h2>
-      <section>
-        <h2 className={text.subtitles}>Expérience Professionnelle</h2>
-        {experiences.map((experience, index) => (
-          <Experience key={index} {...experience} />
-        ))}
-      </section>
-      <section>
-        <h2 className={text.subtitles}>Éducation</h2>
-        {educations.map((education, index) => (
-          <Education key={index} {...education} />
-        ))}
-      </section>
-      <section>
-      <h2 className={text.subtitles}>Hobbies</h2>
-        <Hobbies hobbies={hobbies} />
-      </section>
+      <h2 className={text.text}>{information.accroches[0]}</h2>
+      
+      <Experience />  
     </div>
   );
 };

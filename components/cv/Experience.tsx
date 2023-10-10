@@ -1,22 +1,30 @@
-import React from 'react';
-import text from '@/styles/text.module.css'
-import style from '@/components/cv/_style/cv.module.css'
+import Carousel from 'react-bootstrap/Carousel';
+import 'bootstrap/dist/css/bootstrap.min.css';  // Important 
+import ExampleCarouselImage from './carouselImage';
 
-interface ExperienceProps {
-  title: string;
-  company: string;
-  year: string;
-  description: string;
-}
-
-const Experience: React.FC<ExperienceProps> = ({ title, company, year, description }) => {
+function Experience() {
   return (
-    <div className={style.margingTop}>
-      <h3 className={text.subtitles}>{title}</h3>
-      <p className={text.text}>{company} ({year})</p>
-      <p className={text.textSmall}>{description}</p>
+    <div className="d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
+      <Carousel fade controls={false} interval={10000} style={{ width: '80%', height: '80%' }}>
+        <Carousel.Item>
+          <ExampleCarouselImage text="/cv/oxiov2.png" />
+        </Carousel.Item>
+        <Carousel.Item>
+          <ExampleCarouselImage text="/cv/oxio.png" />
+        </Carousel.Item>
+        {/* <Carousel.Item>
+          <ExampleCarouselImage text="/cv/oxiov2.png" />
+        </Carousel.Item> */}
+      </Carousel>
     </div>
   );
-};
+}
+
 
 export default Experience;
+        {/* <Carousel.Caption>
+          <h3>Third slide label</h3>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+        </Carousel.Caption> */}
