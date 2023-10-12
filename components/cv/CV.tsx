@@ -16,23 +16,6 @@ const CV: React.FC = () => {
     Height:300
   }
 
-  const experiences = [
-    {
-      title: 'Développeur Web',
-      company: 'ABC Inc.',
-      year: '2019-2021',
-      description: 'Travaux de développement web pour divers clients.'
-    },
-  ];
-
-  // const educations = [
-  //   {
-  //     degree: 'Baccalauréat en Informatique',
-  //     school: 'Université XYZ',
-  //     year: '2015-2019'
-  //   },
-  // ];
-
   const hobbies = ['Voyager', 'Photographie', 'Lecture', 'Cuisine'];
 
   return (

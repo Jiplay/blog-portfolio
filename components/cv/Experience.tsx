@@ -5,12 +5,18 @@ import ExampleCarouselImage from './carouselImage';
 function Experience() {
   return (
     <div className="d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
-      <Carousel fade controls={false} interval={10000} style={{ width: '80%', height: '80%' }}>
+      <Carousel controls={false} interval={10000} wrap={true} style={{ width: '60%', height: '90vh', maxHeight: '100vh' }}>
         <Carousel.Item>
-          <ExampleCarouselImage text="/cv/oxiov2.png" />
+          <ExampleCarouselImage text="/cv/oxio1.png" />
         </Carousel.Item>
         <Carousel.Item>
-          <ExampleCarouselImage text="/cv/oxio.png" />
+          <ExampleCarouselImage text="/cv/oxio2.png" />
+        </Carousel.Item>
+        <Carousel.Item>
+          <ExampleCarouselImage text="/cv/schoolab.png" />
+        </Carousel.Item>
+        <Carousel.Item>
+          <ExampleCarouselImage text="/cv/MFL.png" />
         </Carousel.Item>
         {/* <Carousel.Item>
           <ExampleCarouselImage text="/cv/oxiov2.png" />

@@ -7,7 +7,8 @@
 }
 
 .gradientBackground {
-  background: linear-gradient(to bottom, #ffffff, #f0750a);
+  /* background: linear-gradient(to bottom, #ffffff, #f0750a); */
+  background: #FFF5E0;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;

@@ -2,10 +2,11 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import "./NavBar.css"
 
 function CollapsibleExample() {
   return (
-    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+    <Navbar collapseOnSelect expand="lg" className="navbar">
       <Container>
         <Navbar.Brand href="/">Écrits d'un Globe-Trotter Créatif</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />

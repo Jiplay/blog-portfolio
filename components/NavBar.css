@@ -1,8 +1,6 @@
 /* navbar.css */
 .navbar {
-    background-color: rgb(35, 105, 203); /* Couleur de fond de la barre de navigation */
-    color: #fff; /* Couleur du texte */
-    padding: 10px 0; /* Espacement intérieur vertical de la barre de navigation */
+    background-color: #FF6969; /* Couleur de fond de la barre de navigation */
   }
   
   .navbar-container {
