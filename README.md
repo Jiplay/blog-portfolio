@@ -3,6 +3,14 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 "Écrits d'un Globe-Trotter Créatif : Livres, Films & Plus" - Cette bannière met en avant votre côté créatif et votre amour pour les voyages.
 
+
+Couleurs : 
+FFF5E0
+FF6969
+C70039
+141E46
+
+
 ## Getting Started
 
 First, run the development server:

@@ -3,6 +3,9 @@
     background-color: #FF6969; /* Couleur de fond de la barre de navigation */
   }
   
+.title {
+  color:#141E46
+}
   .navbar-container {
     display: flex; /* Utilise Flexbox pour aligner les éléments horizontalement */
     justify-content: space-between; /* Éspacez les éléments pour qu'ils soient répartis sur toute la largeur */
