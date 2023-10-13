@@ -1,13 +1,13 @@
 import Image from 'next/image';
 
 const MyImage = () => (
-  <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '3%', marginBottom: '3%' }}>
+  <div style={{ display: 'flex', float: 'left', marginTop: '3%', marginBottom: '3%', marginLeft: '10px', marginRight: '3%' }}>
     <Image
-      src="/img/banner.jpg" // Route of the image file
-      height={444} // Desired size with correct aspect ratio
-      width={572} // Desired size with correct aspect ratio
+      src="/img/banner.jpg"
+      height={444}
+      width={572}
       alt="Your Name"
-      />
+    />
   </div>
 );
 

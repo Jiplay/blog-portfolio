@@ -1,10 +1,8 @@
 import React from 'react';
 import Experience from './Experience';
-import Education from './Education';
-import Hobbies from './Hobbies';
 import MyImage from '../_general/Image';
 
-import { educations, information } from '@/static/data';
+import { information } from '@/static/data';
 import style from "@/components/cv/_style/cv.module.css"
 import text from "@/styles/text.module.css"
 
@@ -16,16 +14,14 @@ const CV: React.FC = () => {
     Height:300
   }
 
-  const hobbies = ['Voyager', 'Photographie', 'Lecture', 'Cuisine'];
-
   return (
     <div>
-      <h1 className={text.headlines}>À propos de moi :</h1>
+      <h1 className={text.headlines}>About me :</h1>
       <div className={style.leftImage}>
         <MyImage imgToDisplay={profilePicture}/>
       </div>
       <h2 className={text.text}>{information.accroches[0]}</h2>
-      
+      <h1 className={text.subtitles}>Professional experiences  :</h1>
       <Experience />  
     </div>
   );

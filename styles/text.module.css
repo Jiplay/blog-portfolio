@@ -1,4 +1,3 @@
-/* Gros titre */
 .headlines {
     font-family: 'Geneva';
     font-size: 44px;
@@ -9,30 +8,27 @@
     color:#C70039
   }
   
-  /* Sous-titre */
   .subtitles {
-    margin-top: 2%;
-    margin-bottom: 2%;
+    color:#C70039;
     margin-left: 10px;
     font-family: 'Geneva';
     font-size: 24px;
     font-weight: bold;
   }
   
-  /* Texte normal */
   .text {
     margin-top: 2%;
+    color:#141E46;
     margin-left: 10px;
     font-family: 'Geneva';
-    font-size: 16px;
+    font-size: 20px;
   }
   
-  /* Texte en petit */
   .textSmall {
     margin-left: 10px;
     margin-top: 2%;
     margin-bottom: 2%;
     font-family: 'Geneva';
-    font-size: 14px;
+    font-size: 8px;
   }
   

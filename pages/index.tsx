@@ -14,9 +14,10 @@ function HomePage() {
         <ColorSchemesExample />
         <h1 className={style.customHeading}> {french.title}</h1>
         <MyImage />
-        <TextComponent content={french.precept} />
-        <TextComponent content={french.small_presentation} />
-        <TextComponent content={french.end_of_presentation} />
+        <TextComponent content={french.precept[0]} />
+        <TextComponent content={french.small_presentation[0]} />
+        <TextComponent content={french.another_paragraph[0]} />
+        <TextComponent content={french.end_of_presentation[0]} />
       </div>
     </div>
   );
