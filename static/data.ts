@@ -7,13 +7,13 @@ type Data = {
   };
 
   // INDEX : 0 = English, 1 = French, 2 : Italian
-export const french:Data = {
+export const indexText:Data = {
     title:[
       "Écrits d'un Globe-Trotter Créatif : Livres, Films & Plus."
     ],
     precept:[
       "Deux éléments me tiennent particulièrement à cœur : l'acquisition de connaissances variées sur la vie et le partage de ces connaissances avec mon cercle proche. C'est dans cette optique que je conçois ce blog. J'y ajouterai une dimension collaborative, impliquant certains de mes amis, afin d'enrichir nos échanges et d'accumuler davantage de savoir.",
-      "Two things are dear to me: learning a wealth of facts about life and sharing them with those around me. This is the blog I envision. I plan to add a cooperative aspect, involving some of my friends to enhance our shared knowledge even further.",
+      "Two things are particularly important to me: acquiring diverse knowledge about life and sharing that knowledge with my close circle. It is with this in mind that I conceive this blog. I will add a collaborative dimension to it, involving some of my friends, in order to enrich our discussions and accumulate even more knowledge.",
       "Ci sono due cose a cui tengo particolarmente: imparare un'ampia gamma di fatti sulla vita e condividerli con coloro che mi circondano. Questo è il blog che immagino. Intendo aggiungere un aspetto collaborativo coinvolgendo alcuni dei miei amici per arricchire ulteriormente la nostra conoscenza condivisa."
     ],
     small_presentation:[

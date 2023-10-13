@@ -16,6 +16,28 @@
   min-height: 100vh
 }
 
+.centerButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh; /* Pour centrer verticalement */
+}
+
+.centerButton .btn-lg {
+  font-size: 24px; /* Ajustez la taille de la police selon vos besoins */
+  padding: 20px 40px; /* Ajustez les marges intérieures selon vos besoins */
+}
+
+.colorButton {
+  background-color: #C70039 !important;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  color: #ffffff !important;
+}
+
+.colorButton:hover {
+  background-color: #141E46 !important;
+}
 
 .customHeading {
   font-size: 24px; 
