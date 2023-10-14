@@ -8,3 +8,9 @@
     border: 1px solid #000000;
     border-radius: 5px;
   }
+
+  .articleGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes de largeur égale */
+    grid-gap: 16px; /* Espace entre les articles */
+  }

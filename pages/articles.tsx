@@ -27,6 +27,12 @@ const ArticlePage: React.FC = () => {
       ImageURL:'https://images.ctfassets.net/rc3dlxapnu6k/4L8JKctXbOXFSrEVtIVnJL/23b029b7cf6ec0165f105d0335e7aaab/USA_Texas_Sonnenuntergang_bei_Corpus_Christi.jpg?w=2300&h=1293&fl=progressive&q=50&fm=jpg',
       Author: "me"    
     },
+    {
+      Headlines: 'Article 3',
+      Text: ['Contenu de l\'article 3.'],
+      ImageURL:'https://images.ctfassets.net/rc3dlxapnu6k/4L8JKctXbOXFSrEVtIVnJL/23b029b7cf6ec0165f105d0335e7aaab/USA_Texas_Sonnenuntergang_bei_Corpus_Christi.jpg?w=2300&h=1293&fl=progressive&q=50&fm=jpg',
+      Author: "me"    
+    },
   ];
 
   return (
@@ -35,7 +41,7 @@ const ArticlePage: React.FC = () => {
       <div className={style.gradientBackground}>
         <ColorSchemesExample />
         <h1 className={article.headlines}>Liste des articles</h1>
-        <div className="article-list">
+        <div className={article.articleGrid}>
             {articles.map((article:Articles, index:number) => (
             <Article key={index} article={article} />
             ))}
