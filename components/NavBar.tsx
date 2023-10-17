@@ -25,7 +25,7 @@ function CollapsibleExample() {
             </NavDropdown>
           </Nav>
           <Nav>
-            <Nav.Link href="#deets">Espace copain</Nav.Link>
+            <Nav.Link href="/login">Espace copain</Nav.Link>
             <Nav.Link eventKey={2} href="/julien">Espace de Julien</Nav.Link>
           </Nav>
         </Navbar.Collapse>

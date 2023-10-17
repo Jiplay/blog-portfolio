@@ -1,19 +1,21 @@
 /* Style de base pour le bouton */
 .custom-button {
-  margin: 10px;
+  margin: 10px auto;
+  margin-top: 30px;
+  display: block;
   padding: 10px 20px;
-  background-color: #54708d;
-  color: #fff;
+  background-color: #C70039 !important;
   font-size: 16px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   text-align: center;
+  
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
 
 /* Style au survol du bouton */
 .custom-button:hover {
-  background-color: #1a4f88;
+  background-color: #141E46 !important;
 }

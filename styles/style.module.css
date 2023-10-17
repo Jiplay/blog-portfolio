@@ -28,6 +28,20 @@
   padding: 20px 40px; /* Ajustez les marges intérieures selon vos besoins */
 }
 
+.flexContainer {
+  display: flex;
+  align-items: center; /* Centrer verticalement les éléments */
+  justify-content: center; /* Centrer horizontalement les éléments */
+}
+
+.image {
+  max-width: 70vh; /* Ajustez la largeur de l'image selon vos besoins */
+  max-height: 70vh;
+  margin-left: 10%;
+  border-radius: 10px;
+  margin-top: 5vmax;
+}
+
 .colorButton {
   background-color: #C70039 !important;
   margin-top: 10vh;

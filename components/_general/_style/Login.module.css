@@ -1,0 +1,51 @@
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* Pour s'assurer que le contenu reste centré même si la page est plus petite que le contenu. */
+}
+
+.container {
+    width: 60vh; /* Largeur du conteneur (peut être ajustée selon vos besoins) */
+    height: 50vh; /* Hauteur du conteneur (peut être ajustée selon vos besoins) */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0; /* Réinitialise la marge */
+    padding: 20px; /* Espace intérieur du conteneur */
+    box-sizing: border-box; /* S'assure que la largeur inclut les marges et le rembourrage */
+    background-color: #FF6969;
+    border-radius: 10px;
+}
+
+.inputField {
+    margin-bottom: 10px;
+    color: #141E46;
+    font-family: Geneva;
+}
+
+.title {
+    margin-bottom: 30px;
+    color: #141E46;
+    font-family: Geneva;
+}
+
+.inputData {
+    color: #141E46;
+    font-family: Geneva;
+}
+
+.grid {
+    display: block;
+    grid-template-columns: max-content 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+.textInputField {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px; /* Espacement entre les étiquettes et les champs d'entrée */  
+}
