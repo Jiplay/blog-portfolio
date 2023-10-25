@@ -1,5 +1,5 @@
 .text {
-    font-family: 'Geneva';
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
 }
 
@@ -10,7 +10,7 @@
 }
 
 .text {
-font-family: 'Geneva';
+font-family: Verdana, Geneva, Tahoma, sans-serif;
 font-size: 20px;
 color:#141E46
 }

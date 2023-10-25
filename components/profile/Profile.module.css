@@ -1,0 +1,25 @@
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* Pour s'assurer que le contenu reste centré même si la page est plus petite que le contenu. */
+}
+
+.container {
+    width: 85%; /* Largeur du conteneur (peut être ajustée selon vos besoins) */
+    height: 90vh; /* Hauteur du conteneur (peut être ajustée selon vos besoins) */
+    display: flex;
+    flex-direction: column;
+    margin: 0; /* Réinitialise la marge */
+    padding: 20px; /* Espace intérieur du conteneur */
+    box-sizing: border-box; /* S'assure que la largeur inclut les marges et le rembourrage */
+    background-color: #FFF5E0;
+    border-radius: 10px;
+}
+
+.title {
+    margin-bottom: 30px;
+    color: #141E46;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

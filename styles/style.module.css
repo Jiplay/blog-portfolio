@@ -16,6 +16,16 @@
   min-height: 100vh
 }
 
+.profileBackground {
+  background: #141E46;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: auto;
+  min-height: 100vh
+}
+
+
 .centerButton {
   display: flex;
   justify-content: center;
