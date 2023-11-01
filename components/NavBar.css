@@ -1,6 +1,9 @@
 /* navbar.css */
 .navbar {
-    background-color: #FF6969; /* Couleur de fond de la barre de navigation */
+    background-color: white; /* Couleur de fond de la barre de navigation */
+    width: 90%;
+    margin: 0 auto; /* Pour centrer la Navbar horizontalement */
+  
   }
   
 .title {
@@ -26,7 +29,7 @@
   }
   
   .nav-item {
-    color: #fff;
+    color: black;
     margin-right: 20px; /* Espacement entre les éléments de navigation */
   }
   
@@ -36,7 +39,7 @@
   
   .nav-link {
     text-decoration: none; /* Supprimez la soulignement par défaut des liens */
-    color: #fff; /* Couleur du texte des liens */
+    color: black; /* Couleur du texte des liens */
     font-size: 16px; /* Taille de la police des liens */
   }
   
@@ -46,7 +49,7 @@
   
   .nav-link {
     text-decoration: none; /* Supprimez la soulignement par défaut des liens */
-    color: #fff; /* Couleur du texte en blanc */
+    color: black; /* Couleur du texte en blanc */
     font-size: 16px; /* Taille de la police des liens */
   }
 

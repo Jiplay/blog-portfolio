@@ -1,3 +1,20 @@
+// import React from 'react';
+import ReactMarkdown from 'react-markdown';
+
+interface MarkdownRendererProps {
+  source: string; // Le contenu du fichier Markdown à afficher
+}
+
+// const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ source }) => {
+//   return (
+//     <div>
+//       <ReactMarkdown>{source}</ReactMarkdown>
+//     </div>
+//   );
+// };
+
+// export default MarkdownRenderer;
+
 import React, { useState } from 'react';
 import style from "../styles/style.module.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -8,7 +25,12 @@ import { Articles } from '@/backend/models/models';
 import ColorSchemesExample from '@/components/NavBar';
 
 
-function HomePage() {
+const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ source }) => {
+  const imageStyle = {
+    maxWidth: '70%',
+    marginLeft: '5%',
+    height: 'auto',
+  };
   const articles: Articles[] = [
     {
       Headlines: 'Article 1',
@@ -47,11 +69,14 @@ function HomePage() {
       </div>
     </div>
     <div style={{display: 'flex' }}>
-      <main style={{ width: '70%', justifyContent: 'center', alignItems: 'center'}}>
-        <h2>TODO Theme sort</h2>
-        {articles.map((article:Articles, index:number) => (
-          <Article key={index} article={article} />
-        ))}
+      <main style={{ width: '70%', justifyContent: 'center', alignItems: 'center', maxWidth: '70%'}}>
+      <ReactMarkdown
+        components={{
+          img: (props) => <img {...props} style={imageStyle} />
+        }}
+      >
+        {source}
+      </ReactMarkdown>
         </main>
         <div style={{ width: '30%', marginRight: "5%" }}>
           <div className={style.sideComponent}>
@@ -66,4 +91,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default MarkdownRenderer;

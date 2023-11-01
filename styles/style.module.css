@@ -7,7 +7,6 @@
 }
 
 .gradientBackground {
-  /* background: linear-gradient(to bottom, #ffffff, #f0750a); */
   background: #FFF5E0;
   background-size: cover;
   background-repeat: no-repeat;
@@ -25,6 +24,13 @@
   min-height: 100vh
 }
 
+.sideComponent {
+  border: 1px solid black; /* Bordure de 2px solide grise */
+  background-color: #FFF6E0;
+  padding: 10px; /* Marge intérieure de 10px */
+  margin-top: 13%;
+  border-radius: 5px; /* Coins arrondis de 5px */
+}
 
 .centerButton {
   display: flex;

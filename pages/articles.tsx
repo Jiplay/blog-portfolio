@@ -4,6 +4,7 @@ import style from "../styles/style.module.css"
 import article from "../styles/article.module.css"
 import { Articles } from '@/backend/models/models';
 import 'bootstrap/dist/css/bootstrap.min.css';  // Important 
+import Image from 'next/image';
 
 import ColorSchemesExample from '@/components/NavBar';
 
@@ -40,7 +41,19 @@ const ArticlePage: React.FC = () => {
     <div className={style.container}>
       <div className={style.gradientBackground}>
         <ColorSchemesExample />
-        <h1 className={article.headlines}>Liste des articles</h1>
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', overflow: 'hidden', borderRadius: '50%' }}>
+      <div style={{ position: 'relative', borderRadius: '50%' }}>
+        <Image
+          src="/img/banner.jpg"
+          alt="Your Name"
+          width={572}
+          height={444}
+          layout="responsive"
+          objectFit="cover"
+          style={{ borderRadius: '50%', marginBottom: '3%', marginTop: '3%' }}
+        />
+      </div>
+    </div>
         <div className={article.articleGrid}>
             {articles.map((article:Articles, index:number) => (
             <Article key={index} article={article} />
