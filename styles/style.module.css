@@ -7,7 +7,7 @@
 }
 
 .gradientBackground {
-  background: #FFF5E0;
+  background: white;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -16,7 +16,7 @@
 }
 
 .profileBackground {
-  background: #141E46;
+  background: white;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -26,7 +26,7 @@
 
 .sideComponent {
   border: 1px solid black; /* Bordure de 2px solide grise */
-  background-color: #FFF6E0;
+  background-color: white;
   padding: 10px; /* Marge intérieure de 10px */
   margin-top: 13%;
   border-radius: 5px; /* Coins arrondis de 5px */

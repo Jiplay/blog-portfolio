@@ -1,7 +1,7 @@
 import React from 'react';
 import style from '@/components/_style/ArticleComponent.module.css'
 import { Articles } from '@/backend/models/models';
-
+import { Button } from 'react-bootstrap';
 
 interface ArticleProps {
   article: Articles
@@ -17,6 +17,9 @@ const Article: React.FC<ArticleProps> = ({ article }) => {
         <h2 className={style.title}>{article.Headlines}</h2>
         <p className={style.paragraph}>{article.Text}</p>
         <p className={style.paragraph}>{article.Author}</p>
+      </div>
+      <div>
+        <Button href="/articles/Halloween">Lire plus </Button>
       </div>
     </div>
   );
