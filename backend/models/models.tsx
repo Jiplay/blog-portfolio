@@ -1,18 +1,10 @@
 
-type Articles = {
-  Headlines: string
-  ImageURL: string
-  Text: string[]
-  Themes?: string[]
-  Author: string
+export type Article = {
+  Title: string;
+  FirstParagraph: string;
+  LinkToImageToPromote: string;
+  Theme: string;
+  Author: string;
+  Date: Date;
+  PathOfFile: string;
 };
-
-type ImageToDisplay =  {
-  Source: string,
-  AlternativeText: string,
-  Width: number,
-  Height: number,
-}
-
-
-export type {Articles, ImageToDisplay} 
