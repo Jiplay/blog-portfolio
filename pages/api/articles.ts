@@ -1,7 +1,9 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import { articleManager } from "@/backend/articles/article";
+import { Article } from "@/backend/models/models";
 
 type ResponseData = {
+  articles?: Article[];
   status?: string;
 };
 
@@ -21,7 +23,6 @@ export default async function endpoint(req: NextApiRequest, res: NextApiResponse
     const { author }: QueryParameters = req.query;
 
     const articles = await articleManager.getArticles(author!);
-    console.log(articles) // FIXME convert weird type into Articles
-    res.status(200).json({ status: "OK" });
+    res.status(200).json({ articles: articles });
   } 
 }
