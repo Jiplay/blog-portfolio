@@ -1,6 +1,5 @@
 import { Article } from "../models/models"
 import { database } from "../database/mongo";
-import { appendFile } from "fs";
 
 export const articleManager = {
     createArticle(body: any) {
@@ -9,7 +8,6 @@ export const articleManager = {
             FirstParagraph: body.FirstParagraph,
             LinkToImageToPromote: body.Link,
             Theme: body.Theme,
-            Date: new Date(),
             Author: body.Author,
             PathOfFile: body.Path,
         };
@@ -26,12 +24,11 @@ export const articleManager = {
                 FirstParagraph: element.article.FirstParagraph,
                 LinkToImageToPromote: element.article.LinkToImageToPromote,
                 Theme: element.article.Theme,
-                Date: element.article.Date,
                 Author: element.article.Author,
                 PathOfFile: element.article.PathOfFile,
             }
             articles.push(tmp)
         }
         return articles
-    }
+    },
 }

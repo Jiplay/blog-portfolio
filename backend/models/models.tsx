@@ -5,6 +5,5 @@ export type Article = {
   LinkToImageToPromote: string;
   Theme: string;
   Author: string;
-  Date: Date;
   PathOfFile: string;
 };
