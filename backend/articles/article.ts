@@ -13,8 +13,10 @@ export const articleManager = {
         };
         database.addArticles(sampleArticle);
     },
-    async getArticles(author: string): Promise<Article[]> {
-        const data = await database.getArticles(author)
+    async getArticles(author?:string ): Promise<Article[]> {
+        let data;
+        data = await database.getArticles(author)
+
         let articles:Article[] = [] 
         for (let index = 0; index < data.length; index++) {
             const element = data[index];

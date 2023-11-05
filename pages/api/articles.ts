@@ -21,7 +21,12 @@ export default async function endpoint(req: NextApiRequest, res: NextApiResponse
     res.status(200).json({ status: "OK" });
   } else if (req.method === "GET") {
     const { author }: QueryParameters = req.query;
-    const articles = await articleManager.getArticles(author!);
+    let articles
+    if (author === undefined) {
+      articles = await articleManager.getArticles();
+    } else {
+      articles = await articleManager.getArticles(author)
+    }
 
     res.status(200).json({ articles: articles });
   } 
