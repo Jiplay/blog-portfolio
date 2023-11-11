@@ -1,23 +1,24 @@
 import Image from 'next/image';
-import { ImageToDisplay } from '@/backend/models/models';
+import { UserProfileCV } from '@/backend/models/models';
 import text from "@/components/_general/_style/image.module.css"
 
 interface ImageProps {
-  imgToDisplay: ImageToDisplay;
+  profile : UserProfileCV
 }
 
-const MyImage: React.FC<ImageProps> = ({ imgToDisplay }) => {
+const MyImage: React.FC<ImageProps> = ({ profile }) => {
   return (
     <div >
       <Image
-        src={imgToDisplay.Source}
-        alt={imgToDisplay.AlternativeText}
-        width={imgToDisplay.Width}
-        height={imgToDisplay.Height}
+        src={profile.source}
+        alt="Picture of <_>"
+        width={300}
+        height={300}
+        className={text.image}
       />
       <h2 className={text.text}>Reach me on:</h2>
       <div className={text.socialIcons}>
-        <a href="https://www.linkedin.com/in/julien-garsia/" target="_blank" rel="noopener noreferrer">
+        <a href={profile.linkedIn} target="_blank" rel="noopener noreferrer">
           <Image
             src="/img/linkedin.png"
             alt="LinkedIn"
@@ -25,7 +26,7 @@ const MyImage: React.FC<ImageProps> = ({ imgToDisplay }) => {
             height={40}
           />
         </a>
-        <a href="https://github.com/Jiplay" target="_blank" rel="noopener noreferrer">
+        <a href={profile.github} target="_blank" rel="noopener noreferrer">
           <Image
             src="/img/github.png"
             alt="GitHub"
@@ -33,7 +34,7 @@ const MyImage: React.FC<ImageProps> = ({ imgToDisplay }) => {
             height={40}
           />
         </a>
-        <a href="https://www.instagram.com/jul_italiano/" target="_blank" rel="noopener noreferrer">
+        <a href={profile.instagram} target="_blank" rel="noopener noreferrer">
           <Image
             src="/img/instagram.png"
             alt="Instagram"

@@ -1,27 +1,46 @@
 import React from 'react';
 import MyImage from '../_general/Image';
-
+import { UserProfileCV } from '@/backend/models/models';
 import style from "@/components/cv/_style/cv.module.css"
-import text from "@/styles/text.module.css"
+import { Button, Divider, List, Typography } from 'antd';
 
-const CV: React.FC = () => {
-  const profilePicture = {
-    Source:"https://media.licdn.com/dms/image/D4D03AQGH-n-0wkhM7Q/profile-displayphoto-shrink_800_800/0/1680077046046?e=2147483647&v=beta&t=L-c1zdJkbYv4-ggF_CVUKNN_HbpflL6Sfd0bu9FJTvU",
-    AlternativeText:"me.png",
-    Width:300,
-    Height:300
-  }
+interface cvProps {
+  profile : UserProfileCV
+}
 
+const CV: React.FC<cvProps> = (profile) => {
+  const data = [
+    'SafeCall',
+    'Projet CPI',
+    'Erasmus Italie',
+  ];
+  
   return (
     <div className={style.rightcolumn}>
-        <MyImage imgToDisplay={profilePicture}/>
+        <MyImage profile={profile.profile} />
         <a
         href="/cv/Julien.pdf"
         download="Julien.pdf"
-        className={text.downloadLink}
+        className={style.downloadButton}
       >
         Télécharger mon CV
       </a>
+      <>
+    <Divider orientation="left">Default Size</Divider>
+    <List
+      header={<div>Projets personnels</div>}
+      bordered
+      dataSource={data}
+      renderItem={(item) => (
+        <div className={style.flexContainer}>
+          <List.Item>
+            <Typography.Text mark>[DONE]</Typography.Text> {item}
+            <button className={style.MoreInfoButton}>Voir </button>
+          </List.Item>
+        </div>
+      )}
+    />
+  </>
     </div>
   );
 };

@@ -8,6 +8,12 @@ export type Article = {
   PathOfFile: string;
 };
 
+export type UserProfileCV = {
+  source: string;
+  linkedIn: string;
+  instagram: string;
+  github: string;
+}
 
 export type User = {
   Username: string;

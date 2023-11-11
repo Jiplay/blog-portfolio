@@ -4,7 +4,6 @@ import ReactDOM from 'react-dom';
 
 interface ImageTextOverlayProps {
   imagePath: string;
-  overlayText: string;
 }
 
 interface CardData {
@@ -15,7 +14,7 @@ interface CardData {
   colors: { header: string; body: string };
 }
 
-const ImageTextOverlay: React.FC<ImageTextOverlayProps> = ({ imagePath, overlayText }) => {
+const ImageTextOverlay: React.FC<ImageTextOverlayProps> = ({ imagePath }) => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   const cardDataList: CardData[] = [
@@ -27,7 +26,7 @@ const ImageTextOverlay: React.FC<ImageTextOverlayProps> = ({ imagePath, overlayT
       colors:{header: "#FFB932", body: "white"}, 
     },
     {
-      title: 'OXIO CDI 6 mois',
+      title: 'OXIO - Software Engineer 6 mois',
       subtitle: "Après mon redoublement, j'ai retravaillé avec OXIO en dehors de mes études en CDI. J'ai travaillé sur un script qui a permis d'estimer le pourcentage de données impactés par une erreur. Skills : Python, Google SpreadSheet, API",
       url: 'https://example.com/card2',
       position: { top: 90, left: -60 },
@@ -88,7 +87,7 @@ const ImageTextOverlay: React.FC<ImageTextOverlayProps> = ({ imagePath, overlayT
 
       img.src = imagePath;
     }
-  }, [imagePath, overlayText]);
+  }, [imagePath]);
 
   return <div ref={containerRef} />;
 };
