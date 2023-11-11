@@ -49,7 +49,7 @@
 }
 
 .MoreInfoButton:hover {
-  background-color: #AA9BD2;
-  border: 1px solid #AA9BD2;
-  color: white;
+  background-color: #AA9BD2 !important;
+  border: 1px solid #AA9BD2 !important;
+  color: white !important;
 }

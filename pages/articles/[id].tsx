@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import MarkdownRenderer from '@/components/MarkDownRenderer';
 import style from "@/styles/style.module.css"
 import { useRouter } from "next/router";
@@ -11,7 +11,12 @@ interface MDReaderProps {
 
 const MDReader: React.FC<MDReaderProps> = ({ path }) => {
   const router = useRouter();
-  const { project } = router.query;
+  const { id } = router.query;  // FIXME
+
+  useEffect(() => {
+    // Faites quelque chose si id change ici.
+  }, [id]);
+
 
   return (
     <div className={style.gradientBackground}>
@@ -29,7 +34,7 @@ const MDReader: React.FC<MDReaderProps> = ({ path }) => {
         />
       </div>
     </div>
-      <MarkdownRenderer source={"/articles/fun/Halloween.MD"} />
+    {id !== undefined ? <MarkdownRenderer source={`/articles/${id}.MD`} /> : null}
     </div>
   );
 };

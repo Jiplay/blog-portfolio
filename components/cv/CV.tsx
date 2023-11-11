@@ -8,11 +8,16 @@ interface cvProps {
   profile : UserProfileCV
 }
 
+type Projects =  {
+  name: string;
+  href: string;
+}
+
 const CV: React.FC<cvProps> = (profile) => {
-  const data = [
-    'SafeCall',
-    'Projet CPI',
-    'Erasmus Italie',
+  const data: Projects[] = [
+    { name: "SafeCall", href: "articles/SafeCall" },
+    { name: "Projet CPI", href: "articles/CPI" },
+    { name: "Erasmus Italie", href: "articles/Erasmus" },
   ];
   
   return (
@@ -34,8 +39,8 @@ const CV: React.FC<cvProps> = (profile) => {
       renderItem={(item) => (
         <div className={style.flexContainer}>
           <List.Item>
-            <Typography.Text mark>[DONE]</Typography.Text> {item}
-            <button className={style.MoreInfoButton}>Voir </button>
+            <Typography.Text mark>[DONE]</Typography.Text> {item.name}
+            <Button className={style.MoreInfoButton} href={item.href} >Voir </Button>
           </List.Item>
         </div>
       )}
