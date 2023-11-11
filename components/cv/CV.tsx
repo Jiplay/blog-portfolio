@@ -1,8 +1,6 @@
 import React from 'react';
-import Experience from './Experience';
 import MyImage from '../_general/Image';
 
-import { information } from '@/static/data';
 import style from "@/components/cv/_style/cv.module.css"
 import text from "@/styles/text.module.css"
 
@@ -15,14 +13,15 @@ const CV: React.FC = () => {
   }
 
   return (
-    <div>
-      <h1 className={text.headlines}>About me :</h1>
-      <div className={style.leftImage}>
+    <div className={style.rightcolumn}>
         <MyImage imgToDisplay={profilePicture}/>
-      </div>
-      <h2 className={text.text}>{information.accroches[0]}</h2>
-      <h1 className={text.subtitles}>Professional experiences  :</h1>
-      <Experience />  
+        <a
+        href="/cv/Julien.pdf"
+        download="Julien.pdf"
+        className={text.downloadLink}
+      >
+        Télécharger mon CV
+      </a>
     </div>
   );
 };

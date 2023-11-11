@@ -4,21 +4,25 @@
     margin-top: 2%;
     margin-bottom: 2%;
     margin-left: 10px;
+    padding-right: 1vh;
+    padding-left: 1vh;
     font-weight: bold;
-    color:#C70039
   }
   
   .subtitles {
-    color:#C70039;
     margin-left: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 24px;
     font-weight: bold;
+    padding-right: 1vh;
+    padding-left: 1vh;
   }
   
   .text {
-    margin-top: 2%;
-    color:#141E46;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    padding-right: 2vh;
+    padding-left: 2vh;
     margin-left: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;

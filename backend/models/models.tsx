@@ -7,3 +7,10 @@ export type Article = {
   Author: string;
   PathOfFile: string;
 };
+
+
+export type User = {
+  Username: string;
+  Email: string;
+  Password: string;
+};
