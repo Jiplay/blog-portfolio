@@ -15,9 +15,9 @@ type Projects =  {
 
 const CV: React.FC<cvProps> = (profile) => {
   const data: Projects[] = [
-    { name: "SafeCall", href: "articles/SafeCall" },
-    { name: "Projet CPI", href: "articles/CPI" },
-    { name: "Erasmus Italie", href: "articles/Erasmus" },
+    { name: "SafeCall", href: "/articles/SafeCall" },
+    { name: "Projet CPI", href: "/articles/CPI" },
+    { name: "Erasmus Italie", href: "/articles/Erasmus" },
   ];
   
   return (
@@ -31,7 +31,7 @@ const CV: React.FC<cvProps> = (profile) => {
         Télécharger mon CV
       </a>
       <>
-    <Divider orientation="left">Default Size</Divider>
+    <Divider orientation="left"></Divider>
     <List
       header={<div>Projets personnels</div>}
       bordered
