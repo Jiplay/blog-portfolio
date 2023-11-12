@@ -22,7 +22,7 @@ const MDReader: React.FC<MDReaderProps> = ({ path }) => {
     <div className={style.gradientBackground}>
         <ColorSchemesExample />
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', overflow: 'hidden', borderRadius: '50%' }}>
-      <div style={{ position: 'relative', borderRadius: '50%' }}>
+      {/* <div style={{ position: 'relative', borderRadius: '50%' }}>
         <Image
           src="/img/banner.jpg"
           alt="Your Name"
@@ -32,7 +32,7 @@ const MDReader: React.FC<MDReaderProps> = ({ path }) => {
           objectFit="cover"
           style={{ borderRadius: '50%', marginBottom: '3%', marginTop: '3%'}}
         />
-      </div>
+      </div> */}
     </div>
     {id !== undefined ? <MarkdownRenderer source={`/articles/${id}.MD`} /> : null}
     </div>

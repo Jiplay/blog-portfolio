@@ -1,17 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import Card from './Card';
+import { CardData } from '@/backend/models/models';
 import ReactDOM from 'react-dom';
 
 interface ImageTextOverlayProps {
   imagePath: string;
-}
-
-interface CardData {
-  title: string;
-  subtitle: string;
-  url: string;
-  position: { top: number; left: number };
-  colors: { header: string; body: string };
 }
 
 const ImageTextOverlay: React.FC<ImageTextOverlayProps> = ({ imagePath }) => {
@@ -20,10 +13,11 @@ const ImageTextOverlay: React.FC<ImageTextOverlayProps> = ({ imagePath }) => {
   const cardDataList: CardData[] = [
     {
       title: 'OXIO - Stage 6 mois',
-      subtitle: "J'ai beaucoup appris aux cotés de l'équipe d'OXIO. Comme les méthodes agiles de développement, le Golang, différentes base de données comme MySQL, postgreSQL et MongoDB. J'ai aussi beaucoup appris sur l'architecture d'un projet en microservices.",
+      subtitle: "J'ai beaucoup appris aux côtés de l'équipe d'OXIO. Comme les méthodes agiles de développement, le Golang, différentes bases de données comme MySQL, postgreSQL et MongoDB. J'ai aussi beaucoup appris sur l'architecture d'un projet en microservices.",
       url: 'https://example.com/card1',
       position: { top: 0, left: 200 },
       colors:{header: "#FFB932", body: "white"}, 
+      skills: "Golang, Docker, PostgreSQL, Méthodes Agiles"
     },
     {
       title: 'OXIO - Software Engineer 6 mois',
@@ -31,6 +25,7 @@ const ImageTextOverlay: React.FC<ImageTextOverlayProps> = ({ imagePath }) => {
       url: 'https://example.com/card2',
       position: { top: 90, left: -60 },
       colors:{header: "#FFB16F", body: "white"},
+      skills: "Golang, Python, PostgreSQL, Google Spreadsheet API"
     },
     {
         title: 'Concentus - Lead Dev. 6 mois',
@@ -38,6 +33,7 @@ const ImageTextOverlay: React.FC<ImageTextOverlayProps> = ({ imagePath }) => {
         url: 'https://example.com/card1',
         position: { top: 190, left: 200 },
         colors:{header: "#F5BAA5", body: "white"}, 
+        skills: "Gestion d'équipe, C++, Python, Protobuf"
     },
     {
         title: 'MFL - Fullstack 6 mois',
@@ -45,6 +41,7 @@ const ImageTextOverlay: React.FC<ImageTextOverlayProps> = ({ imagePath }) => {
         url: 'https://example.com/card2',
         position: { top: 290, left: -60 },
         colors:{header: "#EB9ED1", body: "white"},
+        skills: "Stable-diffusion, Typescript, mongoDB"
     },
   ];
 
@@ -71,9 +68,9 @@ const ImageTextOverlay: React.FC<ImageTextOverlayProps> = ({ imagePath }) => {
 
         // Ajouter des composants Card en boucle
         cardDataList.forEach((cardData, index) => {
-          const { title, subtitle, url, position, colors } = cardData;
+          const { title, subtitle, url, position, colors, skills } = cardData;
           const cardKey = `card_${index}`;
-          const cardComponent = <Card key={cardKey} title={title} subtitle={subtitle} url={url} position={position} colors={colors} />;
+          const cardComponent = <Card key={cardKey} title={title} subtitle={subtitle} url={url} position={position} colors={colors} skills={skills} />;
           const cardContainer = document.createElement('div');
           cardContainer.style.position = 'absolute';
           cardContainer.style.top = `${position.top}px`;

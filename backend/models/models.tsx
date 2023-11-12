@@ -20,3 +20,12 @@ export type User = {
   Email: string;
   Password: string;
 };
+
+export type CardData = {
+  title: string;
+  subtitle: string;
+  url: string;
+  position: { top: number; left: number };
+  colors: { header: string; body: string };
+  skills: string;
+}

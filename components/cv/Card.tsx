@@ -6,9 +6,10 @@ interface CardProps {
   url: string;
   position: { top: number; left: number };
   colors: { header: string };
+  skills : string
 }
 
-const Card: React.FC<CardProps> = ({ title, subtitle, url, position, colors }) => {
+const Card: React.FC<CardProps> = ({ title, subtitle, url, position, colors, skills }) => {
   const cardStyle: React.CSSProperties = {
     position: 'absolute',
     marginTop: '1vh',
@@ -32,9 +33,10 @@ const Card: React.FC<CardProps> = ({ title, subtitle, url, position, colors }) =
       <h3>{title}</h3>
       <div style={cardStyle}>
         <p>{subtitle}</p>
-        <a href={url} target="_blank" rel="noopener noreferrer" >
+        {/* <a href={url} target="_blank" rel="noopener noreferrer" >
           View more
-        </a>
+        </a> */}
+        <p>Skills : {skills}</p>
       </div>
     </div>
   );
