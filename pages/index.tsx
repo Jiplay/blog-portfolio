@@ -9,7 +9,7 @@ import ColorSchemesExample from '@/components/NavBar';
 
 function JulienPage() {
   const profilePicture: UserProfileCV = {
-    source:"https://media.licdn.com/dms/image/D4D03AQGH-n-0wkhM7Q/profile-displayphoto-shrink_800_800/0/1680077046046?e=2147483647&v=beta&t=L-c1zdJkbYv4-ggF_CVUKNN_HbpflL6Sfd0bu9FJTvU",
+    source:"/cv/photo.jpg",
     linkedIn:"https://www.linkedin.com/in/julien-garsia/",
     github:"https://github.com/Jiplay",
     instagram:"https://www.instagram.com/jul_italiano/",
