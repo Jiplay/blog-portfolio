@@ -12,34 +12,34 @@ const ImageTextOverlay: React.FC<ImageTextOverlayProps> = ({ imagePath }) => {
 
   const cardDataList: CardData[] = [
     {
-      title: 'OXIO - Stage 6 mois',
-      subtitle: "J'ai beaucoup appris aux côtés de l'équipe d'OXIO. Comme les méthodes agiles de développement, le Golang, différentes bases de données comme MySQL, postgreSQL et MongoDB. J'ai aussi beaucoup appris sur l'architecture d'un projet en microservices.",
-      url: 'https://example.com/card1',
-      position: { top: 0, left: 200 },
+      title: 'OXIO - Backend',
+      subtitle: "MongoDB, MySQL, startup, microservices, Jira",
+      url: '/articles/OXIO0',
+      position: { height: 0, width: 20 },
       colors:{header: "#FFB932", body: "white"}, 
       skills: "Golang, Docker, PostgreSQL, Méthodes Agiles"
     },
-    {
+    {//Après mon redoublement, j'ai retravaillé avec OXIO en dehors de mes études en CDI. J'ai travaillé sur un script qui a permis d'estimer le pourcentage de données impactés par une erreur. Skills : Python, Google SpreadSheet, API"
       title: 'OXIO - Software Engineer 6 mois',
-      subtitle: "Après mon redoublement, j'ai retravaillé avec OXIO en dehors de mes études en CDI. J'ai travaillé sur un script qui a permis d'estimer le pourcentage de données impactés par une erreur. Skills : Python, Google SpreadSheet, API",
-      url: 'https://example.com/card2',
-      position: { top: 90, left: -60 },
+      subtitle: "Télétravail, autonomie",
+      url: '/articles/OXIO1',
+      position: { height: 20, width: 0 },
       colors:{header: "#FFB16F", body: "white"},
       skills: "Golang, Python, PostgreSQL, Google Spreadsheet API"
     },
-    {
+    {//Mon objectif lors de cette experience était de gérer une équipe et ensemble développer un module en collaboration avec Total Energies sur le sujet des bornes de rechargement de véhicule éléctrique. Skills : Gérer et travailler en Équipe, C++, Python, Protobuf, docker
         title: 'Concentus - Lead Dev. 6 mois',
-        subtitle: "Mon objectif lors de cette experience était de gérer une équipe et ensemble développer un module en collaboration avec Total Energies sur le sujet des bornes de rechargement de véhicule éléctrique. Skills : Gérer et travailler en Équipe, C++, Python, Protobuf, docker",
-        url: 'https://example.com/card1',
-        position: { top: 190, left: 200 },
+        subtitle: "Documentation, Onboarding",
+        url: '/articles/Concentus',
+        position: { height: 40, width: 5 },
         colors:{header: "#F5BAA5", body: "white"}, 
-        skills: "Gestion d'équipe, C++, Python, Protobuf"
+        skills: "Gestion d'équipe, C++, Python, Protobuf, ZMQ"
     },
-    {
+    {// Durant cette periode, j'étais en charge de monter un projet pour générer des milliers images grâces à des services d'IA. J'ai créer un site web en Next.JS avec Typescript pour permettre la génération d'image en générant des paramètres différents à chaque fois. Skills : Typescript, Next.js, MongoDB
         title: 'MFL - Fullstack 6 mois',
-        subtitle: "Durant cette periode, j'étais en charge de monter un projet pour générer des milliers images grâces à des services d'IA. J'ai créer un site web en Next.JS avec Typescript pour permettre la génération d'image en générant des paramètres différents à chaque fois. Skills : Typescript, Next.js, MongoDB",
-        url: 'https://example.com/card2',
-        position: { top: 290, left: -60 },
+        subtitle: "Vercel, Notion, IA, Web3",
+        url: '/articles/MFL',
+        position: { height: 60, width: 10 },
         colors:{header: "#EB9ED1", body: "white"},
         skills: "Stable-diffusion, Typescript, mongoDB"
     },
@@ -50,19 +50,29 @@ const ImageTextOverlay: React.FC<ImageTextOverlayProps> = ({ imagePath }) => {
 
     if (container) {
       const img = new Image();
+      img.src = imagePath;
       img.onload = () => {
-        container.style.position = 'relative';
-        container.style.width = `${img.width}px`;
-        container.style.height = `${img.height}px`;
-
+        container.style.position = 'absolute';
+        container.style.width = '100%';
+        container.style.minWidth = '100%';
+        container.style.height = '100%';
+        container.style.overflow = 'hidden';
+        container.style.top = '0';
+        container.style.left = '0';
+    
         const imageDiv = document.createElement('div');
-        imageDiv.style.position = 'absolute';
-        imageDiv.style.top = '0';
-        imageDiv.style.left = '0';
         imageDiv.style.width = '100%';
-        imageDiv.style.height = '100%';
-        imageDiv.style.backgroundImage = `url(${imagePath})`;
-        imageDiv.style.backgroundSize = 'cover';
+        imageDiv.style.height = '100vh';
+        imageDiv.style.overflow = 'hidden';
+    
+        const imgElement = document.createElement('img');
+        imgElement.src = imagePath;
+        imgElement.style.width = '100%';
+        imgElement.style.height = '100vh';
+        imgElement.style.objectFit = 'fill';
+    
+        imageDiv.appendChild(imgElement);
+        container.appendChild(imageDiv);
 
         container.appendChild(imageDiv);
 
@@ -73,11 +83,17 @@ const ImageTextOverlay: React.FC<ImageTextOverlayProps> = ({ imagePath }) => {
           const cardComponent = <Card key={cardKey} title={title} subtitle={subtitle} url={url} position={position} colors={colors} skills={skills} />;
           const cardContainer = document.createElement('div');
           cardContainer.style.position = 'absolute';
-          cardContainer.style.top = `${position.top}px`;
-          cardContainer.style.left = `${position.left}px`;
+          if (index % 2 !== 0) {
+            cardContainer.style.top = `${position.height}%`;
+            cardContainer.style.left = `${position.width}%`;
+          } else  {
+            cardContainer.style.top = `${position.height}%`;
+            cardContainer.style.right = `${position.width}%`;
+          }
 
           container.appendChild(cardContainer);
 
+          // ReactDOM.render(cardComponent, cardContainer);
           ReactDOM.render(cardComponent, cardContainer);
         });
       };

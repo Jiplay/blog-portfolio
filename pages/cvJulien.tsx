@@ -20,7 +20,7 @@ function JulienPage() {
       <div className={style.gradientBackground}>
         <ColorSchemesExample />
         <div style={{display: 'flex', marginTop: '3vh' }}>
-        <main style={{ width: '70%', justifyContent: 'center', alignItems: 'center', maxWidth: '70%', marginLeft: '3%', paddingLeft: "20vh"}}>
+        <main style={{ width: '70%', justifyContent: 'center', alignItems: 'center', maxWidth: '70%', marginLeft: '3%', paddingLeft: "20vh", height:"100%"}}>
         <ImageTextOverlay imagePath='/cv/test.png'/>
         </main>
         <CV profile={profilePicture}/>

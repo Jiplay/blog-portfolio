@@ -37,7 +37,7 @@ const CV: React.FC<cvProps> = (profile) => {
       bordered
       dataSource={data}
       renderItem={(item) => (
-        <div className={style.flexContainer}>
+        <div>
           <List.Item>
             <Typography.Text mark>[DONE]</Typography.Text> {item.name}
             <Button className={style.MoreInfoButton} href={item.href} >Voir </Button>

@@ -12,8 +12,8 @@ const MyImage: React.FC<ImageProps> = ({ profile }) => {
       <Image
         src={profile.source}
         alt="Picture of me "
-        width={281}
-        height={375}
+        width={250}
+        height={250}
         className={text.image}
       />
       <h2 className={text.text}>Reach me on:</h2>

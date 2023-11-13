@@ -1,18 +1,27 @@
 
 .container {
-  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /* Empêche tout débordement hors du conteneur */
+
+  /* min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between; */
 }
 
 .gradientBackground {
-  background: white;
+  width: 100vw;
+  height: auto;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #ffffff, #e6e6e6); /* Exemple de fond dégradé, ajustez selon vos besoins */
+
+  /* background: white;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   padding: auto;
-  min-height: 100vh
+  min-height: 100vh */
 }
 
 .profileBackground {

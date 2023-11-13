@@ -16,17 +16,15 @@ function JulienPage() {
   }
 
   return (
-    <div className={style.container}>
       <div className={style.gradientBackground}>
         <ColorSchemesExample />
-        <div style={{display: 'flex', marginTop: '3vh' }}>
-        <main style={{ width: '70%', justifyContent: 'center', alignItems: 'center', maxWidth: '70%', marginLeft: '3%', paddingLeft: "20vh"}}>
-        <ImageTextOverlay imagePath='/cv/test.png'/>
-        </main>
-        <CV profile={profilePicture}/>
+        <div style={{ display: 'flex', minHeight: '100vh' }}>
+          <main style={{ width: '100%', minHeight: '100wh', justifyContent: 'center', alignItems: 'center', maxWidth: '70%', marginLeft: '3%', paddingLeft: '20vh', position: 'relative' }}>
+              <ImageTextOverlay imagePath='/cv/test.png' />
+          </main>
+          <CV profile={profilePicture} />
         </div>
       </div>
-    </div>
   );
 }
 

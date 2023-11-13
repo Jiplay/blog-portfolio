@@ -4,7 +4,7 @@ interface CardProps {
   title: string;
   subtitle: string;
   url: string;
-  position: { top: number; left: number };
+  position: { height: number; width: number };
   colors: { header: string };
   skills : string
 }
@@ -20,8 +20,8 @@ const Card: React.FC<CardProps> = ({ title, subtitle, url, position, colors, ski
 
   const header: React.CSSProperties = {
     position: 'relative',
-    top: `${position.top}px`,
-    left: `${position.left}px`,
+    top: `${position.height}px`,
+    left: `${position.width}px`,
     backgroundColor: colors.header,
     padding: '10px',
     borderRadius: "30px",
@@ -30,13 +30,13 @@ const Card: React.FC<CardProps> = ({ title, subtitle, url, position, colors, ski
 
   return (
     <div style={header}>
-      <h3>{title}</h3>
+      <h4>{title}</h4>
       <div style={cardStyle}>
-        <p>{subtitle}</p>
-        {/* <a href={url} target="_blank" rel="noopener noreferrer" >
-          View more
-        </a> */}
-        <p>Skills : {skills}</p>
+        <p>Skills : {skills} </p>
+        <p>{subtitle} </p>
+        <a href={url} target="_blank" rel="noopener noreferrer" >
+          En savoir plus
+        </a>
       </div>
     </div>
   );

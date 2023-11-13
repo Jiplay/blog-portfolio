@@ -25,7 +25,7 @@ export type CardData = {
   title: string;
   subtitle: string;
   url: string;
-  position: { top: number; left: number };
+  position: { height: number; width: number };
   colors: { header: string; body: string };
   skills: string;
 }
