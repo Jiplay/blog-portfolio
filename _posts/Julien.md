@@ -1,21 +1,14 @@
 ---
-title: 'Dynamic Routing and Static Generation'
-excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
-coverImage: '/assets/blog/dynamic-routing/cover.jpg'
+title: "I'm JG"
+excerpt: 'Blablabla.'
+coverImage: '/postImg/hero.png'
 date: '2020-03-16T05:35:07.322Z'
 author:
-  name: JJ Kasper
-  picture: '/assets/blog/authors/jj.jpeg'
+  name: Julien Garsia
+  picture: '/assets/pictures/julien.png'
 ogImage:
-  url: '/assets/blog/dynamic-routing/cover.jpg'
+  url: '/postImg/hero.png'
 ---
-
-# Julien.md
-
-## Bienvenue !
-
-![Image](https://www.photofunky.net/output/image/e/7/6/a/e76a0f/photofunky.gif)
-
 
 Je pense que la première chose à faire, c'est de se présenter alors commençons, je m'appelle Julien, je suis le développeur et utilisateur principal de ce site web. Je ne saurais trop comment le présenter, c'est beaucoup de chose en même temps, c'est la réunion de mes projets, envies et besoins.
 

@@ -1,0 +1,24 @@
+.downloadButton {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+    text-decoration: none;
+    background-color: #938DC5;
+    color: white;
+    border: 1px solid #938DC5;
+    border-radius: 5px;
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.downloadButton:hover {
+    background-color: #AA9BD2;
+    border: 1px solid #AA9BD2;
+    color: white;
+}

@@ -3,23 +3,24 @@ import MoreStories from '../components/more-stories'
 import HeroPost from '../components/hero-post'
 import Intro from '../components/intro'
 import Layout from '../components/layout'
-import { getAllPosts } from '../lib/api'
+import { getAllPosts, getHeroPost } from '../lib/api'
 import Head from 'next/head'
 import { CMS_NAME } from '../lib/constants'
 import Post from '../interfaces/post'
 
 type Props = {
   allPosts: Post[]
+  presentationPost: Post
 }
 
-export default function Index({ allPosts }: Props) {
-  const heroPost = allPosts[0]
+export default function Index({ allPosts, presentationPost }: Props) {
+  const heroPost = presentationPost
   const morePosts = allPosts.slice(1)
   return (
     <>
       <Layout>
         <Head>
-          <title>{`Next.js Blog Example with ${CMS_NAME}`}</title>
+          <title>{`JG-Blog`}</title>
         </Head>
         <Container>
           <Intro />
@@ -49,8 +50,16 @@ export const getStaticProps = async () => {
     'coverImage',
     'excerpt',
   ])
+  const presentationPost = getHeroPost([
+    'title',
+    'date',
+    'slug',
+    'author',
+    'coverImage',
+    'excerpt',
+  ])
 
   return {
-    props: { allPosts },
+    props: { allPosts, presentationPost },
   }
 }
