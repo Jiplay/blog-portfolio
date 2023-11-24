@@ -18,6 +18,8 @@ type Props = {
   preview?: boolean
 }
 
+const PATH_OF_POSTS = '_posts/books';
+
 export default function Post({ post, morePosts, preview }: Props) {
   const router = useRouter()
   const title = `${post.title} | Next.js Blog Example with ${CMS_NAME}`
@@ -68,7 +70,7 @@ export async function getStaticProps({ params }: Params) {
     'ogImage',
     'coverImage',
     'tag'
-  ], "_posts/")
+  ], PATH_OF_POSTS)
   const content = await markdownToHtml(post.content || '')
 
   return {
@@ -82,7 +84,7 @@ export async function getStaticProps({ params }: Params) {
 }
 
 export async function getStaticPaths() {
-  const posts = getAllPosts(['slug'], '_posts')
+  const posts = getAllPosts(['slug'], PATH_OF_POSTS)
   return {
     paths: posts.map((post) => {
       return {

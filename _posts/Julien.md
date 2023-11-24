@@ -8,6 +8,7 @@ author:
   picture: '/assets/pictures/julien.png'
 ogImage:
   url: '/postImg/hero.png'
+tag: '/books/Tommyknocker'
 ---
 
 Je pense que la première chose à faire, c'est de se présenter alors commençons, je m'appelle Julien, je suis le développeur et utilisateur principal de ce site web. Je ne saurais trop comment le présenter, c'est beaucoup de chose en même temps, c'est la réunion de mes projets, envies et besoins.

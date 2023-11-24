@@ -1,5 +1,5 @@
 ---
-title: 'Projet Création Produit Innovant'
+title: 'Health'
 excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
 coverImage: '/postImg/CPI.png'
 date: '2020-03-16T05:35:07.322Z'
@@ -8,6 +8,7 @@ author:
   picture: '/assets/pictures/julien.png'
 ogImage:
   url: '/postImg/CPI.png'
+tag: 'Health'
 ---
 
 # Création d'un Produit Innovant

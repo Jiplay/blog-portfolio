@@ -8,9 +8,14 @@ export function getPostSlugs() {
   return fs.readdirSync(postsDirectory)
 }
 
-export function getPostBySlug(slug: string, fields: string[] = []) {
+export function getPostSlugsPath(dir: string) {
+  return fs.readdirSync(dir)
+}
+
+export function getPostBySlug(slug: string, fields: string[] = [], dir: string) {
   const realSlug = slug.replace(/\.md$/, '')
-  const fullPath = join(postsDirectory, `${realSlug}.md`)
+  const fullPath = join(dir, `${realSlug}.md`)
+  
   const fileContents = fs.readFileSync(fullPath, 'utf8')
   const { data, content } = matter(fileContents)
 
@@ -37,18 +42,40 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
   return items
 }
 
-export function getAllPosts(fields: string[] = []) {
-  const slugs = getPostSlugs()
+export function getAllPosts(fields: string[] = [], directory: string) {
+  let slugs = getPostSlugsPath(directory)
+  slugs = slugs.filter((slug) => slug.endsWith('.md'));
+
   const posts = slugs
-    .map((slug) => getPostBySlug(slug, fields))
+    .map((slug) => getPostBySlug(slug, fields, directory))
     // sort posts by date in descending order
     .sort((post1, post2) => (post1.date > post2.date ? -1 : 1))
   return posts
 }
 
+
+export function getAllCategoriesPosts(fields: string[] = []) {
+  const categoriesPosts = [
+    getCategoryPost(fields, '_posts/books'),
+    getCategoryPost(fields, '_posts/health'),
+    getCategoryPost(fields, '_posts/else'),
+    getCategoryPost(fields, '_posts/projects'),
+  ]
+
+  return categoriesPosts
+}
+
 export function getHeroPost(fields: string[] = []) {
-  const posts = ["Julien"]
-    .map((slug) => getPostBySlug(slug, fields))
+  const posts = ["Presentation"]
+    .map((slug) => getPostBySlug(slug, fields, '_posts'))
+    // sort posts by date in descending order
+    .sort((post1, post2) => (post1.date > post2.date ? -1 : 1))
+  return posts[0]
+}
+
+export function getCategoryPost(fields: string[] = [], categoryPath: string) {
+  const posts = getPostSlugsPath(join(process.cwd(), categoryPath))
+    .map((slug) => getPostBySlug(slug, fields, categoryPath))
     // sort posts by date in descending order
     .sort((post1, post2) => (post1.date > post2.date ? -1 : 1))
   return posts[0]
