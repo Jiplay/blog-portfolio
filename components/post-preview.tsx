@@ -26,17 +26,16 @@ const PostPreview = ({
   return (
     <div>
       <div className="mb-5">
-        <h1> tag  = {tag}</h1>
-        <CoverImage slug={slug} title={title} tag={tag} src={coverImage} />
+        <CoverImage title={title} tag={tag} src={coverImage} />
       </div>
       <h3 className="text-3xl mb-3 leading-snug">
-        <Link
+        {/* <Link
           as={`${tag}`}
           href={tag}
           className="hover:underline"
         >
           {title}
-        </Link>
+        </Link> */}
       </h3>
       <div className="text-lg mb-4">
         <DateFormatter dateString={date} />
