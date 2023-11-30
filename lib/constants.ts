@@ -203,3 +203,26 @@ export const SVGs = {
   </g>
   </svg>`
 }
+
+export const ProModalContents = [
+  {
+    title: "OXIO - 2019 - Backend Dev.",
+    content: "During my initial six months as a backend developer at an American startup, I gained invaluable professional experience. Working within a dynamic team of four developers, I delved into the realm of microservices, exploring technologies like Golang and diverse databases such as MySQL, PostgreSQL, and MongoDB.\n Our work methodology revolved around sprints organized in Confluence, where I would self-assign tasks from the backlog to familiarize myself with the process. Through my first merge requests, I contributed to elevating the code quality, marking significant milestones in my professional journey."
+  },
+  {
+    title: "title 1",
+    content: "content 0"
+  },
+  {
+    title: "title 0",
+    content: "content 0"
+  },
+  {
+    title: "title 0",
+    content: "content 0"
+  },
+  {
+    title: "title 0",
+    content: "content 0"
+  },
+]

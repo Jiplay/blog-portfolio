@@ -18,7 +18,6 @@ export default function Index({ post, preview }: Props) {
       <Container>
         <Header />
         <ProHeader title={post.title} author={post.author} />
-        {/* <h1>{presentationPost.}</h1> */}
         <PostBody content={post.content} />
       </Container>
     </Layout>
