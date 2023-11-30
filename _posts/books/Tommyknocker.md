@@ -1,6 +1,6 @@
 ---
 title: 'Tommyknockers'
-excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
+excerpt: "I know how to enjoy a good book, and I like to know the authors, what happened in their life, what was the context when this book came out, all this kind of things. I want to share this information online. It's exactly what you'll find here, an online bookshelf of mine "
 coverImage: '/assets/categories/books.png'
 date: '2020-03-16T05:35:07.322Z'
 author:

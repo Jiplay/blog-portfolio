@@ -70,7 +70,7 @@ export function getHeroPost(fields: string[] = []) {
     .map((slug) => getPostBySlug(slug, fields, '_posts'))
     // sort posts by date in descending order
     .sort((post1, post2) => (post1.date > post2.date ? -1 : 1))
-  return posts[0]
+    return posts[0]
 }
 
 export function getCategoryPost(fields: string[] = [], categoryPath: string) {
