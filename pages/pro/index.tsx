@@ -79,9 +79,13 @@ export default function Index({ post, preview }: Props) {
         
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleCloseModal}>
-            Close
-          </Button>
+        <a
+        href="/cv/JulienGARSIA.pdf"
+        download="Julien.pdf"
+        className="inline-block bg-gray-500 text-white px-4 py-2 rounded"
+      >
+        Download my resume
+      </a>
           <Button variant="primary" onClick={handleCloseModal}>
             Contact me 
           </Button>

@@ -212,22 +212,22 @@ export const ProModalContents = [
   },
   {
     title: "OXIO - 2020 - Backend Dev.",
-    technical: "During my initial six months as a backend developer at an American startup, I gained invaluable professional experience. Working within a dynamic team of four developers, I delved into the realm of microservices, exploring technologies like Golang and diverse databases such as MySQL, PostgreSQL, and MongoDB.",
-    else: "Our work methodology revolved around sprints organized in Confluence, where I would self-assign tasks from the backlog to familiarize myself with the process. Through my first merge requests, I contributed to elevating the code quality, marking significant milestones in my professional journey."
+    technical: "In the subsequent year, I rejoined OXIO as a backend developer, leveraging my familiarity with the main project's structure for more seamless collaboration. During this period, I undertook a specialized mission: evaluating the repercussions of an error in a feature affecting a majority of users and databases across the entire project. To address the specific task at hand, I developed a Python script to gather data from various microservices (30k data points) and organized it in a Google Spreadsheet for in-depth analysis.",
+    else: "Facing the challenges of the remote work environment imposed by the Covid-19 pandemic, I honed my skills in efficient communication with colleagues despite the absence of a physical office. Moreover, I took charge of reporting key progress and project results."
   },
   {
     title: "Concentus - 2021 - Lead Dev.",
-    technical: "During my initial six months as a backend developer at an American startup, I gained invaluable professional experience. Working within a dynamic team of four developers, I delved into the realm of microservices, exploring technologies like Golang and diverse databases such as MySQL, PostgreSQL, and MongoDB.",
-    else: "Our work methodology revolved around sprints organized in Confluence, where I would self-assign tasks from the backlog to familiarize myself with the process. Through my first merge requests, I contributed to elevating the code quality, marking significant milestones in my professional journey."
+    technical: "In my role as Lead Developer at Concentus, I orchestrated a team of four to execute a pivotal project: update one part of the software managing electric vehicle charging points for Total Energie. Over six months, we focused on developing the C++ module responsible for interfacing with a Python script. Employing Protocol Buffers and ZeroMQ, we designed and serialized classes to facilitate seamless communication between the two technologies.",
+    else: "My responsibilities extended beyond technical choices; I played a crucial role in team organization, task allocation, and technology explanation. As the team's most seasoned developer, I conducted thorough code reviews, ensuring the quality and coherence of our work. This experience marked my inaugural foray into a lead role, where I not only contributed technically but also honed soft skills in communication, organization, and leadership. Successfully navigating this project underscored my ability to blend technical expertise with effective team coordination, culminating in a robust software upgrade for Total Energie's charging infrastructure."
   },
   {
     title: "MFL - 2023 - Fullstack Dev.",
-    technical: "During my initial six months as a backend developer at an American startup, I gained invaluable professional experience. Working within a dynamic team of four developers, I delved into the realm of microservices, exploring technologies like Golang and diverse databases such as MySQL, PostgreSQL, and MongoDB.",
-    else: "Our work methodology revolved around sprints organized in Confluence, where I would self-assign tasks from the backlog to familiarize myself with the process. Through my first merge requests, I contributed to elevating the code quality, marking significant milestones in my professional journey."
+    technical: "In a six-month stint with Meta Football League, I embraced the full stack developer role, transforming a company side project into a vital solution. The objective was to render soccer players photorealistic through stable diffusion. My contribution involved crafting a website for seamless generation and moderation. Leveraging Typescript, Next.js, and Vercel ensured its functionality, while MongoDB and S3 were instrumental in data storage.",
+    else: "This experience not only acquainted me with diverse technologies but also showcased my ability to elevate a concept from inception to a practical, data-intensive solution."
   },
   {
     title: "Looking for next challenges",
-    technical: "During my initial six months as a backend developer at an American startup, I gained invaluable professional experience. Working within a dynamic team of four developers, I delved into the realm of microservices, exploring technologies like Golang and diverse databases such as MySQL, PostgreSQL, and MongoDB.",
-    else: "Our work methodology revolved around sprints organized in Confluence, where I would self-assign tasks from the backlog to familiarize myself with the process. Through my first merge requests, I contributed to elevating the code quality, marking significant milestones in my professional journey."
+    technical: "As I embark on a quest for fresh challenges, I am open to roles as a backend developer, full-stack developer, or leader of a small development team. My primary focus is contributing meaningfully to projects, particularly those aligned with 'tech for good' initiatives.",
+    else: " Starting in March 2024, I am keen on securing a permanent position in Paris or a fully remote role in Italy, with potential relocation plans. Always receptive to exciting opportunities, please feel free to peruse my CV or reach out via email at julien.garsia@proton.me."
   },
 ]
