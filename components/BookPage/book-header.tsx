@@ -1,6 +1,5 @@
 import Avatar from '../avatar'
 import PostTitle from '../post-title'
-import SVGWithModal from './bookshelf';
 import type Author from '../../interfaces/author'
 
 type Props = {
@@ -14,14 +13,6 @@ const ProHeader = ({ title, author }: Props) => {
       <PostTitle>{title}</PostTitle>
       <div className="hidden md:block md:mb-12">
         <Avatar name={author.name} picture={author.picture} />
-      </div>
-      <div className="mb-8 md:mb-16 sm:mx-0">
-        <SVGWithModal />
-      </div>
-      <div className="max-w-2xl mx-auto">
-        {/* <div className="block md:hidden mb-6"> */}
-          {/* <Avatar name={author.name} picture={author.picture} /> */}
-        {/* </div> */}
       </div>
     </>
   )

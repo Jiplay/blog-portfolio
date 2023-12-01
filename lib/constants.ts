@@ -207,22 +207,27 @@ export const SVGs = {
 export const ProModalContents = [
   {
     title: "OXIO - 2019 - Backend Dev.",
-    content: "During my initial six months as a backend developer at an American startup, I gained invaluable professional experience. Working within a dynamic team of four developers, I delved into the realm of microservices, exploring technologies like Golang and diverse databases such as MySQL, PostgreSQL, and MongoDB.\n Our work methodology revolved around sprints organized in Confluence, where I would self-assign tasks from the backlog to familiarize myself with the process. Through my first merge requests, I contributed to elevating the code quality, marking significant milestones in my professional journey."
+    technical: "During my initial six months as a backend developer at an American startup, I gained invaluable professional experience. Working within a dynamic team of four developers, I delved into the realm of microservices, exploring technologies like Golang and diverse databases such as MySQL, PostgreSQL, and MongoDB.",
+    else: "Our work methodology revolved around sprints organized in Confluence, where I would self-assign tasks from the backlog to familiarize myself with the process. Through my first merge requests, I contributed to elevating the code quality, marking significant milestones in my professional journey."
   },
   {
-    title: "title 1",
-    content: "content 0"
+    title: "OXIO - 2020 - Backend Dev.",
+    technical: "During my initial six months as a backend developer at an American startup, I gained invaluable professional experience. Working within a dynamic team of four developers, I delved into the realm of microservices, exploring technologies like Golang and diverse databases such as MySQL, PostgreSQL, and MongoDB.",
+    else: "Our work methodology revolved around sprints organized in Confluence, where I would self-assign tasks from the backlog to familiarize myself with the process. Through my first merge requests, I contributed to elevating the code quality, marking significant milestones in my professional journey."
   },
   {
-    title: "title 0",
-    content: "content 0"
+    title: "Concentus - 2021 - Lead Dev.",
+    technical: "During my initial six months as a backend developer at an American startup, I gained invaluable professional experience. Working within a dynamic team of four developers, I delved into the realm of microservices, exploring technologies like Golang and diverse databases such as MySQL, PostgreSQL, and MongoDB.",
+    else: "Our work methodology revolved around sprints organized in Confluence, where I would self-assign tasks from the backlog to familiarize myself with the process. Through my first merge requests, I contributed to elevating the code quality, marking significant milestones in my professional journey."
   },
   {
-    title: "title 0",
-    content: "content 0"
+    title: "MFL - 2023 - Fullstack Dev.",
+    technical: "During my initial six months as a backend developer at an American startup, I gained invaluable professional experience. Working within a dynamic team of four developers, I delved into the realm of microservices, exploring technologies like Golang and diverse databases such as MySQL, PostgreSQL, and MongoDB.",
+    else: "Our work methodology revolved around sprints organized in Confluence, where I would self-assign tasks from the backlog to familiarize myself with the process. Through my first merge requests, I contributed to elevating the code quality, marking significant milestones in my professional journey."
   },
   {
-    title: "title 0",
-    content: "content 0"
+    title: "Looking for next challenges",
+    technical: "During my initial six months as a backend developer at an American startup, I gained invaluable professional experience. Working within a dynamic team of four developers, I delved into the realm of microservices, exploring technologies like Golang and diverse databases such as MySQL, PostgreSQL, and MongoDB.",
+    else: "Our work methodology revolved around sprints organized in Confluence, where I would self-assign tasks from the backlog to familiarize myself with the process. Through my first merge requests, I contributed to elevating the code quality, marking significant milestones in my professional journey."
   },
 ]
