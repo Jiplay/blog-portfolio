@@ -19,7 +19,7 @@ type Props = {
 
 export default function Index({ post, preview }: Props) {
   const [modalOpen, setModalOpen] = useState(false);
-  const [modalDataIterator, setModalDataIterator] = useState<0 | 1 | 2 | 3 | 4>();
+  const [modalDataIterator, setModalDataIterator] = useState<0 | 1 | 2 | 3 | 4>(0);
 
   const handleRectClick = (param: 0 | 1 | 2 | 3 | 4) => () => {
     setModalDataIterator(param);
@@ -66,7 +66,11 @@ export default function Index({ post, preview }: Props) {
         <PostBody content={post.content} />
         <Modal show={modalOpen} onHide={handleCloseModal}>
         <Modal.Header closeButton>
-          <Modal.Title>{ProModalContents[modalDataIterator].title}</Modal.Title>
+          <Modal.Title>
+          {ProModalContents[modalDataIterator].title !== null
+          ? ProModalContents[modalDataIterator].title
+          : 'Default Title'}
+            </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <p>{ProModalContents[modalDataIterator].technical}</p>
