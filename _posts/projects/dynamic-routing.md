@@ -1,11 +1,11 @@
 ---
 title: 'Projects'
-excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
+excerpt: "This page is crucial to me because it's where I'll be sharing thoughts, articles, and information about my friends' projects. It's a way to support their work and encourage different opinions on various topics."
 coverImage: '/assets/categories/idea.png'
 date: '2023-11-23T05:35:07.322Z'
 author:
-  name: JJ Kasper
-  picture: '/assets/blog/authors/jj.jpeg'
+  name: Julien Garsia
+  picture: '/assets/pictures/julien.png'
 ogImage:
   url: '/assets/blog/dynamic-routing/cover.jpg'
 tag: 'project'

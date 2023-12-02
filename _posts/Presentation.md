@@ -1,6 +1,6 @@
 ---
 title: "Introduction"
-excerpt: "This is the main page about me, professionally I mean, I'll describe my education, my professionnal experiences, and the most challenging projects."
+excerpt: "My professionnal carrer sorted into folders when you'll have more information about my experiences than on my resume. Always looking for opportunity"
 coverImage: '/postImg/hero.png'
 date: '2023-11-23T05:35:07.322Z'
 author:
@@ -21,5 +21,5 @@ Year Abroad in Italy: An enriching experience studying AI and Computer Science.
 
 This Website: A ongoing personal project, chronicling my endeavors.
 
-For a comprehensive view, visit the /project page I am actively constructing.
+For a comprehensive view, visit the project page I am actively constructing.
 

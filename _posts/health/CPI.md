@@ -1,6 +1,6 @@
 ---
 title: 'Health'
-excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
+excerpt: "I am meticulous in managing my health and implementing various habits in my daily routine to optimize overall well-being. Additionally, I engage in regular gym sessions. I intend to share my acquired knowledge in this space, not only to streamline information but also to document my health-conscious choices."
 coverImage: '/assets/categories/Health.png'
 date: '2020-03-16T05:35:07.322Z'
 author:

@@ -78,7 +78,7 @@ export default function Index({ post, preview }: Props) {
           <p>{ProModalContents[modalDataIterator].else}</p>
         
         </Modal.Body>
-        <Modal.Footer>
+        {/* <Modal.Footer>
         <a
         href="/cv/JulienGARSIA.pdf"
         download="Julien.pdf"
@@ -89,7 +89,7 @@ export default function Index({ post, preview }: Props) {
           <Button variant="primary" onClick={handleCloseModal}>
             Contact me 
           </Button>
-        </Modal.Footer>
+        </Modal.Footer> */}
       </Modal>
 
       </Container>

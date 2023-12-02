@@ -4,8 +4,8 @@ excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo
 coverImage: '/assets/categories/Else.png'
 date: '2020-03-16T05:35:07.322Z'
 author:
-  name: JJ Kasper
-  picture: '/assets/blog/authors/jj.jpeg'
+  name: Julien Garsia
+  picture: '/assets/pictures/julien.png'
 ogImage:
   url: '/assets/blog/dynamic-routing/cover.jpg'
 tag: 'else'
