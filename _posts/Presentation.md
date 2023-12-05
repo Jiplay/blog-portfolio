@@ -1,6 +1,6 @@
 ---
-title: "Introduction"
-excerpt: "My professionnal carrer sorted into folders when you'll have more information about my experiences than on my resume. Always looking for opportunity"
+title: "Experiences in folders"
+excerpt: "I'm a developer, I did a lot of different things during the first steps of my carrer that I organize in folder in order to vizualise everything easily. I choose this way of life because I'm a creative person who likes challenges, I craving to learn new things, other way of doing things. I'm passionated by optimization, I want to solve big problem with the easiest possible solution. I ordered my professional experiences in folders, click on them to have a short version of what I did and learn during this period of time."
 coverImage: '/postImg/hero.png'
 date: '2023-11-23T05:35:07.322Z'
 author:
@@ -11,15 +11,19 @@ ogImage:
 tag: 'pro'
 ---
 
-Explore my professional journey in the folders, encapsulating all my past work experiences. Yet, my expertise extends beyond these roles, enriched by various projects—personal, educational, and collaborative:
+# More experiences
 
-SafeCall: An impactful end-of-studies project, jointly developed with six friends.
+You'll find all the details about my professional experience in the folders. Yet, this is all you can find on this website, but soon enough I'll add others projects, some from school, some side project:
 
-CPi Project at Schoolab: A noteworthy venture contributing to my skill set.
+* SafeCall - 2022 to 2024: My end-of-studies project at EPITECH, it's an application, web and mobile where users can chat vocally and textually without sharing their phone number with each other. We build this app for the second-hand market communication, where we noticed that a large share of user write his own phone number to get contacted more easily. 
+We tried to build a safe environment where people can't be harassed or spammed by advertisement.
 
-Year Abroad in Italy: An enriching experience studying AI and Computer Science.
+In SafeCall I have different roles: 
 
-This Website: A ongoing personal project, chronicling my endeavors.
+* The architect role : I disposed the backend entirely, related to the preferences of the team and the technical requirements. We chose a microservice architecture, with an API in Golang for the entry point of our backend. With this service, we have another one in Golang to manage the user profile and another in Node.js to manage the text communication. We have as well one in C++ for the managing the audio.
 
-For a comprehensive view, visit the project page I am actively constructing.
+* The software engineer : I developed entirely the API and the profile microservice, I also setup the database (MongoDB Atlas) and create the models for the different entities in SafeCall.
 
+* The DevOps role : I take care of the deployment of the application, using vercel for the web application, and using a virtual machine on Microsoft Azure for the backend. Every microservice is dockerized and published, we just need to download the images on the virtual machines, run the images inside a docker network for them to communicate easily without any exposure on the Internet.
+
+*I'll build soon the project page, with a more detailed view.*

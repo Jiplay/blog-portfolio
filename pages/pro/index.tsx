@@ -34,7 +34,10 @@ export default function Index({ post, preview }: Props) {
       <Container>
         <Header />
         <ProHeader title={post.title} author={post.author} />
+        <p className="text-lg leading-relaxed mb-4">{post.excerpt}</p>
+        
         <div className="flex items-center justify-center">
+        
         <div
           onClick={handleRectClick(0)}
           dangerouslySetInnerHTML={{ __html: SVGs.oxio1 }}
@@ -78,20 +81,7 @@ export default function Index({ post, preview }: Props) {
           <p>{ProModalContents[modalDataIterator].else}</p>
         
         </Modal.Body>
-        {/* <Modal.Footer>
-        <a
-        href="/cv/JulienGARSIA.pdf"
-        download="Julien.pdf"
-        className="inline-block bg-gray-500 text-white px-4 py-2 rounded"
-      >
-        Download my resume
-      </a>
-          <Button variant="primary" onClick={handleCloseModal}>
-            Contact me 
-          </Button>
-        </Modal.Footer> */}
       </Modal>
-
       </Container>
     </Layout>
   )
