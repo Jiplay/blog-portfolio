@@ -1,5 +1,5 @@
 ---
-title: "Experiences in folders"
+title: "Experiences in a nutshell"
 excerpt: "I'm a developer, I did a lot of different things during the first steps of my carrer that I organize in folder in order to vizualise everything easily. I choose this way of life because I'm a creative person who likes challenges, I craving to learn new things, other way of doing things. I'm passionated by optimization, I want to solve big problem with the easiest possible solution. I ordered my professional experiences in folders, click on them to have a short version of what I did and learn during this period of time."
 coverImage: '/postImg/hero.png'
 date: '2023-11-23T05:35:07.322Z'

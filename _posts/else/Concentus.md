@@ -1,6 +1,6 @@
 ---
 title: 'Else'
-excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
+excerpt: "This category will be more a else section, where you'll be able find random articles about cool facts, maybe some video games review. I'm not really sure at this time, but it'll be more precise with time I promise !"
 coverImage: '/assets/categories/Else.png'
 date: '2020-03-16T05:35:07.322Z'
 author:
