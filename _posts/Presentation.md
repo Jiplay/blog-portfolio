@@ -1,6 +1,6 @@
 ---
 title: "Experiences in a nutshell"
-excerpt: "I'm a developer, I did a lot of different things during the first steps of my carrer that I organize in folder in order to vizualise everything easily. I choose this way of life because I'm a creative person who likes challenges, I craving to learn new things, other way of doing things. I'm passionated by optimization, I want to solve big problem with the easiest possible solution. I ordered my professional experiences in folders, click on them to have a short version of what I did and learn during this period of time."
+excerpt: "I'm a developer, I did a lot of different things during the first steps of my carrer that I organize in folders to vizualise everything easily. I'm a creative person who likes challenges, I craving to learn new things, passionated by optimization."
 coverImage: '/postImg/hero.png'
 date: '2023-11-23T05:35:07.322Z'
 author:
@@ -20,10 +20,10 @@ We tried to build a safe environment where people can't be harassed or spammed b
 
 In SafeCall I have different roles: 
 
-* The architect role : I disposed the backend entirely, related to the preferences of the team and the technical requirements. We chose a microservice architecture, with an API in Golang for the entry point of our backend. With this service, we have another one in Golang to manage the user profile and another in Node.js to manage the text communication. We have as well one in C++ for the managing the audio.
+* 📍 The architect role : I disposed the backend entirely, related to the preferences of the team and the technical requirements. We chose a microservice architecture, with an API in Golang for the entry point of our backend. With this service, we have another one in Golang to manage the user profile and another in Node.js to manage the text communication. We have as well one in C++ for the managing the audio.
 
-* The software engineer : I developed entirely the API and the profile microservice, I also setup the database (MongoDB Atlas) and create the models for the different entities in SafeCall.
+* 📍 The software engineer : I developed entirely the API and the profile microservice, I also setup the database (MongoDB Atlas) and create the models for the different entities in SafeCall.
 
-* The DevOps role : I take care of the deployment of the application, using vercel for the web application, and using a virtual machine on Microsoft Azure for the backend. Every microservice is dockerized and published, we just need to download the images on the virtual machines, run the images inside a docker network for them to communicate easily without any exposure on the Internet.
+* 📍 The DevOps role : I take care of the deployment of the application, using vercel for the web application, and using a virtual machine on Microsoft Azure for the backend. Every microservice is dockerized and published, we just need to download the images on the virtual machines, run the images inside a docker network for them to communicate easily without any exposure on the Internet.
 
 *I'll build soon the project page, with a more detailed view.*
