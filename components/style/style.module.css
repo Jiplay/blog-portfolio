@@ -1,0 +1,9 @@
+.customLink {
+    color: black;
+    text-decoration: none; /* Pas d'underline par défaut */
+  }
+  
+  .customLink:hover {
+    text-decoration: underline; /* Underline au survol */
+  }
+  

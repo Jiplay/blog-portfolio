@@ -23,7 +23,7 @@ export default function Index({ allPosts, presentationPost }: Props) {
           <title>{`JG-Blog`}</title>
         </Head>
         <Container>
-          <Intro />
+          <Intro title={"JG Blog"} description={"Musings of a Learning-Centric Developer"} />
           {heroPost && (
             <HeroPost
               title={heroPost.title}
