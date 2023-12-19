@@ -2,7 +2,7 @@
 title: 'SafeCall'
 excerpt: "This page is crucial to me because it's where I'll be sharing thoughts, articles, and information about my friends' projects. It's a way to support their work and encourage different opinions on various topics."
 coverImage: '/postImg/SafeCall/test.png'
-date: '2023-11-23T05:35:07.322Z'
+date: '2023-12-19T05:35:07.322Z'
 author:
   name: Julien Garsia
   picture: '/assets/pictures/julien.png'
@@ -21,7 +21,7 @@ SafeCall is an ecosystem where people can chat without any needs of sharing the 
 With SafeCall, this privacy issue is resolved.
 
 ## Technically :
-![image](/postImg/SafeCall/archi.png)
+![Architecture of the Server of SafeCall](/postImg/SafeCall/archi.png)
 
 This is how SafeCall is built, we have 2 different kind of clients, the web app and the mobile application. Then we have an exposed API that redirect the requests to the required services. We have 3 different microservices : Audio, used for audio and video management, Profilers, used for the profile data of the users, and Messagerie takes care of the textual conversations of the application. All those services exploit a MongoDB (Atlas) database.
 
@@ -43,3 +43,8 @@ I managed this aspect of the project on my own and I learned a lot of stuff. EPI
 Before this, I dockerized every part of the server, taking care to the dependencies and the optimisation of build, because the storage on the VM is limited. I setup a docker network where all the containers could communicate with each other while being not accessible from the Internet. Only the main API is accessible for security purposes.
 
 This worked most of the time, but when we deployed the main website on Vercel, we had a big problem, we needed to update our API from HTTP to HTTPS, because Vercel export all application as HTTPS. So I generated certificates approved by Let’s Encrypt, and once upload on our server, it finally worked.
+
+
+## Sources
+
+Vous pouvez retrouver SafeCall sur son site vitrine à l'adresse, et vous pouvez également télécharger l'APK de l'application sur le site : [SafeCall](https://eip.epitech.eu/2024/safecall/) 

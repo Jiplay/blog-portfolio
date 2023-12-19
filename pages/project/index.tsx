@@ -12,13 +12,12 @@ import Post from '../../interfaces/post'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 type Props = {
-  post: PostType
   allPosts: Post[]
   preview?: boolean
 }
 
 export default function Index({ allPosts }: Props) {
-  const morePosts = allPosts.slice(1)
+  const morePosts = allPosts
   return (
     <Layout>
       <Container>
@@ -43,17 +42,6 @@ export default function Index({ allPosts }: Props) {
 }
 
 export const getStaticProps = async () => {
-  const presentationPost = getHeroPost([
-    'title',
-    'date',
-    'slug',
-    'author',
-    'coverImage',
-    'excerpt',
-    'content',
-    'tag',
-  ])
-
   const allPosts = getAllPosts([
     'title',
     'date',
@@ -64,14 +52,9 @@ export const getStaticProps = async () => {
     'tag',
   ], "_posts/projects")
 
-  const content = await markdownToHtml(presentationPost.content || '')
   return {
     props: {
       allPosts,
-      post: {
-        ...presentationPost,
-        content,
-      },
     },
   }
 }
