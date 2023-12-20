@@ -1,9 +1,32 @@
 .customLink {
     color: black;
-    text-decoration: none; /* Pas d'underline par défaut */
+    text-decoration: none;
   }
   
   .customLink:hover {
-    text-decoration: underline; /* Underline au survol */
+    text-decoration: underline;
+  }
+
+
+  .linkButton {
+    text-decoration: none;
+    margin: 0.75rem;
+    background-color: #000;
+    border: 1px solid #000;
+    color: #fff;
+    font-weight: bold;
+    padding: 0.75rem 2rem;
+    transition: background-color 0.2s, color 0.2s;
   }
   
+  .linkButton:hover {
+    background-color: #f8f8f8;
+    color: #000;
+  }
+  
+  @media (min-width: 1024px) {
+    .linkButton {
+      padding: 0.75rem 1rem;
+      margin-bottom: 0;
+    }
+  }
