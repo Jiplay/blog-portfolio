@@ -8,7 +8,7 @@ author:
   picture: '/assets/pictures/julien.png'
 ogImage:
   url: '/postImg/CPI.png'
-tag: 'Health'
+tag: 'health'
 ---
 
 # Création d'un Produit Innovant
