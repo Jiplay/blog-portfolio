@@ -1,8 +1,8 @@
 ---
 title: 'Tommyknockers'
 excerpt: "This book switch on my bookworm past, I bought it in a garage sale with my cousin, I bought 3 old books of Stephen King, and this is the 1st that I read. I was addicted to this book. The story is about 2 main characters, a writter and a teacher in university. Both of them are addicted to something, and those addictions, will lead them in a crazy story"
-coverImage: '/assets/categories/books.png'
-date: '2020-03-16T05:35:07.322Z'
+coverImage: '/postImg/Tommyknockers.png'
+date: '2023-12-23T05:35:07.322Z'
 author:
   name: Julien Garsia
   picture: '/assets/pictures/julien.png'
@@ -12,107 +12,37 @@ ogImage:
 tag: '/books/Tommyknocker'
 ---
 
-# Fiche de Lecture
 
-## Informations Générales
-- **Titre du Livre :** Les Tommyknocker
-- **Auteur :** Stephen King
-- **Année de Publication :** 1987
-- **Genre :** Horreur, Science-Fiction
-- **Nombre de Pages :** 600 pages
+# The Tommyknockers : Story 
 
-## L'Auteur
+This book had a big influence on me, before this book, I was not much of a reader, I used to read everyday tech stuff with my job, but a book ? Not for me.
 
-Stephen King est un écrivain américain né en 1947 qui à écrit plus d'une soixantaine de livres lors de sa carrière de 1970 à 2010. De plusieurs genre différent comme le fantastique, la fantasy et le policier.
+And The Tommyknockers happened, I bought it in a garage sale and like the character in the book, my transformation began slowly. Stephen King is the kind of writter you never regret buying books from him, because his stories are amazing. 
 
-Il a une jeunesse difficile, ou il survit avec sa mère dans le manque, il assiste directement à la mort d'un de ses camarades d'école qui se fait renverser par un train.
+This one is about 2 ex lovers a writer and a teacher, a town of countryside of America, and Aliens. And the way all those subjects once seen from his point of view make sense and write a different story about themes much more realistic : addictions.
 
-Rapidement il a l'envie d'écrire des histoires et puis il se battra pour les publier, au début pour quelques dollar dans des petits jounaux. Puis dans les années 70, il écrit grâce au soutient de sa compagne Tabitha : Carrie, une histoire à propos d'une adolescente qui développe des pouvoir de télékinésie. Carrie qui sera son premier roman publié et c'est le premier d'une longue série!
+I didn't know before buying this book, even before understanding it during my reading session, this book is about addictions, and how people live with them, different behaviours and differents ends as well.
 
-## Œuvres Antérieures de l'Auteur
-Ce livre c'est ma première experience de Stephen King.
+Bobbi Anderson is one of the main character of this book. She's a writer, living in the big farm of her dead uncle. She use to live by herself, cuting woods, crafting stuff and walking a lot with his good old dog Pete. One day, she notices something strange buried in the ground, in her garden. Something she never saw before, and slowy but surely, the want of knowing what this is will obsessed her.
 
-## Contexte
-Ce livre, "Les TommyKnockers" à été écrit dans un contexte un peu particulier, une période ou Stephen King était addict à l'alcool, la drogue et aux médicamments. Aidé encore une fois par sa femme Tabitha, il va se faire aider pour prendre de la distance avec ses démons.
+So she will start diging to know what it exactly is, and at every moment she'll have this strange feeling "I'm almost there". This project will start to take all her free time, and then she'll stop eating, sleeping until she'll understand, that the thing, buried in the ground, whatever it is, has an effect on her, she'll start to know what's her new limits.
 
-Dans l'histoire des Tommyknockers et dans celle de Misery, une autre de ses histoire écrite dans la même période, on y retrouve ses adictions mise en scène. Dans Les Tommyknockers, l'histoire explore directement les thèmes de l'obsession de dépendance et de transformation, qui une fois mis en abime avec le contexte de l'écrivain, on comprend pourquoi ces thèmes l'ont tant poussé à écrire.
+At the same time, Jim Gardener, another main character of this *amazing* story, is living his life peacefully compared to what he experimenced in the past. He was an alcoholic, and shot his own wife, drunk and woke up in a cell, not knowing why. But this is the past, now this giving literature courses. One day, he will join a party of important people, and he will kill the host of the party.
 
-## Résumé
+This event will be the trigger for his life, going from this peacefull state, to something like hell. He'll get wasted after this event and will try to commit suicide, but before jumping in the void, he has one thougth : Bobbi, his old student, lover, friends and much more is encouring a big danger, and he's the only one who can help her. So he'll try to call her, without success, and will try to go at her place. 
 
-Nous allons suivre tout au long du roman Roberta Anderson, Bobbie et son ancien professeur d'université Jim Gardener.
-Bobbi découvre un vaisseau spacial dans son jardin et va s'atteler à le déterrer sans se rendre compte qu'il a une influence délirante sur le monde qui l'entoure.
-Jim, immunisé par cette influence, va subir une autre influence tout aussi réelle, va aider à deterrer le vaisseau tout en essayant de sauver son amie en fuyant ses vieux démons
+After big troubles, he's finally there, and can't recognize his old friend, she's skinny, work all day in the garden and her place seems change. She's now energetically independent, has a stand-alone typewriter.
 
-## Thèmes Principaux
+He'll try to reason with her but it's already too late, and before he'll notice, he will get sucked into his past addictions, and will vegetate. Slowly all the town will act like her and will consider her as a leader, and the person with the most finished transformation. At this state Gardener, will be reduced to slavery and will work on this project, because he seems immune to the effects for unknowns reasons..
 
-Ce livre relate surtout d'addiction, une grande majorité des personnages sont obsessionels et addicts à différentes choses. Ils réagissent de manière différente et permette d'avoir une histoire complète et diversifié sur un même thème.
+We'll follow how the *effect of the thing* has an impact on the villagers through stories inside the main one. I think it was a very nice initiative and helps to understand that everyone is touch by this *thing*
 
+After some twists and turns, Gardener finally manage to get out of his conditions to save, what can be saved at this point. This will lead to an epic part of the book, where everyone in this town is crazy and Gardener has a target on his back at this point.
 
-## Structure
-La structure du récit m'a tout de suite interpelé, il est découpé en livres, qui ont différents chapitre et qui sont découpés en parties.
+# The Tommyknockers : My word 
 
-Cette structure, facilite grandement la lecture, et fais avancer le récit rapidement.
+I really liked this book, and it rekindle the flame of my reading soul and I'm so grateful for that ! I would recommand this book for anyone, it's not especially scary or difficult to read, you let yourself follow the flow of the story and getting addicted with it.
 
-## Style d'Écriture
+# Cool thing to know 
 
-Pour le style d'écriture c'est assez familier, ce qui facilite l'immersion pour le lecteur. Le narrateur change a plusieurs reprise ce qui permet d'avoir plusieurs histoires, plusieurs effet de l'influence des Tommyknockers.
-
-## Personnages Principaux
-* Bobbie, c'est une écrivaine dans la vingtaine, exilé de sa famille à cause de sa soeur, elle habite seule la ferme de son oncle décédé avec son chien. Un jour elle va tomber sur une chose non identifié dans son jardin qu'elle n'avait jamais remarqué. Elle va devenir totalement absorbé par cette tâche et va changer de manière singulière. Le vaisseau va la changer doucement mais surement, il va développer sa créativité et elle va inventer une machine a écrire autonome. Elle va devenir le cervau de son village et va être la première a évoluer.
-
-* Jim, c'est un professeur d'université sobre depuis des mois qui va entamer dès le début du roman une descente aux enfers. Il va tuer un homme par accident en état d’ébriété. Et à partir de là il va vouloir s'ôter la vie. Mais just avant le point de non retour, il a une vision : Il doit protéger son ancienne petite amie Bobbie, quelque chose de terrible va lui arriver. Il va donc faire en sorte d'aller vérifier qu'elle aille bien et s'assurer que ça continue. Il va s'enfermer dans l'alcool et laisser son amie devenir une créature totalement étrangère de celle qu'il a aimé et qui au fond de lui aime encore.
-
-
-## Analyse Critique
-
-(Analysez en profondeur le contenu du livre. Vous pouvez discuter de sa pertinence, de ses messages, de ses implications, etc.)
-
-## Mon Avis
-
-J'ai vraiment aimé ce livre, l'évolution de chacun des personnages, mais en particulier Jim Gardener qui est mon personnage préféré et sur quelques aspects je me suis reconnu en lui.
-
-Il affronte un monde ou il est le seul dissident, et tout le pousse vers la bouteille, jusqu'au moment ou il en a assez, il affronte le monde et va se sauver avec la seule chose qui peut encore l'être.
-
-## Recommandation
-
-Je recommanderais ce livre chaudement, c'est un livre qui m'a marqué tant bien dans chacun des personnages principaux et de leur évolutions. Je n'ai pas vu le temps passé en lisant ce livre, il est véritablement prenant et c'est une très belle histoire en plus de ça, vous pouvez y aller les yeux fermés ! 
-
-
-
----
-
-
-# Catégories optionnelles
-
-## Intrigue et Suspense
-(Analysez la structure de l'intrigue, les rebondissements, le suspense et la façon dont l'auteur maintient l'attention du lecteur.)
-
-## Développement des Personnages
-(Approfondissez l'analyse des personnages, en discutant de leur évolution, de leur complexité et de leur psychologie.)
-
-## Tonalité et Atmosphère
-(Parlez de la tonalité générale du roman, de l'atmosphère créée par l'auteur et de la façon dont cela influence votre expérience de lecture.)
-
-## Symbolisme et Métaphores
-(Identifiez les symboles, les métaphores ou les motifs récurrents dans le roman et discutez de leur signification.)
-
-## Style Narratif
-(Analysez le choix de la narration (à la première personne, à la troisième personne, etc.) et son impact sur le récit.)
-
-## Analyse Sociale et Culturelle
-(Explorez les thèmes sociaux, culturels ou historiques abordés dans le roman et comment ils sont traités.)
-
-## Structure du Dialogue
-(Si le dialogue joue un rôle important, examinez la façon dont les personnages s'expriment et communiquent.)
-
-## Mises en garde
-(Si le livre contient des éléments sensibles ou des mises en garde (violence, contenu pour adultes, déclencheurs potentiels, etc.), il peut être utile de les signaler.)
-
-## Comparaisons avec d'autres Œuvres
-(Comparez le roman avec d'autres œuvres du même auteur ou du même genre littéraire.)
-
-## Éléments stylistiques
-(Évaluez les choix stylistiques de l'auteur, comme l'utilisation de la langue, les figures de style, etc.)
-
-
-N'hésitez pas à personnaliser cette template en fonction de vos préférences, en ajoutant plus d'informations sur l'auteur ou en modifiant d'autres sections pour refléter votre expérience de lecture.
+This book was realeased in the 1st part of the carreer of Stephen King, and this main theme, the addictions, were inspiring for him for a good reason. Before this book, the author was addicted to alcohol, drugs and medicines, but thanks to his wife Tabitha, he will get rid of those demons, and write this book.

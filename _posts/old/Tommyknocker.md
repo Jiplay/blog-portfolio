@@ -1,6 +1,6 @@
 ---
-title: 'Books'
-excerpt: "I know how to enjoy a good book, and I like to know the authors, what happened in their life, what was the context when this book came out, all this kind of things. I want to share this information online. It's exactly what you'll find here, an online bookshelf of mine "
+title: 'Tommyknockers'
+excerpt: "This book switch on my bookworm past, I bought it in a garage sale with my cousin, I bought 3 old books of Stephen King, and this is the 1st that I read. I was addicted to this book. The story is about 2 main characters, a writter and a teacher in university. Both of them are addicted to something, and those addictions, will lead them in a crazy story"
 coverImage: '/assets/categories/books.png'
 date: '2020-03-16T05:35:07.322Z'
 author:
@@ -8,7 +8,8 @@ author:
   picture: '/assets/pictures/julien.png'
 ogImage:
   url: '/assets/blog/dynamic-routing/cover.jpg'
-tag: '/books'
+
+tag: '/books/Tommyknocker'
 ---
 
 # Fiche de Lecture
@@ -26,7 +27,7 @@ Stephen King est un écrivain américain né en 1947 qui à écrit plus d'une so
 
 Il a une jeunesse difficile, ou il survit avec sa mère dans le manque, il assiste directement à la mort d'un de ses camarades d'école qui se fait renverser par un train.
 
-Rapidement il a l'envie d'écrire des histoires et puis il se battra pour les publier, au début pour quelques dollar dans des petits jounaux. Puis dans les années 70, il écrit grâce au soutient de sa compagne Tabitha, Carrie, une histoire à propos d'une adolescente qui développe des pouvoir d télékinésie. Carrie qui sera son premier roman publié et c'est le premier d'une longue série!
+Rapidement il a l'envie d'écrire des histoires et puis il se battra pour les publier, au début pour quelques dollar dans des petits jounaux. Puis dans les années 70, il écrit grâce au soutient de sa compagne Tabitha : Carrie, une histoire à propos d'une adolescente qui développe des pouvoir de télékinésie. Carrie qui sera son premier roman publié et c'est le premier d'une longue série!
 
 ## Œuvres Antérieures de l'Auteur
 Ce livre c'est ma première experience de Stephen King.

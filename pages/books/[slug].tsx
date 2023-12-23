@@ -42,6 +42,7 @@ export default function Post({ post, morePosts, preview }: Props) {
                 coverImage={post.coverImage}
                 date={post.date}
                 author={post.author}
+                tooBig={true}
               />
               <PostBody content={post.content} />
             </article>
