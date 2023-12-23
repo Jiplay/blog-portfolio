@@ -1,6 +1,6 @@
 ---
 title: 'Tommyknockers'
-excerpt: "I know how to enjoy a good book, and I like to know the authors, what happened in their life, what was the context when this book came out, all this kind of things. I want to share this information online. It's exactly what you'll find here, an online bookshelf of mine "
+excerpt: "This book switch on my bookworm past, I bought it in a garage sale with my cousin, I bought 3 old books of Stephen King, and this is the 1st that I read. I was addicted to this book. The story is about 2 main characters, a writter and a teacher in university. Both of them are addicted to something, and those addictions, will lead them in a crazy story"
 coverImage: '/assets/categories/books.png'
 date: '2020-03-16T05:35:07.322Z'
 author:
