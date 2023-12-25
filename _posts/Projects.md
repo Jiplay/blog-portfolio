@@ -1,6 +1,6 @@
 ---
 title: 'Projects'
-excerpt: "This page will host different kind of projects, the one I took part in, the one that I like, and some of my friends that I want to share."
+excerpt: "This page will host different kinds of projects, including the ones I took part in, the ones that I like, and some projects of my friends that I want to share."
 coverImage: '/assets/categories/projects.png'
 date: '2023-11-23T05:35:07.322Z'
 author:
