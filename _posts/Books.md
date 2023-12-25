@@ -1,8 +1,8 @@
 ---
 title: 'Books'
-excerpt: "I know how to enjoy a good book, and I like to know the authors, what happened in their life, what was the context when this book came out, all this kind of things. I want to share this information online. It's exactly what you'll find here, an online bookshelf of mine "
+excerpt: "I know how to enjoy a good book, and I like to know the authors, what happened in their lives, the context in which this book came out—all these kinds of things. I want to share this information online. It's exactly what you'll find here—an online bookshelf of mine"
 coverImage: '/assets/categories/books.png'
-date: '2020-03-16T05:35:07.322Z'
+date: '2023-12-23T05:35:07.322Z'
 author:
   name: Julien Garsia
   picture: '/assets/pictures/julien.png'

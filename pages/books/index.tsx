@@ -29,8 +29,7 @@ export default function Index({ allPosts }: Props) {
         Books
       </h2>
       <p className="text-lg leading-relaxed mb-4">
-        You'll find some thoughts about the book I read, I like all the "basics" for now, like Stephen King, 
-        Jules Verne or Maxime Chattam.
+        IKD.
       </p>
       <div className="flex items-center justify-center">
         {morePosts.length > 0 && <MoreStories posts={morePosts} />}

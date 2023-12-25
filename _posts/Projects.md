@@ -1,7 +1,7 @@
 ---
 title: 'Projects'
-excerpt: "This page is crucial to me because it's where I'll be sharing thoughts, articles, and information about my friends' projects. It's a way to support their work and encourage different opinions on various topics."
-coverImage: '/assets/categories/idea.png'
+excerpt: "This page will host different kind of projects, the one I took part in, the one that I like, and some of my friends that I want to share."
+coverImage: '/assets/categories/projects.png'
 date: '2023-11-23T05:35:07.322Z'
 author:
   name: Julien Garsia

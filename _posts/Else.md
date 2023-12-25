@@ -2,13 +2,13 @@
 title: 'Else'
 excerpt: "This category will be more a else section, where you'll be able find random articles about cool facts, maybe some video games review. I'm not really sure at this time, but it'll be more precise with time I promise !"
 coverImage: '/assets/categories/Else.png'
-date: '2020-03-16T05:35:07.322Z'
+date: '2024-03-16T05:35:07.322Z'
 author:
   name: Julien Garsia
   picture: '/assets/pictures/julien.png'
 ogImage:
   url: '/assets/blog/dynamic-routing/cover.jpg'
-tag: 'else'
+tag: ''
 ---
 
 
