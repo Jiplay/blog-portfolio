@@ -29,7 +29,7 @@ export default function Index({ allPosts }: Props) {
         Books
       </h2>
       <p className="text-lg leading-relaxed mb-4">
-        IKD.
+      I know how to enjoy a good book, and I like to know the authors, what happened in their lives, the context in which this book came out—all these kinds of things. I want to share this information online. It's exactly what you'll find here—an online bookshelf of mine
       </p>
       <div className="flex items-center justify-center">
         {morePosts.length > 0 && <MoreStories posts={morePosts} />}
