@@ -1,4 +1,4 @@
-import Alert from './alert'
+import { Analytics } from '@vercel/analytics/react';
 import Footer from './footer'
 import Meta from './meta'
 
@@ -14,6 +14,7 @@ const Layout = ({ preview, children }: Props) => {
       <div className="min-h-screen">
         {/* <Alert preview={preview} /> */}
         <main>{children}</main>
+        <Analytics />
       </div>
       <Footer />
     </>

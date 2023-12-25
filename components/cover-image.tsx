@@ -7,10 +7,11 @@ type Props = {
   src: string
   tag: string
   slug?: string
+  tooBig?: boolean
 }
 
-const CoverImage = ({ title, src, tag, slug }: Props) => {
-  const image = (
+const CoverImage = ({ title, src, tag, slug, tooBig }: Props) => {
+  let image = (
     <Image
       src={src}
       alt={`Cover Image for ${title}`}
@@ -21,6 +22,26 @@ const CoverImage = ({ title, src, tag, slug }: Props) => {
       height={630}
     />
   )
+  if (tooBig === true) {
+    image = (
+      <Image
+        src={src}
+        alt={`Cover Image for ${title}`}
+        className={cn('shadow-sm w-full', {
+          'hover:shadow-lg transition-shadow duration-200': slug,
+        })}
+        style={{
+          "maxWidth": "800px",
+          "display": "block",  // Pour centrer horizontalement
+          "margin": "auto",    // Pour centrer horizontalement
+          "alignItems": "center",
+          "justifyItems": "center",
+    }}
+        width={1300}
+        height={630}
+      />
+    )
+  }
   return (
     <div className="sm:mx-0">
       {slug ? (

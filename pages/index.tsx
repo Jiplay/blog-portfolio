@@ -14,8 +14,6 @@ type Props = {
 }
 
 export default function Index({ allPosts, presentationPost }: Props) {
-  const heroPost = presentationPost
-  const morePosts = allPosts
   return (
     <>
       <Layout>
@@ -23,19 +21,19 @@ export default function Index({ allPosts, presentationPost }: Props) {
           <title>{`JG-Blog`}</title>
         </Head>
         <Container>
-          <Intro />
-          {heroPost && (
+          <Intro title={"JG Blog"} description={"Musings of a Learning-Centric Developer"} />
+          {presentationPost && (
             <HeroPost
-              title={heroPost.title}
-              coverImage={heroPost.coverImage}
-              date={heroPost.date}
-              author={heroPost.author}
-              slug={heroPost.slug}
-              excerpt={heroPost.excerpt}
-              tag={heroPost.tag}
+              title={presentationPost.title}
+              coverImage={presentationPost.coverImage}
+              date={presentationPost.date}
+              author={presentationPost.author}
+              slug={presentationPost.slug}
+              excerpt={presentationPost.excerpt}
+              tag={presentationPost.tag}
             />
           )}
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+          {allPosts.length > 0 && <MoreStories posts={allPosts} />}
         </Container>
       </Layout>
     </>
@@ -63,6 +61,6 @@ export const getStaticProps = async () => {
     'tag',
   ])
   return {
-    props: { allPosts, presentationPost },
+    props: { presentationPost, allPosts },
   }
 }
