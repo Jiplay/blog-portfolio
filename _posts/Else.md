@@ -1,7 +1,7 @@
 ---
 title: 'Else'
 excerpt: "This category will be more a else section, where you'll be able find random articles about cool facts, maybe some video games review. I'm not really sure at this time, but it'll be more precise with time I promise !"
-coverImage: '/assets/categories/Else.png'
+coverImage: '/assets/categories/curious.png'
 date: '2024-03-16T05:35:07.322Z'
 author:
   name: Julien Garsia
