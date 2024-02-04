@@ -1,7 +1,7 @@
 ---
 title: 'Health'
 excerpt: "I am meticulous in managing my health and implementing various habits in my daily routine to optimize overall well-being. Additionally, I engage in regular gym sessions. I intend to share my acquired knowledge in this space, not only to streamline information but also to document my health-conscious choices."
-coverImage: '/assets/categories/health.png'
+coverImage: '/assets/categories/healthMain.png'
 date: '2024-03-16T05:35:07.322Z'
 author:
   name: Julien Garsia
