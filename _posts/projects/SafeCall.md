@@ -47,4 +47,4 @@ This worked most of the time, but when we deployed the main website on **Vercel*
 
 ## Sources
 
-You can visit our website to get further information about the project : *[link](https://eip.epitech.eu/2024/safecall/)*
+You can visit our website to get further information about the project : [here](https://eip.epitech.eu/2024/safecall/)
