@@ -1,7 +1,7 @@
 ---
 title: 'LUX'
 excerpt: ""
-coverImage: '/postImg/LUX.png'
+coverImage: '/postImg/books/LUX.png'
 date: '2024-01-22T05:35:07.322Z'
 author:
   name: Julien Garsia

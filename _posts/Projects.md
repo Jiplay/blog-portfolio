@@ -1,6 +1,7 @@
 ---
 title: 'Projects'
-excerpt: "This page will host different kinds of projects, including the ones I took part in, the ones that I like, and some projects of my friends that I want to share."
+excerpt: "This will probably be the most technical part of the website, more like my portfolio, where I’ll expose my projects and what they brought to me. 
+Nothing more to say; let’s dig in !"
 coverImage: '/assets/categories/software.png'
 date: '2023-11-23T05:35:07.322Z'
 author:

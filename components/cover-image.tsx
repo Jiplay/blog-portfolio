@@ -7,10 +7,10 @@ type Props = {
   src: string
   tag: string
   slug?: string
-  tooBig?: boolean
+  printImage?: boolean
 }
 
-const CoverImage = ({ title, src, tag, slug, tooBig }: Props) => {
+const CoverImage = ({ title, src, tag, slug, printImage }: Props) => {
   let image = (
     <Image
       src={src}
@@ -22,7 +22,7 @@ const CoverImage = ({ title, src, tag, slug, tooBig }: Props) => {
       height={630}
     />
   )
-  if (tooBig === true) {
+  if (printImage === true) {
     image = (
       <Image
         src={src}

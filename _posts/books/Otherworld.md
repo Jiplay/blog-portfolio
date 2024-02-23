@@ -1,7 +1,7 @@
 ---
 title: 'The Otherworld'
 excerpt: ""
-coverImage: '/postImg/Otherworld.png'
+coverImage: '/postImg/books/Otherworld.png'
 date: '2024-02-22T05:35:07.322Z'
 author:
   name: Julien Garsia

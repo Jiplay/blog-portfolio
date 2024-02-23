@@ -1,6 +1,10 @@
 ---
 title: 'Health'
-excerpt: "I am meticulous in managing my health and implementing various habits in my daily routine to optimize overall well-being. Additionally, I engage in regular gym sessions. I intend to share my acquired knowledge in this space, not only to streamline information but also to document my health-conscious choices."
+excerpt: "A lot of people live without really understanding what is happening inside their bodies. Why do I feel like this ? How do some people have this kind of result and I don’t ?
+
+All these things are very interesting to me, as someone keen on optimization, into software engineering, video games (factorio, diablo, RPG...), or the most important of all: LIFE.
+
+I will use this part to describe some habit, tips, or whatever helped me at some point in my life regarding my health in the broadest sense of the term"
 coverImage: '/assets/categories/healthMain.png'
 date: '2024-03-16T05:35:07.322Z'
 author:
