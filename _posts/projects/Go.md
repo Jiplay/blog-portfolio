@@ -1,7 +1,7 @@
 ---
 title: 'Go'
 excerpt: "Go is the programing language that I used the most in my life, I kinda like it"
-coverImage: '/postImg/Go.png'
+coverImage: '/postImg/go.png'
 date: '2023-12-19T05:35:07.322Z'
 author:
   name: Julien Garsia
