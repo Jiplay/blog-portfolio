@@ -1,7 +1,7 @@
 ---
 title: 'Tommyknockers'
 excerpt: "This book switched on my bookworm past, I bought it in a garage sale with my cousin. I bought 3 old books by Stephen King, and this is the first that I read. I was addicted to this book. The story is about 2 main characters, a writer and a teacher at the university. Both of them are addicted to something, and those addictions will lead them in a crazy story"
-coverImage: '/postImg/Tommyknockers.png'
+coverImage: '/postImg/books/Tommyknockers.png'
 date: '2023-12-23T05:35:07.322Z'
 author:
   name: Julien Garsia

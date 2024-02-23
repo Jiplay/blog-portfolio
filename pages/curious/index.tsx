@@ -26,10 +26,10 @@ export default function Index({ allPosts }: Props) {
         <title>{`JG-Blog`}</title>
       </Head>
       <h2 className="mb-8 text-5xl md:text-7xl font-bold tracking-tighter leading-tight">
-        Projects
+        Anything else I want to write about 
       </h2>
       <p className="text-lg leading-relaxed mb-4">
-        This page will host some articles about things that I discovered or just want to share. Maybe focus on a special framework, technology or anything.
+      Curious isn't it ?
       </p>
       <div className="flex items-center justify-center">
         {morePosts.length > 0 && <MoreStories posts={morePosts} />}
@@ -49,7 +49,7 @@ export const getStaticProps = async () => {
     'coverImage',
     'excerpt',
     'tag',
-  ], "_posts/projects")
+  ], "_posts/curious")
 
   return {
     props: {

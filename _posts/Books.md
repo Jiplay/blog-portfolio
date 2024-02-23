@@ -1,6 +1,8 @@
 ---
 title: 'Books'
-excerpt: "I know how to enjoy a good book, and I like to know the authors, what happened in their lives, the context in which this book came out—all these kinds of things. I want to share this information online. It's exactly what you'll find here—an online bookshelf of mine"
+excerpt: "When I was young, I used to read a lot, and then I discovered video games...
+Some years later, I found a book about addiction by Stephen King. One of my friends told me several times that I should try his book, so I bought it, and read it : it was amazing
+Since then, I've been reading books daily, and I like to write a bit about a book I just finished. That’s the place I will use for this :)"
 coverImage: '/assets/categories/bookworm.png'
 date: '2023-12-23T05:35:07.322Z'
 author:

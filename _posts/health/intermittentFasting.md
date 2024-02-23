@@ -1,6 +1,6 @@
 ---
 title: 'Jeûne intermittent'
-excerpt: "What is intermittent fasting and why I think it's suitable for me and for 95% of the population "
+excerpt: "Le jeune intermittent, quels sont ses forces, et comment les appliquers ? "
 coverImage: '/postImg/Intermittent.png'
 date: '2024-02-03T05:35:07.322Z'
 author:
