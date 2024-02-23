@@ -30,7 +30,7 @@ This is how SafeCall is built, we have 2 different kinds of clients, the web app
 
 I spent a lot of time on the architecture of this project, it was a major choice for a project of 7 people over 2 years and around the world. We needed to have the best configuration for everyone, which is why we chose a **microservice's architecture**.
 
-Concerning the technologies, we had 1 requirement, the possibility to communicate with the main API. I developed the main API & Profiler, and for those two parts of the project, I used **Golang** with the framework **Gin-Gonic** for different reasons. We needed performance for the entry point of the project, and **Golang**, as a compiled language, is a first-choice option with Rust. And because I already knew **Golang** and had already experienced it, I chose to deepen my knowledge with this technology. 
+Concerning the technologies, we had 1 requirement, the possibility to communicate with the main API. I developed the main API & Profiler, and for those two parts of the project, I used **Go** with the framework **Gin-Gonic** for different reasons. We needed performance for the entry point of the project, and **Go**, as a compiled language, is a first-choice option with Rust. And because I already knew **Go** and had already experienced it, I chose to deepen my knowledge with this technology. 
 
 About the Audio, we developed it several times, and every time we were confronted with technical issues with the front end. We wanted to at first use **C++** and communicate with ZMQ with the API, but it didn’t work with the front end, so we changed and finally used **Node.js** to manage the connection of the users, and now they use the peer-to-peer protocol to assure video and audio transmission.
 
