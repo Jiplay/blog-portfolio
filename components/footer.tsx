@@ -30,6 +30,16 @@ const Footer = () => {
               />
               </a>
             </div>
+            <div className='mt-3 ml-3'>
+              <a href='https://github.com/Jiplay'>
+              <Image
+              src="/assets/icons/github.png"
+              alt={`Github`}
+              width={50}
+              height={50}
+              />
+              </a>
+            </div>
           </div>
         </div>
       </Container>
