@@ -14,11 +14,10 @@ import { GetServerSideProps } from 'next'
 
 type Props = {
   post: PostType
-  morePosts: PostType[]
   preview?: boolean
 }
 
-export default function Post({ post, morePosts, preview }: Props) {
+export default function Post({ post, preview }: Props) {
   const router = useRouter()
   const title = `${post.title} | JG Blog`
   if (!router.isFallback && !post?.slug) {
@@ -53,7 +52,7 @@ export default function Post({ post, morePosts, preview }: Props) {
 }
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
-    const { category, slug } = context.params;
+  const { category, slug } = context.params;
   const post = getPostBySlug(slug as string, [
     'title', 
     'date',

@@ -13,7 +13,7 @@ tag: '/books/Tommyknocker'
 ---
 
 
-# The Tommyknockers : Story 
+## The Tommyknockers : Story 
 
 This book had a big influence on me. Before this book, I was not much of a reader, I used to read everyday tech stuff for my job, but a book ? Not for me.
 
@@ -39,10 +39,10 @@ We'll follow how the *effect of the thing* has an impact on the villagers throug
 
 After some twists and turns, Gardener will finally manage to get out of his situation and save what can be saved at this point. This will lead to an epic part of the book, where everyone in this town is crazy and Gardener has a target on his back at this point.
 
-# The Tommyknockers : My word 
+## The Tommyknockers : My word 
 
 I really liked this book, and it rekindled the flame of my reading soul, and I'm so grateful for that ! I would recommend this book for anyone; it's not especially scary or difficult to read; you just let yourself follow the flow of the story and get addicted to it.
 
-# Cool thing to know 
+## Cool thing to know 
 
 This book was released in the first part of the career of Stephen King, and its main theme, addiction, was inspiring for him for a good reason. Before this book, the author was addicted to alcohol, drugs and medicines, but thanks to his wife Tabitha, he will get rid of those demons and write this book.

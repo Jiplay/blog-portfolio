@@ -13,7 +13,7 @@ tag: '/books/LUX'
 ---
 
 
-# Maxime Chattam 
+## Maxime Chattam 
 
 Maxime Chattam, c'est un autheur qui m'a été recommandé par de bons amis, par de la famille également, et donc j'ai décidé de me procurer son dernier livre, LUX. Il est connu pour avoir écrit de superbe romans policier, mais j'ai décidé de le découvrir à travers ce livre là
 
