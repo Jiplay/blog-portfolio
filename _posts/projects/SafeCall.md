@@ -8,7 +8,7 @@ author:
   picture: '/assets/pictures/julien.png'
 ogImage:
   url: '/assets/blog/dynamic-routing/cover.jpg'
-tag: '/project/SafeCall'
+tag: '/projects/SafeCall'
 ---
 
 SafeCall is the EPITECH Innovative Project, in which I took part with six other developers, as a project manager. We developed this idea from the concept stage to the production release. You can find all the details on the showcase site : <link>

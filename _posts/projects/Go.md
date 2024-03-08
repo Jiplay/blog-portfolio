@@ -8,7 +8,7 @@ author:
   picture: '/assets/pictures/julien.png'
 ogImage:
   url: '/assets/blog/dynamic-routing/cover.jpg'
-tag: '/project/Go'
+tag: '/projects/Go'
 ---
 
 Go has been developed at Google in 2007 to solve one major problem at Google, make the development more fast and efficient. At Google, most of the software are using C++, and it took sometimes 45 min to compile the project. To fix this issue, 3 men has worked on the creation of another programming language, Go.

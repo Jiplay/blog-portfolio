@@ -26,4 +26,4 @@ In SafeCall I have different roles:
 
 * 📍 The DevOps role : I take care of the deployment of the application, using vercel for the web application, and using a virtual machine on Microsoft Azure for the backend. Every microservice is dockerized and published, we just need to download the images on the virtual machines, run the images inside a docker network for them to communicate easily without any exposure on the Internet.
 
-See more details about SafeCall [here](/project/SafeCall)
+See more details about SafeCall [here](/projects/SafeCall)
