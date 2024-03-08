@@ -8,7 +8,7 @@ author:
   picture: '/assets/pictures/julien.png'
 ogImage:
   url: '/postImg/Dailydev.png'
-tag: '/project/Dailydev'
+tag: '/projects/Dailydev'
 ---
 
 ## What is it ?

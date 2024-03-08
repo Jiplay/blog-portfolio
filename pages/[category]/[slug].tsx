@@ -5,12 +5,12 @@ import PostBody from '../../components/post-body'
 import Header from '../../components/header'
 import PostHeader from '../../components/post-header'
 import Layout from '../../components/layout'
-import { getPostBySlug, getAllPosts } from '../../lib/api'
+import { getPostBySlug } from '../../lib/api'
 import PostTitle from '../../components/post-title'
 import Head from 'next/head'
-import { CMS_NAME } from '../../lib/constants'
 import markdownToHtml from '../../lib/markdownToHtml'
 import type PostType from '../../interfaces/post'
+import { GetServerSideProps } from 'next'
 
 type Props = {
   post: PostType
@@ -52,15 +52,10 @@ export default function Post({ post, morePosts, preview }: Props) {
   )
 }
 
-type Params = {
-  params: {
-    slug: string
-  }
-}
-
-export async function getStaticProps({ params }: Params) {
-  const post = getPostBySlug(params.slug, [
-    'title',
+export const getServerSideProps: GetServerSideProps = async (context) => {
+    const { category, slug } = context.params;
+  const post = getPostBySlug(slug as string, [
+    'title', 
     'date',
     'slug',
     'author',
@@ -68,7 +63,7 @@ export async function getStaticProps({ params }: Params) {
     'ogImage',
     'coverImage',
     'tag'
-  ], "_posts/books")
+  ], `_posts/${category}`)
   const content = await markdownToHtml(post.content || '')
 
   return {
@@ -79,18 +74,4 @@ export async function getStaticProps({ params }: Params) {
       },
     },
   }
-}
-
-export async function getStaticPaths() {
-  const posts = getAllPosts(['slug'], '_posts/books')
-  return {
-    paths: posts.map((post) => {
-      return {
-        params: {
-          slug: post.slug,
-        },
-      }
-    }),
-    fallback: false,
-  }
-}
+  };

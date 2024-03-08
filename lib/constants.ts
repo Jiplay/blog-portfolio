@@ -779,7 +779,12 @@ export const SVGs = {
   </svg>`
 }
 
-
+export const categoryDescription = {
+  Health: "I'll write some notes about things that I already do like intermitent fasting, I'll document my thoughts and share the benefits of life not lived 'by chance' but by planning.",
+  Projects: "This page will host some articles about things that I discovered or just want to share. Maybe focus on a special framework, technology or anything.",
+  Books: "I know how to enjoy a good book, and I like to know the authors, what happened in their lives, the context in which this book came out—all these kinds of things. I want to share this information online. It's exactly what you'll find here—an online bookshelf of mine",
+  Curious: "Curious isn't it ? "
+} 
 
 export const ProModalContents = [
   {
