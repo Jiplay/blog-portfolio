@@ -28,7 +28,7 @@ export default function Index({ allPosts, category }: Props) {
         <title>{`JG-Blog`}</title>
       </Head>
       <h2 className="mb-8 text-5xl md:text-7xl font-bold tracking-tighter leading-tight">
-        {category}
+        {category.charAt(0).toUpperCase() + category.slice(1)}
       </h2>
       <p className="text-lg leading-relaxed mb-4">
       {categoryDescription[category as string]}

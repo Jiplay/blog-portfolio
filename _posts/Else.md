@@ -12,7 +12,7 @@ author:
   picture: '/assets/pictures/julien.png'
 ogImage:
   url: '/assets/blog/dynamic-routing/cover.jpg'
-tag: 'Curious'
+tag: 'curious'
 ---
 
 

@@ -10,7 +10,7 @@ author:
   picture: '/assets/pictures/julien.png'
 ogImage:
   url: '/assets/blog/dynamic-routing/cover.jpg'
-tag: 'Books'
+tag: 'books'
 ---
 
 # Fiche de Lecture
