@@ -105,11 +105,11 @@ if err != nil {
 ```
 
 And I think that's all for this API, with this post, I learned how to : 
-* Divide my code in Module
-* Work with GoLand
-* Develop an API with the latest version of the standard library
-* Create and use the methods of a structure in Go
-* Work with JWT in Go
+*  📍Divide my code in Module
+*  📍Work with GoLand
+*  📍Develop an API with the latest version of the standard library
+*  📍Create and use the methods of a structure in Go
+*  📍Work with JWT in Go
 
 And I think that's great ! 
 
