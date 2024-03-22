@@ -2,7 +2,7 @@
 title: 'Projects'
 excerpt: "This will probably be the most technical part of the website, more like my portfolio, where I’ll expose my projects and what they brought to me. 
 Nothing more to say; let’s dig in !"
-coverImage: '/assets/categories/software.png'
+coverImage: '/assets/categories/1.png'
 date: '2023-11-23T05:35:07.322Z'
 author:
   name: Julien Garsia

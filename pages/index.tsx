@@ -59,10 +59,20 @@ export default function Index({ allPosts, latestPost, presentationPost }: Props)
             </Col>
           </Row>
           <Row>
-            <Col>1 of 3</Col>
-            <Col>2 of 3</Col>
-            <Col>3 of 3</Col>
-            <Col>3 of 3</Col>
+            {allPosts.map((post, index) => (
+                <Col key={index}>
+                  <PostPreviewTextless
+                      key={post.slug}
+                      title={post.title}
+                      coverImage={post.coverImage}
+                      date={post.date}
+                      author={post.author}
+                      slug={post.slug}
+                      excerpt={post.excerpt}
+                      tag={post.tag}
+                  />
+                </Col>
+            ))}
           </Row>
         </Container>
       </Layout>
