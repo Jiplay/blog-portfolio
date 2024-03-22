@@ -70,3 +70,23 @@ export function getCategoryPost(fields: string[] = [], categoryPath: string) {
     .sort((post1, post2) => (post1.date < post2.date ? -1 : 1))
     return posts
 }
+
+export function getLatestPost(categories: string[] = []) {
+  const latestPosts = [];
+
+  for (const category of categories) {
+    const post = getAllPosts([
+      'title',
+      'date',
+      'slug',
+      'author',
+      'coverImage',
+      'excerpt',
+      'tag',
+    ], `_posts/${category}`)
+    latestPosts.push(post[0])
+  }
+
+  latestPosts.sort((post1, post2) => (post1.date > post2.date ? -1 : 1))
+  return latestPosts[0]
+}

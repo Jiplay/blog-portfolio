@@ -3,17 +3,24 @@ import MoreStories from '../components/more-stories'
 import HeroPost from '../components/hero-post'
 import Intro from '../components/intro'
 import Layout from '../components/layout'
-import { getAllPosts, getHeroPost, getAllCategoriesPosts } from '../lib/api'
+import {getAllPosts, getHeroPost, getAllCategoriesPosts, getLatestPost} from '../lib/api'
 import Head from 'next/head'
-import { CMS_NAME } from '../lib/constants'
 import Post from '../interfaces/post'
+
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import React from "react";
+import PostPreview from "../components/post-preview";
+
 
 type Props = {
   allPosts: Post[]
-  presentationPost: Post
+  latestPost: Post
 }
 
-export default function Index({ allPosts, presentationPost }: Props) {
+export default function Index({ allPosts, latestPost }: Props) {
   return (
     <>
       <Layout>
@@ -22,18 +29,27 @@ export default function Index({ allPosts, presentationPost }: Props) {
         </Head>
         <Container>
           <Intro title={"JG Blog"} description={"Musings of a Learning-Centric Developer"} />
-          {presentationPost && (
-            <HeroPost
-              title={presentationPost.title}
-              coverImage={presentationPost.coverImage}
-              date={presentationPost.date}
-              author={presentationPost.author}
-              slug={presentationPost.slug}
-              excerpt={presentationPost.excerpt}
-              tag={presentationPost.tag}
-            />
-          )}
-          {allPosts.length > 0 && <MoreStories posts={allPosts} />}
+          <Row>
+            <Col sm={8}>
+
+              <PostPreview
+                  key={latestPost.slug}
+                  title={latestPost.title}
+                  coverImage={latestPost.coverImage}
+                  date={latestPost.date}
+                  author={latestPost.author}
+                  slug={latestPost.slug}
+                  excerpt={latestPost.excerpt}
+                  tag={latestPost.tag}
+              />
+
+            </Col>
+            <Col sm={4}>sm=4</Col>
+          </Row>
+          <Row>
+            <Col>1 of 3</Col>
+            <Col>3 of 3</Col>
+          </Row>
         </Container>
       </Layout>
     </>
@@ -60,7 +76,10 @@ export const getStaticProps = async () => {
     'excerpt',
     'tag',
   ])
+
+  const latestPost = getLatestPost(["books", "curious", "health", "projects"])
+
   return {
-    props: { presentationPost, allPosts },
+    props: { latestPost, allPosts },
   }
 }
