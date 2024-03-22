@@ -1,7 +1,7 @@
 ---
 title: "Experiences in a nutshell"
 excerpt: "I'm a developer, I did a lot of different things during the first steps of my carrer that I organize in folders to vizualise everything easily. I'm a creative person who likes challenges, I craving to learn new things, passionated by optimization."
-coverImage: '/postImg/hero.png'
+coverImage: '/postImg/band.png'
 date: '2023-11-23T05:35:07.322Z'
 author:
   name: Julien Garsia

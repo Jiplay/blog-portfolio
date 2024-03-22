@@ -13,14 +13,16 @@ import Col from 'react-bootstrap/Col'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from "react";
 import PostPreview from "../components/post-preview";
+import PostPreviewTextless from "../components/post-preview-textless";
 
 
 type Props = {
   allPosts: Post[]
   latestPost: Post
+  presentationPost: Post
 }
 
-export default function Index({ allPosts, latestPost }: Props) {
+export default function Index({ allPosts, latestPost, presentationPost }: Props) {
   return (
     <>
       <Layout>
@@ -31,7 +33,6 @@ export default function Index({ allPosts, latestPost }: Props) {
           <Intro title={"JG Blog"} description={"Musings of a Learning-Centric Developer"} />
           <Row>
             <Col sm={8}>
-
               <PostPreview
                   key={latestPost.slug}
                   title={latestPost.title}
@@ -44,10 +45,23 @@ export default function Index({ allPosts, latestPost }: Props) {
               />
 
             </Col>
-            <Col sm={4}>sm=4</Col>
+            <Col sm={4}>
+              <PostPreviewTextless
+                  key={presentationPost.slug}
+                  title={presentationPost.title}
+                  coverImage={presentationPost.coverImage}
+                  date={presentationPost.date}
+                  author={presentationPost.author}
+                  slug={presentationPost.slug}
+                  excerpt={presentationPost.excerpt}
+                  tag={presentationPost.tag}
+              />
+            </Col>
           </Row>
           <Row>
             <Col>1 of 3</Col>
+            <Col>2 of 3</Col>
+            <Col>3 of 3</Col>
             <Col>3 of 3</Col>
           </Row>
         </Container>
@@ -80,6 +94,6 @@ export const getStaticProps = async () => {
   const latestPost = getLatestPost(["books", "curious", "health", "projects"])
 
   return {
-    props: { latestPost, allPosts },
+    props: { latestPost, allPosts, presentationPost },
   }
 }
