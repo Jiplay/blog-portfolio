@@ -3,7 +3,7 @@ title: 'Books'
 excerpt: "When I was young, I used to read a lot, and then I discovered video games...
 Some years later, I found a book about addiction by Stephen King. One of my friends told me several times that I should try his book, so I bought it, and read it : it was amazing
 Since then, I've been reading books daily, and I like to write a bit about a book I just finished. That’s the place I will use for this :)"
-coverImage: '/assets/categories/bookworm.png'
+coverImage: '/assets/categories/2.png'
 date: '2023-12-23T05:35:07.322Z'
 author:
   name: Julien Garsia
