@@ -14,6 +14,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React from "react";
 import PostPreview from "../components/post-preview";
 import PostPreviewTextless from "../components/post-preview-textless";
+import Image from "next/image";
+import {auto} from "@popperjs/core";
+import cn from "classnames";
+import Banner from "../components/Banner";
 
 
 type Props = {
@@ -43,7 +47,6 @@ export default function Index({ allPosts, latestPost, presentationPost }: Props)
                   excerpt={latestPost.excerpt}
                   tag={latestPost.tag}
               />
-
             </Col>
             <Col sm={4}>
               <PostPreviewTextless
@@ -73,6 +76,26 @@ export default function Index({ allPosts, latestPost, presentationPost }: Props)
                   />
                 </Col>
             ))}
+          </Row>
+          <Row>
+            <Banner imgSource={"/assets/banner.jpg"} redirect={"https://www.youtube.com/channel/UC9pG9jMcCEA8uISv6vmSWeA"} />
+          </Row>
+          <Row className="mt-5">
+            <Col sm={4}>
+            <Image src={"/assets/project.png"} alt={"project of the month banner"} width={1300} height={630}/>
+          </Col>
+          <Col sm={8} className="mb-5">
+              <PostPreview
+                  key={latestPost.slug}
+                  title={"Feel Didaxie"}
+                  coverImage={"/postImg/didaxie.png"}
+                  date={"2024-03-23T05:35:07.322Z"}
+                  author={latestPost.author}
+                  slug={latestPost.slug}
+                  excerpt={"Ce projet de chaine youtube offre une formation complète sur les statistiques en français, à destination d'étudiant au lycée ou en supérieur"}
+                  tag={"/friends/didaxie"}
+              />
+            </Col>
           </Row>
         </Container>
       </Layout>
