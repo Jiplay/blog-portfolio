@@ -1,9 +1,7 @@
 import Container from '../components/container'
-import MoreStories from '../components/more-stories'
-import HeroPost from '../components/hero-post'
 import Intro from '../components/intro'
 import Layout from '../components/layout'
-import {getAllPosts, getHeroPost, getAllCategoriesPosts, getLatestPost} from '../lib/api'
+import {getHeroPost, getAllCategoriesPosts, getLatestPost} from '../lib/api'
 import Head from 'next/head'
 import Post from '../interfaces/post'
 
@@ -15,8 +13,6 @@ import React from "react";
 import PostPreview from "../components/post-preview";
 import PostPreviewTextless from "../components/post-preview-textless";
 import Image from "next/image";
-import {auto} from "@popperjs/core";
-import cn from "classnames";
 import Banner from "../components/Banner";
 
 
@@ -28,7 +24,7 @@ type Props = {
 
 export default function Index({ allPosts, latestPost, presentationPost }: Props) {
   return (
-    <>
+    <div className="bg-white">
       <Layout>
         <Head>
           <title>{`JG-Blog`}</title>
@@ -99,7 +95,7 @@ export default function Index({ allPosts, latestPost, presentationPost }: Props)
           </Row>
         </Container>
       </Layout>
-    </>
+    </div>
   )
 }
 

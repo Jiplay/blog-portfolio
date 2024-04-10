@@ -1,4 +1,5 @@
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import Footer from './footer'
 import Meta from './meta'
 
@@ -12,9 +13,9 @@ const Layout = ({ preview, children }: Props) => {
     <>
       <Meta />
       <div className="min-h-screen">
-        {/* <Alert preview={preview} /> */}
         <main>{children}</main>
         <Analytics />
+        <SpeedInsights />
       </div>
       <Footer />
     </>
