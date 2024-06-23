@@ -8,7 +8,7 @@ author:
   picture: '/assets/pictures/julien.png'
 ogImage:
   url: '/postImg/hero.png'
-tag: 'pro'
+tag: 'author/Julien'
 ---
 
 # More experiences

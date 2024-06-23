@@ -10,7 +10,6 @@ import MoreStories from '../../components/more-stories';
 import Post from '../../interfaces/post'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { GetServerSideProps } from 'next';
-import { categoryDescription } from '../../lib/constants';
 
 type Props = {
   allPosts: Post[]
@@ -30,9 +29,6 @@ export default function Index({ allPosts, category }: Props) {
       <h2 className="mb-8 text-5xl md:text-7xl font-bold tracking-tighter leading-tight">
         {category.charAt(0).toUpperCase() + category.slice(1)}
       </h2>
-      <p className="text-lg leading-relaxed mb-4">
-      {categoryDescription[category as string]}
-      </p>
       <div className="flex items-center justify-center">
         {morePosts.length > 0 && <MoreStories posts={morePosts} />}
       </div>
