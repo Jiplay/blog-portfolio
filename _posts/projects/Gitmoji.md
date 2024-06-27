@@ -4,7 +4,7 @@ excerpt: "This package helped me to beautiful my commits, to normalize them, and
 coverImage: '/postImg/Gitmoji.png'
 date: '2024-04-03T15:35:07.322Z'
 author:
-  name: Julien Garsia
+  name: Julien
   picture: '/assets/pictures/julien.png'
 ogImage:
   url: '/postImg/Gitmoji.png'

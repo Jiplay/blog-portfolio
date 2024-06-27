@@ -4,7 +4,7 @@ excerpt: ""
 coverImage: '/postImg/books/LUX.png'
 date: '2024-01-22T05:35:07.322Z'
 author:
-  name: Julien Garsia
+  name: Julien
   picture: '/assets/pictures/julien.png'
 ogImage:
   url: '/assets/blog/dynamic-routing/cover.jpg'

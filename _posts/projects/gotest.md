@@ -4,7 +4,7 @@ excerpt: "But today I decided to upgrade my tests skills with Go and the package
 coverImage: '/postImg/gotest.png'
 date: '2024-03-22T05:35:07.322Z'
 author:
-  name: Julien Garsia
+  name: Julien
   picture: '/assets/pictures/julien.png'
 ogImage:
   url: '/postImg/gotest.png'

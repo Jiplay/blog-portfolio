@@ -8,7 +8,7 @@ The only thing I know is that I love so many subjects, and want to write about t
 coverImage: '/assets/categories/4.png'
 date: '2024-05-16T05:35:07.322Z'
 author:
-  name: Julien Garsia
+  name: Julien
   picture: '/assets/pictures/julien.png'
 ogImage:
   url: '/assets/blog/dynamic-routing/cover.jpg'

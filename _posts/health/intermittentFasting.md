@@ -4,7 +4,7 @@ excerpt: "Le jeune intermittent, quels sont ses forces, et comment les appliquer
 coverImage: '/postImg/Intermittent.png'
 date: '2024-02-03T05:35:07.322Z'
 author:
-  name: Julien Garsia, @raptorpodcast
+  name: Julien, @raptorpodcast
   picture: '/assets/pictures/julien.png'
 ogImage:
   url: '/assets/'

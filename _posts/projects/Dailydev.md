@@ -4,7 +4,7 @@ excerpt: "Daily.dev is a new media that I discovered recently, it will help me a
 coverImage: '/postImg/dailydev.png'
 date: '2024-03-01T15:35:07.322Z'
 author:
-  name: Julien Garsia
+  name: Julien
   picture: '/assets/pictures/julien.png'
 ogImage:
   url: '/postImg/Dailydev.png'

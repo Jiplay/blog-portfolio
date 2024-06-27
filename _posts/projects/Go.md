@@ -4,7 +4,7 @@ excerpt: "Go is the programing language that I used the most in my life, I kinda
 coverImage: '/postImg/go.png'
 date: '2023-12-19T05:35:07.322Z'
 author:
-  name: Julien Garsia
+  name: Julien
   picture: '/assets/pictures/julien.png'
 ogImage:
   url: '/assets/blog/dynamic-routing/cover.jpg'

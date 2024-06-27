@@ -4,7 +4,7 @@ excerpt: "This book switched on my bookworm past, I bought it in a garage sale w
 coverImage: '/postImg/books/Tommyknockers.png'
 date: '2023-12-23T05:35:07.322Z'
 author:
-  name: Julien Garsia
+  name: Julien
   picture: '/assets/pictures/julien.png'
 ogImage:
   url: '/assets/blog/dynamic-routing/cover.jpg'

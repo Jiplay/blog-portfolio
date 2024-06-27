@@ -8,7 +8,7 @@ I will use this part to describe some habit, tips, or whatever helped me at some
 coverImage: '/assets/categories/3.png'
 date: '2024-03-16T05:35:07.322Z'
 author:
-  name: Julien Garsia
+  name: Julien
   picture: '/assets/pictures/julien.png'
 ogImage:
   url: '/postImg/CPI.png'

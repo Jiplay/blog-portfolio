@@ -4,7 +4,7 @@ excerpt: "Today I wanted to practice what the last Go update brought to the comm
 coverImage: '/postImg/httpnet.png'
 date: '2024-03-18T05:35:07.322Z'
 author:
-  name: Julien Garsia
+  name: Julien
   picture: '/assets/pictures/julien.png'
 ogImage:
   url: '/postImg/httpnet.png'
