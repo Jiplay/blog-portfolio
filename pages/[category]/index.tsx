@@ -10,6 +10,7 @@ import MoreStories from '../../components/more-stories';
 import Post from '../../interfaces/post'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { GetServerSideProps } from 'next';
+import Custom404 from "../404";
 
 type Props = {
   allPosts: Post[]
@@ -18,7 +19,10 @@ type Props = {
 }
 
 export default function Index({ allPosts, category }: Props) {
-  const morePosts = allPosts
+  if (category === "error") {
+      return <Custom404 />
+  }
+    const morePosts = allPosts
   return (
     <Layout>
       <Container>
@@ -50,7 +54,15 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     'tag',
   ], `_posts/${category}`)
   
-  
+  if (allPosts === undefined) {
+      return {
+          props: {
+              allPosts: null,
+              category: "error"
+          }
+      }
+  }
+
   return {
     props: {
         allPosts,

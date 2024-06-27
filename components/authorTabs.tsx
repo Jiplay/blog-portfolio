@@ -19,10 +19,10 @@ function AuthorTabs({authorData}: Props) {
                 <Tab eventKey="work" title="Work">
                     <WorkSection workData={authorData.WorkData} />
                 </Tab>
-                <Tab eventKey="profile" title="Blog">
+                <Tab eventKey="profile" title="Blog" disabled>
                     Tab content for Blog
                 </Tab>
-                <Tab eventKey="photo" title="Photo">
+                <Tab eventKey="photo" title="Photo" disabled>
                     Tab content for Photo
                 </Tab>
                 <Tab eventKey="contact" title="Contact" disabled>

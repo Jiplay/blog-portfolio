@@ -9,14 +9,20 @@ export function getPostSlugs() {
 }
 
 export function getPostSlugsPath(dir: string) {
-  let resp = fs.readdirSync(dir)
-  return resp.filter((fileName) => fileName.endsWith('.md'));
+  try {
+    let resp = fs.readdirSync(dir)
+    return resp.filter((fileName) => fileName.endsWith('.md'));
+  } catch {
+    return null
+  }
 }
 
 export function getPostBySlug(slug: string, fields: string[] = [], dir: string) {
   const realSlug = slug.replace(/\.md$/, '')
   const fullPath = join(dir, `${realSlug}.md`)
+  try {
   const fileContents = fs.readFileSync(fullPath, 'utf8')
+
   const { data, content } = matter(fileContents)
 
   type Items = {
@@ -40,16 +46,21 @@ export function getPostBySlug(slug: string, fields: string[] = [], dir: string) 
   })
 
   return items
+  } catch (err) {
+    return null
+  }
 }
 
 export function getAllPosts(fields: string[] = [], directory: string) {
   let slugs = getPostSlugsPath(directory)
-  slugs = slugs.filter((slug) => slug.endsWith('.md'));
+  if (slugs !== null) {
+    slugs = slugs.filter((slug) => slug.endsWith('.md'));
 
-  const posts = slugs
-    .map((slug) => getPostBySlug(slug, fields, directory))
-    .sort((post1, post2) => (post1.date > post2.date ? -1 : 1))
-  return posts
+    const posts = slugs
+      .map((slug) => getPostBySlug(slug, fields, directory))
+      .sort((post1, post2) => (post1.date > post2.date ? -1 : 1))
+    return posts
+  }
 }
 
 

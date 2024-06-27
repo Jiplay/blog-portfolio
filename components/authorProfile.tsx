@@ -37,6 +37,18 @@ function AuthorProfile({authorData}: Props) {
                     ))}
                 </Card.Body>
             </Card>
+            <Card  style={{top:"35px", maxWidth: "75%"}}>
+                <Card.Body>
+                    <Card.Title style={{ display: 'flex', alignItems: 'center' }}>
+                        {authorData.SecondaryCard.Title}
+                    </Card.Title>
+                    {authorData.SecondaryCard.Content.map((desc, index) => (
+                        <Card.Text key={index}>
+                            {desc}
+                        </Card.Text>
+                    ))}
+                </Card.Body>
+            </Card>
         </div>
     );
 }

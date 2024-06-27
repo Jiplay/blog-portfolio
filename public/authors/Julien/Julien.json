@@ -3,6 +3,10 @@
   "Job": "Software Engineer | Blogger",
   "Banner": "assets/banner.jpg",
   "Description": ["Some quick example text to build on the card title and make up the bulk of the card's content.", "Some quick example text to build on the card title and make up the bulk of the card's content."],
+  "SecondaryCard": {
+    "Title": " \uD83E\uDD47 Milestone",
+    "Content": ["Learn a 3rd language on my own"]
+  },
   "TabCategory": ["Work", "Blog", "Photo"],
   "WorkData": [{
     "Title": "MetaFootballLeague - 2023 - Fullstack Developer",

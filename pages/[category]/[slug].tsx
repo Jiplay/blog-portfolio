@@ -11,6 +11,8 @@ import markdownToHtml from '../../lib/markdownToHtml'
 import type PostType from '../../interfaces/post'
 import { GetServerSideProps } from 'next'
 
+import Custom404 from "../404";
+
 type Props = {
   post: PostType
   preview?: boolean
@@ -18,6 +20,11 @@ type Props = {
 
 export default function Post({ post, preview }: Props) {
   const router = useRouter()
+
+  if (post === null) {
+    return <Custom404  />
+  }
+
   const title = `${post.title} | JG Blog`
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
@@ -61,14 +68,22 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     'coverImage',
     'tag'
   ], `_posts/${category}`)
-  const content = await markdownToHtml(post.content || '')
+  if (post !== null && post !== undefined) {
+    const content = await markdownToHtml(post.content || '')
 
-  return {
-    props: {
-      post: {
-        ...post,
-        content,
+    return {
+      props: {
+        post: {
+          ...post,
+          content,
+        },
       },
-    },
+    }
+  } else {
+    return {
+      props: {
+        post: null
+      }
+    }
   }
   };
