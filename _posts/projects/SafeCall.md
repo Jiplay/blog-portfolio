@@ -4,7 +4,7 @@ excerpt: "SafeCall is the EPITECH Innovative Project, in which I took part with 
 coverImage: '/postImg/SafeCall/test.png'
 date: '2023-12-19T05:35:07.322Z'
 author:
-  name: Julien Garsia
+  name: Julien
   picture: '/assets/pictures/julien.png'
 ogImage:
   url: '/assets/blog/dynamic-routing/cover.jpg'

@@ -4,7 +4,7 @@ excerpt: "The library of babel, the place where everything is written, the begin
 coverImage: '/postImg/babel.png'
 date: '2024-03-07T15:35:07.322Z'
 author:
-  name: Julien Garsia
+  name: Julien
   picture: '/assets/pictures/julien.png'
 ogImage:
   url: '/postImg/babel.png'

@@ -4,11 +4,11 @@ excerpt: "I'm a developer, I did a lot of different things during the first step
 coverImage: '/postImg/band.png'
 date: '2023-11-23T05:35:07.322Z'
 author:
-  name: Julien Garsia
+  name: Julien
   picture: '/assets/pictures/julien.png'
 ogImage:
   url: '/postImg/hero.png'
-tag: 'pro'
+tag: 'author/julien'
 ---
 
 # More experiences

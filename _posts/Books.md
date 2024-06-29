@@ -6,7 +6,7 @@ Since then, I've been reading books daily, and I like to write a bit about a boo
 coverImage: '/assets/categories/2.png'
 date: '2023-12-23T05:35:07.322Z'
 author:
-  name: Julien Garsia
+  name: Julien
   picture: '/assets/pictures/julien.png'
 ogImage:
   url: '/assets/blog/dynamic-routing/cover.jpg'

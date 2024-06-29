@@ -4,7 +4,7 @@ excerpt: "Ce projet de chaine YouTube offre une formation complète sur les stat
 coverImage: 'npm'
 date: '2024-03-23T05:35:07.322Z'
 author:
-  name: Julien Garsia
+  name: Julien
   picture: '/assets/pictures/julien.png'
 ogImage:
   url: '/postImg/didaxie.png'

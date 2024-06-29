@@ -4,7 +4,7 @@ excerpt: "This package can help in many situations, I'll show you 3 of them, and
 coverImage: '/postImg/Context.png'
 date: '2024-04-10T15:35:07.322Z'
 author:
-  name: Julien Garsia
+  name: Julien
   picture: '/assets/pictures/julien.png'
 ogImage:
   url: '/postImg/Context.png'

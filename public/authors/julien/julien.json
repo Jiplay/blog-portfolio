@@ -1,0 +1,37 @@
+{
+  "ID": "julien",
+  "Name":"Julien Garsia",
+  "Job": "Software Engineer | Blogger",
+  "Banner": "assets/banner.jpg",
+  "Description": ["Hello World ! I'm a french developer that like to create stuff and share them with some people. This place will host those things that I want to create!",
+    ""],
+  "SecondaryCard": {
+    "Title": "Currently",
+    "Content": ["Reading : It, Stephen King ; Des siècles d'immortalité, Hélène Carrère d'Encausse ",
+    "Writing : blog post about learning process (FR) ; Institut de France (FR) ;  Personal project : PassMan (EN)",
+    "Working : on new features for the blog!"]
+  },
+  "TabCategory": ["Work", "Blog", "Photo"],
+  "WorkData": [{
+    "Title": "ECOFI - 2024 - Software architect",
+    "Badge": {"Color": "danger", "Text": "Finance"},
+    "Text": "During the last 6 months of my scholarship at EPITECH that I've spent at ECOFI, I had different subject of reorganization of the information system, automatize tasks, some data subject with SQL server management and DTSX files"
+      },{
+      "Title": "MetaFootballLeague - 2023 - Fullstack Developer",
+      "Badge": {"Color": "warning", "Text": "Video Game"},
+      "Text": "In a six-month stint with Meta Football League, I embraced the full stack developer role, transforming a company side project into a vital solution. The objective was to render soccer players photorealistic through stable diffusion. My contribution involved crafting a website for seamless generation and moderation. Leveraging Typescript, Next.js, and Vercel ensured its functionality, while MongoDB and S3 were instrumental in data storage. This experience not only acquainted me with diverse technologies but also showcased my ability to elevate a concept from inception to a practical, data-intensive solution. It gave birth to my want to build this website"
+    },{
+    "Title": "Concentus - 2021 - Lead Developer",
+    "Badge": {"Color": "success", "Text": "Electric vehicle"},
+    "Text": "In my role as Lead Developer at Concentus, I lead a team of four to update one part of the software managing electric vehicle charging points for Total Energie. Over six months, we focused on developing the C++ module responsible for interfacing with a Python script. Employing Protocol Buffers and ZeroMQ, we designed and serialized classes to facilitate seamless communication between the two technologies. During this period of 6 months, I did more than lead the team in a technical way, I had different roles, manage global organization of the team, the task allocation and the technical choices. I was the most qualified, so I did code review for the whole team, in order to keep coherence in our code. I gained a lot of experience in soft skills like communication, organization and leadership"
+    },{
+    "Title": "OXIO - 2020 - Software Engineer",
+    "Badge": {"Color": "primary", "Text": "Telecom"},
+    "Text": "In the next year, I rejoined OXIO as a software engineer, using my familiarity with the main project's structure for more seamless collaboration. During this period, I undertook a specialized mission: evaluating the repercussions of an error in a feature affecting a majority of users and databases across the entire project. To complete this task, I developed a Python script to gather data from various microservices and organized it in a Google Spreadsheet for in-depth analysis. Facing the challenges of the remote work environment imposed by the Covid-19 pandemic, I honed my skills in efficient communication with colleagues despite the absence of a physical office. Moreover, I took charge of reporting key progress and project results."
+  },{
+    "Title": "OXIO - 2019 - Software Engineer",
+    "Badge": {"Color": "primary", "Text": "Telecom"},
+    "Text": "During my initial six months as a backend developer at OXIO, I gained invaluable professional experience. Working within a dynamic team of four developers, I delved into the realm of microservices, exploring technologies like Golang and diverse databases such as MySQL, PostgreSQL, and MongoDB. Our work methodology revolved around sprints organized in Confluence, where I would self-assign tasks from the backlog to familiarize myself with the process. Through my first merge requests, I contributed to elevating the code quality, marking significant milestones in my professional journey."
+  }
+  ]
+}

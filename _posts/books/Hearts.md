@@ -4,7 +4,7 @@ excerpt: "OK it's been 4 books that I write a post about on this blog, two of th
 coverImage: '/postImg/books/Hearts.png'
 date: '2024-03-29T05:35:07.322Z'
 author:
-  name: Julien Garsia
+  name: Julien
   picture: '/assets/pictures/julien.png'
 ogImage:
   url: '/postImg/books/Hearts.png'
