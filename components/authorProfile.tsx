@@ -8,10 +8,11 @@ type Props = {
 }
 
 function AuthorProfile({authorData}: Props) {
+    const profilePictureURL = `../assets/pictures/${authorData.ID}.png`
     return (
         <div>
             <Image
-                src="../assets/pictures/julien.png"
+                src={profilePictureURL}
                 roundedCircle
                 style={{
                     width: "150px",
@@ -29,7 +30,7 @@ function AuthorProfile({authorData}: Props) {
                     <Card.Title style={{ display: 'flex', alignItems: 'center' }}>
                         {authorData.Name} <FcApproval style={{ marginLeft: '8px' }} />
                     </Card.Title>
-                    <Card.Subtitle className="mb-2 text-muted">Software engineer | Blogger</Card.Subtitle>
+                    <Card.Subtitle className="mb-2 text-muted">{authorData.Job}</Card.Subtitle>
                     {authorData.Description.map((desc, index) => (
                         <Card.Text key={index}>
                             {desc}

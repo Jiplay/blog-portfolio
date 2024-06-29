@@ -1,4 +1,5 @@
 type AuthorProfileType = {
+  ID: string
   Name: string
   Job: string
   Banner: string

@@ -21,6 +21,7 @@ export default function Index({ preview, name }: Props) {
     const { author } = router.query;
     const [data, setData] = useState<authorProfileType | null>(null);
     const [loading, setLoading] = useState(true);
+    const bannerURL = `/authors/${author}/banner.png`
 
     useEffect(() => {
         if (author !== undefined) {
@@ -55,7 +56,7 @@ export default function Index({ preview, name }: Props) {
             <Container fluid style={{marginTop:'-50px'}}>
                 <Row>
                     <Image
-                        src="/authors/Julien/banner.png"
+                        src={bannerURL}
                         style={{ width: "100%", height: "auto", display: "block" }}
                         alt="Banner"
                     />
