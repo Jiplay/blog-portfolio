@@ -5,14 +5,16 @@
   "Description": ["Hello World ! I'm a french developer that like to create stuff and share them with some people. This place will host those things that I want to create!",
     ""],
   "SecondaryCard": {
-    "Title": "Professionally",
-    "Content": ["Graduate student of EPITECH open to every opportunity, feel free to reach me! "]
+    "Title": "Currently",
+    "Content": ["Reading : It, Stephen King ; Des siècles d'immortalité, Hélène Carrère d'Encausse ",
+    "Writing : blog post about learning process (FR) ; Institut de France (FR) ;  Personal project : PassMan (EN)",
+    "Working : on new features for the blog!"]
   },
   "TabCategory": ["Work", "Blog", "Photo"],
   "WorkData": [{
     "Title": "ECOFI - 2024 - Software architect",
     "Badge": {"Color": "danger", "Text": "Finance"},
-    "Text": "During the last 6 months of my scholarship at EPITECH that I spent at ECOFI, I had different subject of reorganization of the information system, automatize tasks, some data subject with SQL server management and DTSX files"
+    "Text": "During the last 6 months of my scholarship at EPITECH that I've spent at ECOFI, I had different subject of reorganization of the information system, automatize tasks, some data subject with SQL server management and DTSX files"
       },{
       "Title": "MetaFootballLeague - 2023 - Fullstack Developer",
       "Badge": {"Color": "warning", "Text": "Video Game"},
