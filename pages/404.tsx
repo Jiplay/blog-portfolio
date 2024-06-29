@@ -11,7 +11,7 @@ const Custom404 = () => {
                 <Col className="d-flex flex-column justify-content-center align-items-center">
                     <div style={{ position: 'relative', width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                         <div style={{ position: 'absolute', width: '80%', height: '80%' }}>
-                            <Image src={"/assets/404.svg"} alt={"404"} layout="fill" objectFit="contain" />
+                            <Image src={"/assets/404.svg"} alt={"404"} fill style={{ objectFit: 'contain' }} />
                         </div>
                     </div>
                     <Link href="/" passHref>
