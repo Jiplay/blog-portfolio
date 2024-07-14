@@ -2,6 +2,7 @@ import { Image, Card } from 'react-bootstrap';
 import {FcApproval} from "react-icons/fc";
 import React from "react";
 import AuthorProfileType from "../interfaces/authorProfileType";
+import ReactMarkdown from 'react-markdown';
 
 type Props = {
     authorData: AuthorProfileType
@@ -38,14 +39,16 @@ function AuthorProfile({authorData}: Props) {
                     ))}
                 </Card.Body>
             </Card>
-            <Card  style={{top:"35px", maxWidth: "75%"}}>
+            <Card  style={{top:"35px"}}>
                 <Card.Body>
                     <Card.Title style={{ display: 'flex', alignItems: 'center' }}>
                         {authorData.SecondaryCard.Title}
                     </Card.Title>
                     {authorData.SecondaryCard.Content.map((desc, index) => (
                         <Card.Text key={index}>
-                            {desc}
+                            <ReactMarkdown>
+                                {desc}
+                            </ReactMarkdown>
                         </Card.Text>
                     ))}
                 </Card.Body>

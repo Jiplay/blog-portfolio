@@ -7,31 +7,29 @@
     ""],
   "SecondaryCard": {
     "Title": "Currently",
-    "Content": ["Reading : It, Stephen King ; Des siècles d'immortalité, Hélène Carrère d'Encausse ",
-    "Writing : blog post about learning process (FR) ; Institut de France (FR) ;  Personal project : PassMan (EN)",
-    "Working : on new features for the blog!"]
+    "Content": ["###### **Working** \n* ❗Looking for a permanent position as a **Software Engineer** starting at the end of the year, located in Paris or remotely in Italy.\n ###### **Reading** \n* *It* by Stephen King \n* *Des siècles d'immortalité* by Hélène Carrère d'Encausse \n###### **Writing**  Posts about\n* Learning process (FR) \n* Institut de France (FR) \n* PassMan, my own Password Manager (EN)"]
   },
   "TabCategory": ["Work", "Blog", "Photo"],
   "WorkData": [{
-    "Title": "ECOFI - 2024 - Software architect",
-    "Badge": {"Color": "danger", "Text": "Finance"},
-    "Text": "During the last 6 months of my scholarship at EPITECH that I've spent at ECOFI, I had different subject of reorganization of the information system, automatize tasks, some data subject with SQL server management and DTSX files"
+    "Title": "2024) ECOFI",
+    "Badge": {"Color": "#435d75", "Text": "Software architect"},
+    "Text": "Actually working on the whole structure of the Information System in a small team at ECOFI a money management firm, daughter company of Crédit Coopératif member of the BCPE group. This mission implies developing **Python** script to parse files DTSX Files, usage of **SQL Server and a global vision on clean architecture**"
       },{
-      "Title": "MetaFootballLeague - 2023 - Fullstack Developer",
-      "Badge": {"Color": "warning", "Text": "Video Game"},
-      "Text": "In a six-month stint with Meta Football League, I embraced the full stack developer role, transforming a company side project into a vital solution. The objective was to render soccer players photorealistic through stable diffusion. My contribution involved crafting a website for seamless generation and moderation. Leveraging Typescript, Next.js, and Vercel ensured its functionality, while MongoDB and S3 were instrumental in data storage. This experience not only acquainted me with diverse technologies but also showcased my ability to elevate a concept from inception to a practical, data-intensive solution. It gave birth to my want to build this website"
+      "Title": "2023) MetaFootballLeague",
+      "Badge": {"Color": "#435d75", "Text": "Fullstack Developer"},
+      "Text": "This was my first experience in the fullstack environnement, I used **Next.js, TypeScript and MongoDB** to investigate if the AI could generate players for the game. I developed a website that could generate players, adjusted the settings of the generation, save them in **S3**, and moderate them."
     },{
-    "Title": "Concentus - 2021 - Lead Developer",
-    "Badge": {"Color": "success", "Text": "Electric vehicle"},
-    "Text": "In my role as Lead Developer at Concentus, I lead a team of four to update one part of the software managing electric vehicle charging points for Total Energie. Over six months, we focused on developing the C++ module responsible for interfacing with a Python script. Employing Protocol Buffers and ZeroMQ, we designed and serialized classes to facilitate seamless communication between the two technologies. During this period of 6 months, I did more than lead the team in a technical way, I had different roles, manage global organization of the team, the task allocation and the technical choices. I was the most qualified, so I did code review for the whole team, in order to keep coherence in our code. I gained a lot of experience in soft skills like communication, organization and leadership"
+    "Title": "2021) Concentus",
+    "Badge": {"Color": "#435d75", "Text": "Lead Developer"},
+    "Text": "I joined this startup working on a charge point for electric vehicles in collaboration with Total Energie, I had to propose solutions to problematic regarding the communication between two projects developed in different technology **C++** and **Python**. I recommended the usage of **Protocol Buffer**, and we started working on this solution with the 3 other people together."
     },{
-    "Title": "OXIO - 2020 - Software Engineer",
-    "Badge": {"Color": "primary", "Text": "Telecom"},
-    "Text": "In the next year, I rejoined OXIO as a software engineer, using my familiarity with the main project's structure for more seamless collaboration. During this period, I undertook a specialized mission: evaluating the repercussions of an error in a feature affecting a majority of users and databases across the entire project. To complete this task, I developed a Python script to gather data from various microservices and organized it in a Google Spreadsheet for in-depth analysis. Facing the challenges of the remote work environment imposed by the Covid-19 pandemic, I honed my skills in efficient communication with colleagues despite the absence of a physical office. Moreover, I took charge of reporting key progress and project results."
+    "Title": "2020) OXIO",
+    "Badge": {"Color": "#435d75", "Text": "Software Engineer"},
+    "Text": "I spent 6 more months at OXIO, working independently on an issue and its monitoring. To achieve this goal, I developed a **Python** script to query specific databases of the project, and processed and compared the results value on a **Google Spread Sheet using API**"
   },{
-    "Title": "OXIO - 2019 - Software Engineer",
-    "Badge": {"Color": "primary", "Text": "Telecom"},
-    "Text": "During my initial six months as a backend developer at OXIO, I gained invaluable professional experience. Working within a dynamic team of four developers, I delved into the realm of microservices, exploring technologies like Golang and diverse databases such as MySQL, PostgreSQL, and MongoDB. Our work methodology revolved around sprints organized in Confluence, where I would self-assign tasks from the backlog to familiarize myself with the process. Through my first merge requests, I contributed to elevating the code quality, marking significant milestones in my professional journey."
+    "Title": "2019) OXIO",
+    "Badge": {"Color": "#435d75", "Text": "Software Engineer"},
+    "Text": "My first experience in an American startup doing business in telecommunication. I joined the engineering team to work on the main product. I discovered how to work efficiently as a team, and technical points like **Go, Protocol Buffers, MongoDB** and how to build a project designed in **microservices**. "
   }
   ]
 }
