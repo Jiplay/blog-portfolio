@@ -17,7 +17,7 @@ const Layout = ({ preview, children }: Props) => {
         <Analytics />
         <SpeedInsights />
       </div>
-      <Footer />
+      {/*<Footer />*/}
     </>
   )
 }

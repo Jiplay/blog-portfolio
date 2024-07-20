@@ -9,7 +9,7 @@
     "Title": "Currently",
     "Content": ["###### **Working** \n* ❗Looking for a permanent position as a **Software Engineer** starting at the end of the year, located in Paris or remotely in Italy.\n ###### **Reading** \n* *It* by Stephen King \n* *Des siècles d'immortalité* by Hélène Carrère d'Encausse \n###### **Writing**  Posts about\n* Learning process (FR) \n* Institut de France (FR) \n* PassMan, my own Password Manager (EN)"]
   },
-  "TabCategory": ["Work", "Blog", "Photo"],
+  "TabCategory": ["Work", "Projects", "Photo"],
   "WorkData": [{
     "Title": "2024) ECOFI",
     "Badge": {"Color": "#435d75", "Text": "Software architect"},
@@ -31,5 +31,22 @@
     "Badge": {"Color": "#435d75", "Text": "Software Engineer"},
     "Text": "My first experience in an American startup doing business in telecommunication. I joined the engineering team to work on the main product. I discovered how to work efficiently as a team, and technical points like **Go, Protocol Buffers, MongoDB** and how to build a project designed in **microservices**. "
   }
-  ]
+  ],
+  "ProjectsData": [{
+    "Title": "PassMan",
+    "Text": "I used my skills in Go to design myself a cross platform password manager, using the same process every company does to store passwords. I used Wails, that allowed me to develop the backend in Go & and frontend with TypeScript and React. I did everything in this project : the client, designer and the developer!",
+    "Image": "/postImg/PassMan/Passman.png",
+    "Redirect": "/projects/PassMan"
+  },{
+    "Title": "SafeCall",
+    "Text": "2.5 years of development with 7 people to create a social network without any leak of data. I designed most of the application, from the backend organized in microservices to the deployment. I successfully designed a working application, and we developed it.",
+    "Image": "/postImg/SafeCall/test.png",
+    "Redirect": "/projects/SafeCall"
+  }],
+  "ContactData": {
+    "Text": "Thanks for having interest in my profile! I'll be very pleased if we get in touch, I'm always open to meet new people and to seek new opportunities !",
+    "Email": "julien.garsia@proton.me",
+    "LinkedIn": "https://www.linkedin.com/in/julien-garsia/",
+    "CV": "/cv/JulienGARSIA.pdf"
+  }
 }

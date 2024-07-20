@@ -29,8 +29,9 @@ function AuthorProfile({authorData}: Props) {
             <Card style={{top:"-35px"}}>
                 <Card.Body>
                     <Card.Title style={{ display: 'flex', alignItems: 'center' }}>
-                        {authorData.Name} <FcApproval style={{ marginLeft: '8px' }} />
+                        {authorData.Name}
                     </Card.Title>
+                        {/*{authorData.Name} <FcApproval style={{ marginLeft: '8px' }} />*/}
                     <Card.Subtitle className="mb-2 text-muted">{authorData.Job}</Card.Subtitle>
                     {authorData.Description.map((desc, index) => (
                         <Card.Text key={index}>
@@ -39,7 +40,7 @@ function AuthorProfile({authorData}: Props) {
                     ))}
                 </Card.Body>
             </Card>
-            <Card  style={{top:"35px"}}>
+            <Card>
                 <Card.Body>
                     <Card.Title style={{ display: 'flex', alignItems: 'center' }}>
                         {authorData.SecondaryCard.Title}

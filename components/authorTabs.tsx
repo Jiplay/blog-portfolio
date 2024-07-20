@@ -2,6 +2,8 @@ import { Tabs, Tab } from 'react-bootstrap';
 import React from "react";
 import WorkSection from "./work";
 import AuthorProfileType from "../interfaces/authorProfileType";
+import AuthorProjectTab from "./AuthorProjectTab";
+import AuthorContactTab from "./AuthorContactTab";
 
 type Props = {
     authorData: AuthorProfileType
@@ -19,15 +21,15 @@ function AuthorTabs({authorData}: Props) {
                 <Tab eventKey="work" title="Work">
                     <WorkSection workData={authorData.WorkData} />
                 </Tab>
-                <Tab eventKey="profile" title="Blog" disabled>
-                    Tab content for Blog
+                <Tab eventKey="projects" title="Projects">
+                    <AuthorProjectTab projectsData={authorData.ProjectsData} />
                 </Tab>
-                <Tab eventKey="photo" title="Photo" disabled>
-                    Tab content for Photo
+                <Tab eventKey="contact" title="Contact">
+                    <AuthorContactTab contactData={authorData.ContactData} />
                 </Tab>
-                <Tab eventKey="contact" title="Contact" disabled>
-                    Tab content for Contact
-                </Tab>
+                {/*<Tab eventKey="photo" title="Photo" disabled>*/}
+                {/*    Tab content for Photo*/}
+                {/*</Tab>*/}
             </Tabs>
         </div>
             );
