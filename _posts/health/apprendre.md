@@ -2,7 +2,7 @@
 title: 'Apprendre'
 excerpt: "Comment es ce que notre corps apprend ?"
 coverImage: '/postImg/apprendre.png'
-date: '2024-07-03T05:35:07.322Z'
+date: '2024-07-21T05:35:07.322Z'
 author:
   name: Julien
   picture: '/assets/pictures/julien.png'

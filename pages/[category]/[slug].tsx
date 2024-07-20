@@ -69,13 +69,12 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     'tag'
   ], `_posts/${category}`)
   if (post !== null && post !== undefined) {
-    const content = await markdownToHtml(post.content || '')
 
     return {
       props: {
         post: {
           ...post,
-          content,
+          post,
         },
       },
     }
