@@ -126,12 +126,12 @@ En cas de stress, des exercices de respirations peuvent être utiles, comme celu
 
 ## Sources
 
-10.000 pas : https://open.spotify.com/episode/21EfTaHr6ZUbg5O89sqJoj
+10.000 pas : [podcast](https://open.spotify.com/episode/21EfTaHr6ZUbg5O89sqJoj)
 
 Études qui traitent du sujet :
 
-* https://www.jstor.org/stable/40247696 (Les erreurs dans l'apprentissage des mathématiques chez des étudiants)
+* [https://www.jstor.org/stable/40247696](https://www.jstor.org/stable/40247696) (Les erreurs dans l'apprentissage des mathématiques chez des étudiants)
 * c
-* Learning from errors (https://www.annualreviews.org/content/journals/10.1146/annurev-psych-010416-044022)
-* Neurotransmetters (https://www.ingentaconnect.com/content/ben/cmc/2009/00000016/00000007/art00002)
+* Learning from errors ([https://www.annualreviews.org/content/journals/10.1146/annurev-psych-010416-044022](https://www.annualreviews.org/content/journals/10.1146/annurev-psych-010416-044022))
+* Neurotransmetters ([https://www.ingentaconnect.com/content/ben/cmc/2009/00000016/00000007/art00002](https://www.ingentaconnect.com/content/ben/cmc/2009/00000016/00000007/art00002))
 
