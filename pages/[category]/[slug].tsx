@@ -37,18 +37,17 @@ export default function Post({ post, preview }: Props) {
           <Header />
             <>
               <article className="mb-32">
-                {/*<Head>*/}
-                  <div>kkelakzelazke</div>
-                {/*  <title>{title}</title>*/}
-                {/*  <meta property="og:image" content={post.ogImage.url} />*/}
-                {/*</Head>*/}
-                {/*<PostHeader*/}
-                {/*  title={post.title}*/}
-                {/*  coverImage={post.coverImage}*/}
-                {/*  date={post.date}*/}
-                {/*  author={post.author}*/}
-                {/*/>*/}
-                {/*<PostBody content={post.content} />*/}
+                <Head>
+                  <title>{title}</title>
+                  <meta property="og:image" content={post.ogImage.url} />
+                </Head>
+                <PostHeader
+                  title={post.title}
+                  coverImage={post.coverImage}
+                  date={post.date}
+                  author={post.author}
+                />
+                <PostBody content={post.content} />
               </article>
             </>
         </Container>
