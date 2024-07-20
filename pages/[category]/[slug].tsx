@@ -39,7 +39,7 @@ export default function Post({ post, preview }: Props) {
               <article className="mb-32">
                 <Head>
                   <title>{title}</title>
-                  {/*<meta property="og:image" content={post.ogImage.url} />*/}
+                  <meta property="og:image" content={post.ogImage.url} />
                 </Head>
                 <PostHeader
                   title={post.title}
@@ -69,13 +69,12 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     'tag'
   ], `_posts/${category}`)
   if (post !== null && post !== undefined) {
-    const content = await markdownToHtml(post.content || '')
 
     return {
       props: {
         post: {
           ...post,
-          content,
+          post,
         },
       },
     }
