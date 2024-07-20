@@ -1,13 +1,13 @@
 ---
 title: 'PassMan'
 excerpt: "I used my skills in Go to design myself a cross platform password manager, using the same process every company does to store passwords. I used Wails, that allowed me to develop the backend in Go & and frontend with TypeScript and React. I did everything in this project : the client, designer and the developer!"
-coverImage: '/postImg/PassMan/PassMan.png'
+coverImage: '/postImg/PassMan/Passman.png'
 date: '2024-05-12T05:35:07.322Z'
 author:
   name: Julien
   picture: '/assets/pictures/julien.png'
 ogImage:
-  url: '/postImg/PassMan/PassMan.png'
+  url: '/postImg/PassMan/Passman.png'
 tag: '/projects/PassMan'
 ---
 
