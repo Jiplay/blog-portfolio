@@ -35,15 +35,15 @@ Once you installed wails and the dependencies (go 1.20+ & NPM Node 15+) you can 
 
 ```shell
 .
-├── build/  // Project build directory
-│   ├── appicon.png // The application icon
+├── build  -- Project build directory
+│   ├── appicon.png -- The application icon
 │   ├── darwin/
 │   └── windows/
-├── frontend/  // Frontend project files 
+├── frontend  -- Frontend project files 
 ├── go.mod
 ├── go.sum
-├── main.go  // The main application
-└── wails.json  // The project configuration
+├── main.go  -- The main application
+└── wails.json  -- The project configuration
 ```
 
 ### How does it work ?
