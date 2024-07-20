@@ -13,7 +13,7 @@ tag: '/projects/PassMan'
 
 Password manager are great, they store and encode your data, when you need it, they gave it to you. But how they do to assure you that your data is safe with them ? I wanted to answer this question and this is how I started working on my own password manager, PassMan.
 
-Code here available on  my [github](https://github.com/Jiplay/PassMan)
+Code here available on my [github](https://github.com/Jiplay/PassMan)
 
 ## Requirements of the project
 
