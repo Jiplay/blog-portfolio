@@ -11,8 +11,8 @@ type Props = {
 const Layout = ({ preview, children }: Props) => {
   return (
     <>
-      <Meta />
-      <div className="min-h-screen">
+      <div className="min-h-screen" style={{ backgroundColor: 'rgb(28, 29, 32)' }}>
+        <Meta />
         <main>{children}</main>
         <Analytics />
         <SpeedInsights />
