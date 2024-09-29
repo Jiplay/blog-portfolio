@@ -34,7 +34,7 @@ const PostPreview = ({
           as={`${tag}`}
           href={tag}
           className={style.customLink}
-          style={{ color: 'black' }}
+          style={{ color: 'white' }}
         >
           {title}
         </Link>

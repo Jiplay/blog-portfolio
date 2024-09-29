@@ -15,6 +15,7 @@ import PostPreviewTextless from "../components/post-preview-textless";
 import Image from "next/image";
 import Banner from "../components/Banner";
 import NavBar from "../components/navBar";
+import HeroPost from "../components/hero-post";
 
 
 type Props = {
@@ -33,66 +34,9 @@ export default function Index({ allPosts, latestPost, presentationPost }: Props)
           <Intro title={"JG Blog"} description={"Musings of a Learning-Centric Developer"} />
           <NavBar></NavBar>
             <Row>
-              <Col sm={8}>
-                <PostPreview
-                    key={latestPost.slug}
-                    title={latestPost.title}
-                    coverImage={latestPost.coverImage}
-                    date={latestPost.date}
-                    author={latestPost.author}
-                    slug={latestPost.slug}
-                    excerpt={latestPost.excerpt}
-                    tag={latestPost.tag}
-                />
-              </Col>
-              <Col sm={4}>
-                <PostPreviewTextless
-                    key={presentationPost.slug}
-                    title={presentationPost.title}
-                    coverImage={presentationPost.coverImage}
-                    date={presentationPost.date}
-                    author={presentationPost.author}
-                    slug={presentationPost.slug}
-                    excerpt={presentationPost.excerpt}
-                    tag={presentationPost.tag}
-                />
-              </Col>
-            </Row>
-            <Row>
-              {allPosts.map((post, index) => (
-                  <Col key={index}>
-                    <PostPreviewTextless
-                        key={post.slug}
-                        title={post.title}
-                        coverImage={post.coverImage}
-                        date={post.date}
-                        author={post.author}
-                        slug={post.slug}
-                        excerpt={post.excerpt}
-                        tag={post.tag}
-                    />
-                  </Col>
-              ))}
-            </Row>
-            <Row>
-              <Banner imgSource={"/assets/banner.jpg"} redirect={"https://www.youtube.com/channel/UC9pG9jMcCEA8uISv6vmSWeA"} />
-            </Row>
-            <Row className="mt-5">
-              <Col sm={4}>
-              <Image src={"/assets/project.png"} alt={"project of the month banner"} width={1300} height={630}/>
-            </Col>
-            <Col sm={8} className="mb-5">
-                <PostPreview
-                    key={latestPost.slug}
-                    title={"Feel Didaxie"}
-                    coverImage={"/postImg/didaxie.png"}
-                    date={"2024-03-23T05:35:07.322Z"}
-                    author={latestPost.author}
-                    slug={latestPost.slug}
-                    excerpt={"Ce projet de chaine youtube offre une formation complète sur les statistiques en français, à destination d'étudiant au lycée ou en supérieur"}
-                    tag={"/friends/didaxie"}
-                />
-              </Col>
+              <Col>1 of 3</Col>
+              <Col xs={5}><HeroPost post={latestPost}></HeroPost> </Col>
+              <Col>3 of 3</Col>
             </Row>
           </Container>
       </Layout>

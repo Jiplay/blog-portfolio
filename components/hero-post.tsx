@@ -1,54 +1,36 @@
-import Avatar from './avatar'
 import DateFormatter from './date-formatter'
 import CoverImage from './cover-image'
-import Link from 'next/link'
-import type Author from '../interfaces/author'
-import style from "./style/style.module.css"
+import Post from '../interfaces/post'
+
+import {Col, Row} from "react-bootstrap";
 
 type Props = {
-  title: string
-  coverImage: string
-  date: string
-  excerpt: string
-  author: Author
-  slug: string
-  tag: string
+  post: Post
 }
 
 const HeroPost = ({
-  title,
-  coverImage,
-  date,
-  excerpt,
-  author,
-  slug,
-  tag,
+  post
 }: Props) => {
   return (
     <section>
-      <div className="mb-8 md:mb-16">
-        <CoverImage title={title} src={coverImage} slug={slug} tag={tag} />
+      <div className="mb-8 md:mb-5">
+        <CoverImage title={post.title} src={post.coverImage} slug={post.slug} tag={post.tag} />
       </div>
-      <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
-        <div>
-          <h3 className="mb-4 text-4xl lg:text-5xl leading-tight" >
-            <Link
-              as={tag}
-              href={tag}
-              className={style.customLink}
-            >
-              {title}
-            </Link>
-          </h3>
-          <div className="mb-4 md:mb-0 text-lg">
-            <DateFormatter dateString={date} />
+      <Row>
+        <Col>
+          <div className="text-3xl text-white text-bold">
+            {post.title}
           </div>
-        </div>
-        <div>
-          <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
-          <Avatar name={author.name} picture={author.picture} />
-        </div>
-      </div>
+        </Col>
+          <Col>
+            <div style={{color: 'rgb(153, 153, 153)', marginTop: "10px"}}>
+              <DateFormatter dateString={post.date} />
+            </div>
+          </Col>
+      </Row>
+        <p className={"text-white"}>
+            {post.excerpt}
+        </p>
     </section>
   )
 }
