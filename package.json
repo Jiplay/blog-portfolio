@@ -15,7 +15,7 @@
     "fs": "^0.0.1-security",
     "gray-matter": "^4.0.3",
     "highlight.js": "^11.9.0",
-    "next": "^14.2.5",
+    "next": "^14.2.10",
     "react": "^18.2.0",
     "react-bootstrap": "^2.9.1",
     "react-bootstrap-icons": "^1.10.3",
