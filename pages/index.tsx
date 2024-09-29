@@ -1,7 +1,7 @@
 import Container from '../components/container'
 import Intro from '../components/intro'
 import Layout from '../components/layout'
-import {getHeroPost, getAllCategoriesPosts, getLatestPost} from '../lib/api'
+import {getHeroPost, getAllCategoriesPosts, getLatestPost, getCategoryPost} from '../lib/api'
 import Head from 'next/head'
 import Post from '../interfaces/post'
 
@@ -16,15 +16,16 @@ import Image from "next/image";
 import Banner from "../components/Banner";
 import NavBar from "../components/navBar";
 import HeroPost from "../components/hero-post";
+import PinnedPosts from "../components/pinnedPost";
 
 
 type Props = {
   allPosts: Post[]
   latestPost: Post
-  presentationPost: Post
+  pinnedPosts: Post[]
 }
 
-export default function Index({ allPosts, latestPost, presentationPost }: Props) {
+export default function Index({ allPosts, latestPost, pinnedPosts }: Props) {
   return (
       <Layout>
         <Head>
@@ -34,7 +35,7 @@ export default function Index({ allPosts, latestPost, presentationPost }: Props)
           <Intro title={"JG Blog"} description={"Musings of a Learning-Centric Developer"} />
           <NavBar></NavBar>
             <Row>
-              <Col>1 of 3</Col>
+              <Col><PinnedPosts posts={pinnedPosts} /></Col>
               <Col xs={5}><HeroPost post={latestPost}></HeroPost> </Col>
               <Col>3 of 3</Col>
             </Row>
@@ -44,7 +45,7 @@ export default function Index({ allPosts, latestPost, presentationPost }: Props)
 }
 
 export const getStaticProps = async () => {
-  const presentationPost = getHeroPost([
+  const pinnedPosts = getCategoryPost([
     'title',
     'date',
     'slug',
@@ -52,7 +53,7 @@ export const getStaticProps = async () => {
     'coverImage',
     'excerpt',
     'tag',
-  ])
+  ], "_posts/pinned")
 
   const allPosts = getAllCategoriesPosts([
     'title',
@@ -67,6 +68,6 @@ export const getStaticProps = async () => {
   const latestPost = getLatestPost(["books", "curious", "health", "projects"])
 
   return {
-    props: { latestPost, allPosts, presentationPost },
+    props: { latestPost, allPosts, pinnedPosts },
   }
 }
