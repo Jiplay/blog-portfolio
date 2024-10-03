@@ -10,10 +10,6 @@ import Col from 'react-bootstrap/Col'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from "react";
-import PostPreview from "../components/post-preview";
-import PostPreviewTextless from "../components/post-preview-textless";
-import Image from "next/image";
-import Banner from "../components/Banner";
 import NavBar from "../components/navBar";
 import HeroPost from "../components/hero-post";
 import PinnedPosts from "../components/pinnedPost";

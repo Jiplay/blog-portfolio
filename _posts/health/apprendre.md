@@ -19,7 +19,7 @@ Apprendre plus vite, c'est un des points qui ne peut pas être laissé au hasard
 
 Évidemment, notre cerveau n'y est pas pour rien, mais il a un formidable allié pour ça, le système nerveux. On apprend de nouvelles choses grâce au cerveau et à la plasticité cérébrale et le système nerveux s'occupe de traiter toutes les informations.
 
-### Les grands acteurs
+# Les grands acteurs
 
 Le cortex moteur situé dans le cerveau abrite les neurones moteur supérieur & inférieur, et on a le réseau locomoteur spinal dans la moelle épinière.
 

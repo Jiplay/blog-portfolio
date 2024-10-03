@@ -30,9 +30,7 @@ export default function Post({ post, preview }: Props) {
     return <ErrorPage statusCode={404} />
   }
   return (
-    <div className="bg-white">
-      <br/>
-      <Layout preview={preview}>
+      <Layout>
         <Container>
           <Header />
             <>
@@ -52,7 +50,6 @@ export default function Post({ post, preview }: Props) {
             </>
         </Container>
       </Layout>
-      </div>
   )
 }
 
