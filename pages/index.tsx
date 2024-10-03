@@ -17,15 +17,16 @@ import Banner from "../components/Banner";
 import NavBar from "../components/navBar";
 import HeroPost from "../components/hero-post";
 import PinnedPosts from "../components/pinnedPost";
+import LatestsPosts from "../components/latestsPosts";
 
 
 type Props = {
-  allPosts: Post[]
+  latestPosts: Post[]
   latestPost: Post
   pinnedPosts: Post[]
 }
 
-export default function Index({ allPosts, latestPost, pinnedPosts }: Props) {
+export default function Index({ latestPosts, latestPost, pinnedPosts }: Props) {
   return (
       <Layout>
         <Head>
@@ -37,7 +38,7 @@ export default function Index({ allPosts, latestPost, pinnedPosts }: Props) {
             <Row>
               <Col><PinnedPosts posts={pinnedPosts} /></Col>
               <Col xs={5}><HeroPost post={latestPost}></HeroPost> </Col>
-              <Col>3 of 3</Col>
+              <Col><LatestsPosts posts={latestPosts} /></Col>
             </Row>
           </Container>
       </Layout>
@@ -55,19 +56,10 @@ export const getStaticProps = async () => {
     'tag',
   ], "_posts/pinned")
 
-  const allPosts = getAllCategoriesPosts([
-    'title',
-    'date',
-    'slug',
-    'author',
-    'coverImage',
-    'excerpt',
-    'tag',
-  ])
-
-  const latestPost = getLatestPost(["books", "curious", "health", "projects"])
-
+  let latestPosts = getLatestPost(["books", "curious", "health", "projects"])
+  const latestPost = latestPosts[0]
+  latestPosts = latestPosts.slice(1)
   return {
-    props: { latestPost, allPosts, pinnedPosts },
+    props: { latestPost, latestPosts, pinnedPosts },
   }
 }

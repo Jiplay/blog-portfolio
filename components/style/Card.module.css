@@ -1,0 +1,73 @@
+.card {
+    width: 300px;
+    background: #fff480;
+    color: black;
+    position: relative;
+    border-radius: 2.5em;
+    padding: 2em;
+    transition: transform 0.4s ease;
+}
+
+.card .cardContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5em;
+    height: 100%;
+    transition: transform 0.4s ease;
+}
+
+.card .cardTop, .card .cardBottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .cardTop p, .card .card-top .card-title, .card .card-bottom p, .card .card-bottom .card-title {
+    margin: 0;
+}
+
+.card .cardTitle {
+    font-weight: bold;
+}
+
+.card .cardTop p, .card .cardBottom p {
+    font-weight: 600;
+}
+
+.card .cardBottom {
+    align-items: flex-end;
+}
+
+.card .cardImage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    pointer-events: none;
+}
+
+.card .cardImage svg {
+    width: 4em;
+    height: 4em;
+    transition: transform 0.4s ease;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(0.97);
+}
+
+.card:hover .cardContent {
+    transform: scale(0.96);
+}
+
+.card:hover .cardImage svg {
+    transform: scale(1.05);
+}
+
+.card:active {
+    transform: scale(0.9);
+}
