@@ -1,6 +1,7 @@
 import React from "react";
 import Post from "../interfaces/post";
 import styles from "./style/Card.module.css";
+import Link from "next/link";
 
 type Props = {
     post: Post;
@@ -19,6 +20,7 @@ const Card = ({ post, nb }: Props) => {
 
 
     return (
+        <Link href={post.tag} style={{textDecoration: "none"}}>
         <div className={styles.card}>
             <div className={styles.cardContent}>
                 <div className={styles.cardTop}>
@@ -45,6 +47,7 @@ const Card = ({ post, nb }: Props) => {
                 </svg>
             </div>
         </div>
+        </Link>
     );
 };
 

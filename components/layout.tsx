@@ -4,20 +4,21 @@ import Footer from './footer'
 import Meta from './meta'
 
 type Props = {
-  preview?: boolean
-  children: React.ReactNode
+      preview?: boolean
+      children: React.ReactNode
+      footer?: boolean
 }
 
-const Layout = ({ preview, children }: Props) => {
+const Layout = ({ preview, children, footer = true }: Props) => {
   return (
     <>
       <div className="min-h-screen" style={{ backgroundColor: 'rgb(28, 29, 32)' }}>
         <Meta />
         <main>{children}</main>
-        <Analytics />
+          <Analytics />
         <SpeedInsights />
+          {footer && <Footer/> }
       </div>
-      {/*<Footer />*/}
     </>
   )
 }

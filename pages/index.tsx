@@ -24,13 +24,13 @@ type Props = {
 
 export default function Index({ latestPosts, latestPost, pinnedPosts }: Props) {
   return (
-      <Layout>
+      <Layout footer={false}>
         <Head>
           <title>{`JG-Blog`}</title>
         </Head>
         <Container>
           <Intro title={"JG Blog"} description={"Musings of a Learning-Centric Developer"} />
-          <NavBar></NavBar>
+          <NavBar />
             <Row>
               <Col><PinnedPosts posts={pinnedPosts} /></Col>
               <Col xs={5}><HeroPost post={latestPost}></HeroPost> </Col>

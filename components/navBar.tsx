@@ -14,13 +14,13 @@ function NavBar() {
                   <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                   <Navbar.Collapse id="basic-navbar-nav">
                       <Nav className="me-auto">
-                          <Nav.Link href="">Software Engineering</Nav.Link>
+                          <Nav.Link href="/projects">Software Engineering</Nav.Link>
                           <Nav.Link href="/books">Books</Nav.Link>
                           <Nav.Link href="/health">Health</Nav.Link>
                           <Nav.Link href="/curious">Else</Nav.Link>
                           <Nav.Link href="/curious">Projects</Nav.Link>
                           <NavDropdown title="Authors" id="basic-nav-dropdown">
-                              <NavDropdown.Item href="#action/3.1">Me</NavDropdown.Item>
+                              <NavDropdown.Item href="author/Julien">Me</NavDropdown.Item>
                           </NavDropdown>
                       </Nav>
                   </Navbar.Collapse>
