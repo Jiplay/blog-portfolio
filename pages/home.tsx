@@ -11,8 +11,10 @@ import Col from 'react-bootstrap/Col'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from "react";
 import NavBar from "../components/navBar";
-import MainCard from "../components/MainCard";
-import {CSCard, CultureCard, SharingCard, TravelCard} from "../constant/cards";
+import HeroPost from "../components/hero-post";
+import PinnedPosts from "../components/pinnedPost";
+import LatestsPosts from "../components/latestsPosts";
+
 
 type Props = {
   latestPosts: Post[]
@@ -21,24 +23,20 @@ type Props = {
 }
 
 export default function Index({ latestPosts, latestPost, pinnedPosts }: Props) {
-  const cards = [CSCard, CultureCard, SharingCard, TravelCard]
-
   return (
       <Layout footer={false}>
         <Head>
           <title>{`JG-Blog`}</title>
         </Head>
         <Container>
-          <Intro title={"Julien's lab'"} description={"Musings of a Learning-Centric Developer"}/>
-          <NavBar/>
-          <Row>
-            {cards.map((CardComponent, index) => (
-                <Col>
-                  <MainCard key={index} Card={CardComponent}/>
-                </Col>
-            ))}
-          </Row>
-        </Container>
+          <Intro title={"JG Blog"} description={"Musings of a Learning-Centric Developer"} />
+          <NavBar />
+            <Row>
+              <Col><PinnedPosts posts={pinnedPosts} /></Col>
+              <Col xs={5}><HeroPost post={latestPost}></HeroPost> </Col>
+              <Col><LatestsPosts posts={latestPosts} /></Col>
+            </Row>
+          </Container>
       </Layout>
   )
 }
@@ -58,6 +56,6 @@ export const getStaticProps = async () => {
   const latestPost = latestPosts[0]
   latestPosts = latestPosts.slice(1)
   return {
-    props: {latestPost, latestPosts, pinnedPosts},
+    props: { latestPost, latestPosts, pinnedPosts },
   }
 }
