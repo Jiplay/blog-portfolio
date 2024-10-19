@@ -13,14 +13,14 @@ import React from "react";
 import NavBar from "../components/navBar";
 import MainCard from "../components/MainCard";
 import {CSCard, CultureCard, SharingCard, TravelCard} from "../constant/cards";
+import PostBody from "../components/post-body";
+import Footer from "../components/footer";
 
 type Props = {
-  latestPosts: Post[]
-  latestPost: Post
-  pinnedPosts: Post[]
+  heroPost: Post
 }
 
-export default function Index({ latestPosts, latestPost, pinnedPosts }: Props) {
+export default function Index({ heroPost }: Props) {
   const cards = [CSCard, CultureCard, SharingCard, TravelCard]
 
   return (
@@ -28,36 +28,29 @@ export default function Index({ latestPosts, latestPost, pinnedPosts }: Props) {
         <Head>
           <title>{`JG-Blog`}</title>
         </Head>
-        <Container>
-          <Intro title={"Julien's lab'"} description={"Musings of a Learning-Centric Developer"}/>
-          <NavBar/>
-          <Row>
-            {cards.map((CardComponent, index) => (
-                <Col>
-                  <MainCard key={index} Card={CardComponent}/>
-                </Col>
-            ))}
-          </Row>
-        </Container>
+          <Container>
+              <Intro title={"Julien's lab'"} description={"Musings of a Learning-Centric Developer"}/>
+              <NavBar/>
+              <Row style={{marginTop: "20px"}}>
+                  {cards.map((CardComponent, index) => (
+                      <Col>
+                          <MainCard key={index} Card={CardComponent}/>
+                      </Col>
+                  ))}
+              </Row>
+              <PostBody content={heroPost.content}></PostBody>
+          </Container>
+        <Footer />
       </Layout>
   )
 }
 
 export const getStaticProps = async () => {
-  const pinnedPosts = getCategoryPost([
-    'title',
-    'date',
-    'slug',
-    'author',
-    'coverImage',
-    'excerpt',
-    'tag',
-  ], "_posts/pinned")
 
-  let latestPosts = getLatestPost(["books", "curious", "health", "projects"])
-  const latestPost = latestPosts[0]
-  latestPosts = latestPosts.slice(1)
+  const heroPost = getHeroPost([
+    'content',
+  ])
   return {
-    props: {latestPost, latestPosts, pinnedPosts},
+    props: {heroPost},
   }
 }
