@@ -14,28 +14,33 @@ import NavBar from "../../components/navBar";
 import HeroPost from "../../components/hero-post";
 import PinnedPosts from "../../components/pinnedPost";
 import LatestsPosts from "../../components/latestsPosts";
+import PostList from "../../components/postList";
+import Card from "../../components/card";
 
 
 type Props = {
-  latestPosts: Post[]
+  posts: Post[]
   latestPost: Post
   pinnedPosts: Post[]
 }
 
-export default function Index({ latestPosts, latestPost, pinnedPosts }: Props) {
+export default function Index({ posts, latestPost, pinnedPosts }: Props) {
   return (
-      <Layout footer={false}>
+      <Layout footer={true}>
         <Head>
           <title>{`JG-Blog`}</title>
         </Head>
         <Container>
-          <Intro title={"JG Blog"} description={"Musings of a Learning-Centric Developer"} />
+          <Intro title={"Computer Science Room"} description={""} />
           <NavBar />
             <Row>
               <Col><PinnedPosts posts={pinnedPosts} /></Col>
               <Col xs={5}><HeroPost post={latestPost}></HeroPost> </Col>
-              <Col><LatestsPosts posts={latestPosts} /></Col>
+              <Col>
+                <img src={"https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Jiplay&theme=dracula"}/>
+              </Col>
             </Row>
+            <PostList posts={posts} />
           </Container>
       </Layout>
   )
@@ -52,10 +57,20 @@ export const getStaticProps = async () => {
     'tag',
   ], "_posts/pinned")
 
-  let latestPosts = getLatestPost(["books", "curious", "health", "projects"])
+  const posts = getCategoryPost([
+    'title',
+    'date',
+    'slug',
+    'author',
+    'coverImage',
+    'excerpt',
+    'tag',
+    'themes'
+  ], "_posts/projects")
+  let latestPosts = getLatestPost(["projects"])
   const latestPost = latestPosts[0]
-  latestPosts = latestPosts.slice(1)
+  // latestPosts = latestPosts.slice(1)
   return {
-    props: { latestPost, latestPosts, pinnedPosts },
+    props: { latestPost, posts, pinnedPosts },
   }
 }

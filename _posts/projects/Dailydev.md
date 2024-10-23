@@ -9,6 +9,7 @@ author:
 ogImage:
   url: '/postImg/Dailydev.png'
 tag: '/projects/Dailydev'
+themes: ["media"]
 ---
 
 ## What is it ?

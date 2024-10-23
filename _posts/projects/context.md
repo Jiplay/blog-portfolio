@@ -9,6 +9,7 @@ author:
 ogImage:
   url: '/postImg/Context.png'
 tag: '/projects/context'
+themes: ["Interview", "good practices"]
 ---
 
 Every Go developers will tell you, the context package from the standard library should always be used to solve tons of problem.

@@ -9,6 +9,7 @@ author:
 ogImage:
   url: '/postImg/httpnet.png'
 tag: '/projects/httpnet'
+themes: ["GO", "Latest version"]
 ---
 
 Today I wanted to practice what the last Go update brought to the community :  the http/net update that changed quite a bit the way of developing with the standard library.
