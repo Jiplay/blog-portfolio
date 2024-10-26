@@ -20,11 +20,10 @@ import Card from "../../components/card";
 
 type Props = {
   posts: Post[]
-  latestPost: Post
   pinnedPosts: Post[]
 }
 
-export default function Index({ posts, latestPost, pinnedPosts }: Props) {
+export default function Index({ posts, pinnedPosts }: Props) {
   return (
       <Layout footer={true}>
         <Head>
@@ -35,12 +34,12 @@ export default function Index({ posts, latestPost, pinnedPosts }: Props) {
           <NavBar />
             <Row>
               <Col><PinnedPosts posts={pinnedPosts} /></Col>
-              <Col xs={5}><HeroPost post={latestPost}></HeroPost> </Col>
+              <Col xs={5}><HeroPost post={posts[0]}></HeroPost> </Col>
               <Col>
                 <img src={"https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Jiplay&theme=dracula"}/>
               </Col>
             </Row>
-            <PostList posts={posts} />
+            <PostList posts={posts.slice((1))} />
           </Container>
       </Layout>
   )
@@ -57,7 +56,7 @@ export const getStaticProps = async () => {
     'tag',
   ], "_posts/pinned")
 
-  const posts = getCategoryPost([
+  let posts = getCategoryPost([
     'title',
     'date',
     'slug',
@@ -67,10 +66,10 @@ export const getStaticProps = async () => {
     'tag',
     'themes'
   ], "_posts/projects")
-  let latestPosts = getLatestPost(["projects"])
-  const latestPost = latestPosts[0]
-  // latestPosts = latestPosts.slice(1)
+  // let latestPosts = getLatestPost(["projects"])
+  // let latestPost = latestPosts[0]
+  posts = posts.reverse()
   return {
-    props: { latestPost, posts, pinnedPosts },
+    props: { posts, pinnedPosts },
   }
 }
