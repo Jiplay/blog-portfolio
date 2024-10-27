@@ -33,7 +33,6 @@ export default function Post({ post, preview }: Props) {
   return (
       <Layout>
         <Container>
-          <Header />
               <article>
                 <Head>
                   <title>{title}</title>
