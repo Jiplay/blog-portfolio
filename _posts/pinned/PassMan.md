@@ -1,6 +1,6 @@
 ---
 title: 'PassMan'
-excerpt: "I used my skills in Go to design myself a cross platform password manager, using the same process every company does to store passwords. I used Wails, that allowed me to develop the backend in Go & and frontend with TypeScript and React. I did everything in this project : the client, designer and the developer!"
+excerpt: "Standalone project built with Go and Typescript"
 coverImage: '/postImg/PassMan/Passman.png'
 date: '2024-05-12T05:35:07.322Z'
 author:
@@ -8,7 +8,7 @@ author:
   picture: '/assets/pictures/julien.png'
 ogImage:
   url: '/postImg/PassMan/Passman.png'
-tag: '/projects/PassMan'
+tag: '/pinned/PassMan'
 ---
 
 Password manager are great, they store and encode your data, when you need it, they gave it to you. But how they do to assure you that your data is safe with them ? I wanted to answer this question and this is how I started working on my own password manager, PassMan.

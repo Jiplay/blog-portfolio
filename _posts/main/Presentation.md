@@ -11,19 +11,16 @@ ogImage:
 tag: 'author/julien'
 ---
 
-# More experiences
+## The lab
 
-You'll find all the details about my professional experience in the folders. Yet, this is all you can find on this website, but soon enough I'll add others projects, some from school, some side project:
+Hello everyone and welcome to my Lab' my own space where I can share almost everything with you. I like to create things but I couldn't find the best way to share them with people, within the lab you can find "sub-website" that will gather posts related to a same subject. The Lab' is the place in the middle, in-between the topics that are interesting for me !
 
-* SafeCall - 2022 to 2024: My end-of-studies project at EPITECH, it's an application, web and mobile where users can chat vocally and textually without sharing their phone number with each other. We build this app for the second-hand market communication, where we noticed that a large share of user write his own phone number to get contacted more easily. 
-We tried to build a safe environment where people can't be harassed or spammed by advertisement.
+## Activity
 
-In SafeCall I have different roles: 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pharetra ultrices turpis, id tempor massa porttitor ut. Vestibulum eget eros orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin consectetur urna et nibh sollicitudin sollicitudin. Pellentesque sit amet orci dui. Donec felis mauris, tempus nec augue nec, interdum semper lacus. Cras id ipsum vulputate turpis pharetra accumsan eget eget orci.
 
-* 📍 The architect role : I disposed the backend entirely, related to the preferences of the team and the technical requirements. We chose a microservice architecture, with an API in Golang for the entry point of our backend. With this service, we have another one in Golang to manage the user profile and another in Node.js to manage the text communication. We have as well one in C++ for the managing the audio.
+## Me
 
-* 📍 The software engineer : I developed entirely the API and the profile microservice, I also setup the database (MongoDB Atlas) and create the models for the different entities in SafeCall.
+I'm Julien but you already knows that, what you don't know is the number of idea that I have in mind for this website ! I'll try to realised most of them, writing post, re-design the whole thing, or add a collaboration mode to this, but it takes time. However, I really love this project and with passion and time, nothing can stop me !
 
-* 📍 The DevOps role : I take care of the deployment of the application, using vercel for the web application, and using a virtual machine on Microsoft Azure for the backend. Every microservice is dockerized and published, we just need to download the images on the virtual machines, run the images inside a docker network for them to communicate easily without any exposure on the Internet.
-
-See more details about SafeCall [here](/projects/SafeCall)
+This Lab' describes me more than all the introduction that I could write.

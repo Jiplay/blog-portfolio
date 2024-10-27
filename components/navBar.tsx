@@ -6,29 +6,29 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function NavBar() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
-      <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+      <div>
+          <div style={{borderTop: '1px solid white'}}></div>
+          <Navbar expand="lg" variant="dark" className="text-white" style={{backgroundColor: 'rgb(28, 29, 32)'}}>
+              <Container>
+                  <Navbar.Brand href="/">Home</Navbar.Brand>
+                  <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+                  <Navbar.Collapse id="basic-navbar-nav">
+                      <Nav className="me-auto">
+                          <Nav.Link href="/cs">Computer Science</Nav.Link>
+                          <Nav.Link href="/culture">Culture</Nav.Link>
+                          <Nav.Link href="/sharing">Sharing</Nav.Link>
+                          <Nav.Link href="/travel">Travel</Nav.Link>
+                          <Nav.Link href="/author/julien">Julien</Nav.Link>
+                          {/*/!*<Nav.Link href="/curious">About</Nav.Link>*!/*/}
+                          {/*<NavDropdown title="Authors" id="basic-nav-dropdown">*/}
+                          {/*    <NavDropdown.Item href="author/Julien">Julien</NavDropdown.Item>*/}
+                          {/*</NavDropdown>*/}
+                      </Nav>
+                  </Navbar.Collapse>
+              </Container>
+          </Navbar>
+          <div style={{borderBottom: '1px solid white', marginBottom:"15px"}}></div>
+      </div>
   );
 }
 

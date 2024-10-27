@@ -1,6 +1,6 @@
 ---
 title: 'Hearts in Atlantis'
-excerpt: "OK it's been 4 books that I write a post about on this blog, two of them are from Stephen King, you might have notice that I enjoy reading his books. I got this one at the same time as The Tommyknockers, and I decided to put myself in this mood again."
+excerpt: "#Books #S.King"
 coverImage: '/postImg/books/Hearts.png'
 date: '2024-03-29T05:35:07.322Z'
 author:

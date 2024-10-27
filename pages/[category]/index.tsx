@@ -30,7 +30,7 @@ export default function Index({ allPosts, category }: Props) {
       <Head>
         <title>{`JG-Blog`}</title>
       </Head>
-      <h2 className="mb-8 text-5xl md:text-7xl font-bold tracking-tighter leading-tight">
+      <h2 className="mb-8 text-5xl text-white md:text-7xl font-bold tracking-tighter leading-tight">
         {category.charAt(0).toUpperCase() + category.slice(1)}
       </h2>
       <div className="flex items-center justify-center">

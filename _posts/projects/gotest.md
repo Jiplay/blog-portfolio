@@ -9,6 +9,7 @@ author:
 ogImage:
   url: '/postImg/gotest.png'
 tag: '/projects/gotest'
+themes: ["testing", "Go"]
 ---
 Testing is primordial in software engineering. No one will tell you otherwise, but if you ask the young generation of software engineer about uni testing, most of them didn't test their applications. Always for good reasons, in my case, I always rather functional testing to test that everything work well in my app.
 

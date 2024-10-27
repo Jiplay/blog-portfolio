@@ -4,10 +4,10 @@ import style from "./style/style.module.css"
 
 const Footer = () => {
   return (
-    <footer className="border-t border-neutral-200 bg-neutral-50">
-      <Container>
+    <footer className="border-t" style={{ backgroundColor: 'rgb(42, 43, 44)' }}>
+      <Container rgb={[42, 43, 44]}>
         <div className="py-28 flex flex-col lg:flex-row items-center">
-          <h1 className="text-4xl lg:text-[1.5rem] font-bold tracking-tighter leading-tight text-center lg:text-left mb-10 lg:mb-0 lg:pr-4 lg:w-1/2">
+          <h1 className="text-4xl text-white lg:text-[1.5rem] font-bold tracking-tighter leading-tight text-center lg:text-left mb-10 lg:mb-0 lg:pr-4 lg:w-1/2">
           Contact : julien.garsia@proton.me
           </h1>
           <div className="flex flex-col lg:flex-row justify-center items-center lg:pl-4 lg:w-1/2">

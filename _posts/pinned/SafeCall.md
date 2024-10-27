@@ -1,6 +1,6 @@
 ---
 title: 'SafeCall'
-excerpt: "SafeCall is the EPITECH Innovative Project, in which I took part with six other developers, as a project manager. We developed this idea from the concept stage to the production release"
+excerpt: "Messaging app developed with 7 people in 2.5 year"
 coverImage: '/postImg/SafeCall/test.png'
 date: '2023-12-19T05:35:07.322Z'
 author:
@@ -8,7 +8,7 @@ author:
   picture: '/assets/pictures/julien.png'
 ogImage:
   url: '/assets/blog/dynamic-routing/cover.jpg'
-tag: '/projects/SafeCall'
+tag: '/pinned/SafeCall'
 ---
 
 SafeCall is the EPITECH Innovative Project, in which I took part with six other developers, as a project manager. We developed this idea from the concept stage to the production release. You can find all the details on the showcase site : <link>

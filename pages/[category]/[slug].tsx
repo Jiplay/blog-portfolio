@@ -7,11 +7,12 @@ import PostHeader from '../../components/post-header'
 import Layout from '../../components/layout'
 import { getPostBySlug } from '../../lib/api'
 import Head from 'next/head'
-import markdownToHtml from '../../lib/markdownToHtml'
 import type PostType from '../../interfaces/post'
 import { GetServerSideProps } from 'next'
 
 import Custom404 from "../404";
+import NavBar from "../../components/navBar";
+import React from "react";
 
 type Props = {
   post: PostType
@@ -30,17 +31,14 @@ export default function Post({ post, preview }: Props) {
     return <ErrorPage statusCode={404} />
   }
   return (
-    <div className="bg-white">
-      <br/>
-      <Layout preview={preview}>
+      <Layout>
         <Container>
-          <Header />
-            <>
-              <article className="mb-32">
+              <article>
                 <Head>
                   <title>{title}</title>
                   <meta property="og:image" content={post.ogImage.url} />
                 </Head>
+                <NavBar />
                 <PostHeader
                   title={post.title}
                   coverImage={post.coverImage}
@@ -49,10 +47,8 @@ export default function Post({ post, preview }: Props) {
                 />
                 <PostBody content={post.content} />
               </article>
-            </>
         </Container>
       </Layout>
-      </div>
   )
 }
 

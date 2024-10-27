@@ -9,6 +9,7 @@ author:
 ogImage:
   url: '/postImg/Gitmoji.png'
 tag: '/projects/Gitmoji'
+themes: ["commit"]
 ---
 
 

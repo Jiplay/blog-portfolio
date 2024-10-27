@@ -12,6 +12,7 @@ type PostType = {
   }
   content: string
   tag: string
+  themes: string[]
 }
 
 export default PostType

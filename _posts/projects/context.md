@@ -1,6 +1,6 @@
 ---
 title: 'Context : What is it ?'
-excerpt: "This package can help in many situations, I'll show you 3 of them, and I hope that next time you'll think of it. It's also a famous interview question for Go developer position."
+excerpt: "#Go #CS"
 coverImage: '/postImg/Context.png'
 date: '2024-04-10T15:35:07.322Z'
 author:
@@ -9,6 +9,7 @@ author:
 ogImage:
   url: '/postImg/Context.png'
 tag: '/projects/context'
+themes: ["Interview", "good practices"]
 ---
 
 Every Go developers will tell you, the context package from the standard library should always be used to solve tons of problem.

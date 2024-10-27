@@ -1,6 +1,6 @@
 ---
 title: 'Library of Babel'
-excerpt: "The library of babel, the place where everything is written, the beginning of everything, the story of your life, the exact narration of your death. Everything is in this library, but its opposite as well."
+excerpt: "#Novel #Infinity"
 coverImage: '/postImg/babel.png'
 date: '2024-03-07T15:35:07.322Z'
 author:

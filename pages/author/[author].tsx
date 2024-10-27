@@ -1,15 +1,14 @@
-import Header from '../../components/header'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 
 import Layout from '../../components/layout'
 import React, { useState, useEffect } from 'react';
 
-import { Container, Row, Image, Col } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import AuthorProfile from "../../components/authorProfile";
-import AuthorTabs from "../../components/authorTabs";
 import authorProfileType from "../../interfaces/authorProfileType";
+import ProfileView from "../../components/RecapProfile";
+import NavBar from "../../components/navBar";
 
 type Props = {
     name: string
@@ -19,9 +18,8 @@ type Props = {
 export default function Index({ preview, name }: Props) {
     const router = useRouter();
     const { author } = router.query;
-    const [data, setData] = useState<authorProfileType | null>(null);
+    const [authorData, setData] = useState<authorProfileType | null>(null);
     const [loading, setLoading] = useState(true);
-    const bannerURL = `/authors/${author}/banner.png`
 
     useEffect(() => {
         if (author !== undefined) {
@@ -48,27 +46,15 @@ export default function Index({ preview, name }: Props) {
     }
 
     return (
-        <Layout preview={preview}>
-            <Header/>
+        <Layout preview={preview} footer={true}>
             <Head>
                 <title>{`JG-Blog`}</title>
             </Head>
-            <Container fluid style={{marginTop:'-50px'}}>
-                <Row>
-                    <Image
-                        src={bannerURL}
-                        style={{ width: "100%", height: "auto", display: "block" }}
-                        alt="Banner"
-                    />
-                </Row>
-                <Row style={{backgroundColor:"rgb(240, 240, 240)", height:"100vh"}}>
-                    <Col xs={4} style={{}}>
-                        <AuthorProfile  authorData={data}/>
-                    </Col>
-                    <Col xs={8}>
-                        <AuthorTabs authorData={data}/>
-                    </Col>
-                </Row>
+            <Container>
+                <NavBar/>
+                <div className={"mb-10 mt-10"}>
+                    <ProfileView authorData={authorData} />
+                </div>
             </Container>
         </Layout>
     )
