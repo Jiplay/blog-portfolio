@@ -1,0 +1,329 @@
+.root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 1rem;
+    max-width: 100%;
+}
+
+.pokedex {
+    background-color: #e61515;
+    width: 848px;
+    margin: 0 auto;
+    padding: 1em;
+    border-radius: 15px;
+    border: double black 10px;
+    display: flex;
+
+}
+
+.panel {
+    width: 359px;
+    padding: 10px;
+    border: inset #b31818 3px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+}
+
+.panelRow {
+    display: flex;
+    border-bottom: groove #757575 3px;
+    justify-content: space-evenly;
+}
+
+.rightPanel {
+    padding: 0;
+    width: 379px;
+}
+
+.panelHeader {
+    text-transform: capitalize;
+    font-size: 1.25em;
+    padding: 5px;
+    /*font-family: "Staatliches", cursive;*/
+    text-shadow: #fd5555 -1px 1px;
+}
+
+.screen {
+    background: linear-gradient(14deg, rgb(165, 205, 83) 60%, rgb(193, 217, 144) 65%);
+    padding: 5px;
+    border-radius: 3px;
+    /*font-family: "VT323";*/
+    border: inset #879a65 3px;
+}
+
+.pokemonName {
+    font-size: 28px;
+    letter-spacing: 4px;
+    text-transform: capitalize;
+    height: 45px;
+    box-sizing: border-box;
+}
+
+.pokemonSprite {
+    width: 100%;
+    display: flex;
+    margin: 10px 0;
+    border: inset #9aa28b 3px;
+    border-radius: 5px;
+}
+
+.pokemonSpriteSmall {
+    height: 120px;
+    width: 120px;
+    margin: 3px 0;
+}
+
+.pokemonDescription {
+    font-size: 18px;
+    min-height: 115px;
+    flex: 1;
+}
+
+.spriteControls {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.spriteControl {
+    height: 30px;
+    width: 30px;
+    border: groove grey 3px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.type {
+    color: rgba(0, 0, 0, 0.9);
+    text-transform: capitalize;
+    font-size: 1.25em;
+    padding: 2px;
+    margin: 2px;
+    border: groove #757575 3px;
+    border-radius: 10px;
+    width: 150px;
+    /*font-family: "Staatliches", cursive;*/
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: rgba(255, 255, 255, 0.3) -1px 1px;
+    align-self: center;
+    background: linear-gradient(
+            15deg,
+            rgba(128, 128, 128, 0.5) 64%,
+            rgba(138, 138, 138, 0.5) 70%,
+            rgba(230, 230, 230, 0.5) 81%,
+            rgba(255, 255, 255, 0.5) 86%,
+            rgba(220, 220, 220, 0.5) 89%,
+            rgba(230, 230, 230, 0.5) 100%
+    );
+    background-blend-mode: hard-light;
+}
+
+.stats {
+    width: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5px;
+    flex: 1;
+}
+.stat-line {
+    font-size: 17px;
+    text-transform: capitalize;
+}
+
+.type-list {
+    display: flex;
+    flex-direction: column;
+    border-left: groove #757575 3px;
+    flex: 1;
+}
+
+.panelHeader {
+    text-transform: capitalize;
+    font-size: 1.25em;
+    padding: 5px;
+    /*font-family: "Staatliches", cursive;*/
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(14deg, #460f0f 0, #891313 30%, #b31818 45%, #fd5555 65%, #b31818 95%);
+    border: groove #e61515 3px;
+    border-width: 3px 2px;
+    text-shadow: #fd5555 -1px 1px;
+}
+
+.panelEvo {
+    flex-wrap: wrap;
+}
+
+.flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.evoNum {
+    /*font-family: "Staatliches", cursive;*/
+    font-size: 1.25em;
+    letter-spacing: 2px;
+    background: transparent;
+    border: none;
+    text-shadow: #e78181 -1px 1px;
+}
+
+.evoName {
+    width: auto;
+    padding: 3px;
+    margin-bottom: 3px;
+    text-align: right;
+}
+
+.typeBox {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-evenly;
+    background: linear-gradient(14deg, #afafaf 50%, #ffffff 80%, #afafaf 90%);
+    border-top: groove #757575 3px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.button {
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: outset rgb(248, 187, 187) 6px;
+    transform: rotate(60deg);
+    background: radial-gradient(
+            circle farthest-corner at 40% 25%,
+            rgb(218, 237, 241) 9%,
+            rgb(124, 214, 237) 20%,
+            rgb(64, 90, 165) 62%,
+            rgb(43, 125, 196) 100%
+    );
+    cursor: pointer;
+}
+
+.button:hover {
+    background: radial-gradient(
+            circle farthest-corner at 40% 25%,
+            rgb(233, 241, 218) 9%,
+            rgb(184, 237, 124) 20%,
+            rgb(64, 165, 106) 62%,
+            rgb(43, 196, 145) 100%
+    );
+}
+
+.button:active {
+    background: radial-gradient(
+            circle farthest-corner at 40% 25%,
+            rgb(229, 255, 181) 9%,
+            rgb(204, 237, 124) 20%,
+            rgb(103, 165, 64) 62%,
+            rgb(66, 204, 40) 100%
+    );
+}
+
+.noButton {
+    background: none;
+    border: none;
+}
+
+.numInput {
+    width: 50px;
+    font-size: 20px;
+    height: 30px;
+    text-align: right;
+    align-self: center;
+}
+
+.submit {
+    width: 66px;
+    height: 18px;
+
+    border: groove #5f845e 3px;
+    background-color: #5ed75e;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+.submit:hover {
+    border-color: #85ec4d;
+}
+
+.normal {
+    background-color: #bfbfbf;
+}
+.fighting {
+    background-color: #d87c58;
+}
+.flying {
+    background-color: #999ade;
+}
+.poison {
+    background-color: #925192;
+}
+.ground {
+    background-color: #dea761;
+}
+.rock {
+    background-color: #897864;
+}
+.bug {
+    background-color: #b1c967;
+}
+.ghost {
+    background-color: #c195dc;
+}
+.steel {
+    background-color: #49769c;
+}
+.fire {
+    background-color: #cf1414;
+}
+.water {
+    background-color: #1689de;
+}
+.grass {
+    background-color: #47a047;
+}
+.electric {
+    background-color: #e6b700;
+}
+.psychic {
+    background-color: #fa43b8;
+}
+.ice {
+    background-color: #98c3de;
+}
+.dragon {
+    background-color: #89315d;
+}
+.dark {
+    background-color: #282433;
+}
+.fairy {
+    background-color: #dca0ce;
+}
+.unknown {
+    background-color: #545454;
+}
+.shadow {
+    background-color: #364163;
+}

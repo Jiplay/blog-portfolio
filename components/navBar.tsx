@@ -18,10 +18,11 @@ function NavBar() {
                           <Nav.Link href="/culture">Culture</Nav.Link>
                           <Nav.Link href="/sharing">Sharing</Nav.Link>
                           <Nav.Link href="/travel">Travel</Nav.Link>
-                          <Nav.Link href="/curious">About</Nav.Link>
-                          <NavDropdown title="Authors" id="basic-nav-dropdown">
-                              <NavDropdown.Item href="author/Julien">Julien</NavDropdown.Item>
-                          </NavDropdown>
+                          <Nav.Link href="/author/Julien">Julien</Nav.Link>
+                          {/*/!*<Nav.Link href="/curious">About</Nav.Link>*!/*/}
+                          {/*<NavDropdown title="Authors" id="basic-nav-dropdown">*/}
+                          {/*    <NavDropdown.Item href="author/Julien">Julien</NavDropdown.Item>*/}
+                          {/*</NavDropdown>*/}
                       </Nav>
                   </Navbar.Collapse>
               </Container>

@@ -19,8 +19,6 @@ Hello everyone and welcome to my Lab' my own space where I can share almost ever
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pharetra ultrices turpis, id tempor massa porttitor ut. Vestibulum eget eros orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin consectetur urna et nibh sollicitudin sollicitudin. Pellentesque sit amet orci dui. Donec felis mauris, tempus nec augue nec, interdum semper lacus. Cras id ipsum vulputate turpis pharetra accumsan eget eget orci.
 
-![Jiplay's GitHub stats](https://github-readme-stats.vercel.app/api?username=Jiplay&show_icons=true&theme=dark)
-
 ## Me
 
 I'm Julien but you already knows that, what you don't know is the number of idea that I have in mind for this website ! I'll try to realised most of them, writing post, re-design the whole thing, or add a collaboration mode to this, but it takes time. However, I really love this project and with passion and time, nothing can stop me !
